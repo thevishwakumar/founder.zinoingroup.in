@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page Not Found | Vishwa K</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/webp" href="assets/img/zinoin-logo.webp">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <style>
+        :root {
+            --bg-color: #0b1120;
+            --card-bg: #131f37;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --text-title: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-title);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .error-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            max-width: 520px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+        }
+        .error-logo {
+            width: 48px;
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
+        .error-code {
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--primary);
+            letter-spacing: -2px;
+            margin-bottom: 0.5rem;
+        }
+        .error-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 1rem;
+        }
+        .error-desc {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 0.75rem 1.75rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        .button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+        .button:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <main class="error-card" role="main">
+        <img src="assets/img/zinoin-logo.webp" alt="Zinoin Group logo" class="error-logo" width="48" height="54">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-desc">
+            The page you are looking for doesn't exist, has been removed, or is temporarily unavailable.
+        </p>
+        <a href="/" class="button" aria-label="Return to Vishwa K Founder Homepage">
+            <i class='bx bx-home' aria-hidden="true"></i> Return to Homepage
+        </a>
+    </main>
+</body>
+</html>

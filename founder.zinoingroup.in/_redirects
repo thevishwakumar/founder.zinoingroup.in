@@ -1,0 +1,5 @@
+# Canonical URL & Trailing Slash Normalization
+/index.html   /   301!
+
+# Custom 404 Error Routing
+/*   /404.html   404
