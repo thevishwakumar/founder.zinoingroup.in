@@ -137,7 +137,7 @@ A combined schema `@graph` declaring both `WebSite` and `Person` has been implem
       "sameAs": [
         "https://www.linkedin.com/in/thevishwakumar",
         "https://github.com/thevishwakumar",
-        "https://www.instagram.com/thevishwa._"
+        "https://www.instagram.com/thevishwakumar/"
       ],
       "knowsAbout": [
         "Technology & Development",

@@ -73,7 +73,7 @@ This document defines the unified professional personal brand identity for **Vis
 | **Founder Website** | ✅ 100% Aligned | Production codebase updated with approved copy, verified education, and verified projects. |
 | **LinkedIn Profile** | `linkedin.com/in/thevishwakumar` | Set headline to: `Founder & Developer at Zinoin Group \| Cybersecurity Engineering Student`. Add website link to Intro header. |
 | **GitHub Profile** | `github.com/thevishwakumar` | Set bio to: `Founder & Developer @ Zinoin Group \| Cybersecurity & Web Development`. Set URL to `https://founder.zinoingroup.in/`. |
-| **Instagram Profile** | `instagram.com/thevishwa._` | Set bio to: `Vishwa K \| Founder & Developer @zinoingroup \| Tech & Cybersecurity`. Add website URL. |
+| **Instagram Profile** | `instagram.com/thevishwakumar` | Set bio to: `Vishwa K \| Founder & Developer @zinoingroup \| Tech & Cybersecurity`. Add website URL. |
 | **Corporate Website** | `zinoingroup.in` | Link to `founder.zinoingroup.in` in corporate leadership and about pages. |
 
 ---

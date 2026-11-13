@@ -35,7 +35,7 @@ This report documents the Open Graph (OG) and Twitter/X Card metadata implemente
 <meta name="twitter:description" content="Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.">
 <meta name="twitter:image" content="https://founder.zinoingroup.in/assets/img/about.jpg">
 <meta name="twitter:image:alt" content="Vishwa K — Founder & Developer at Zinoin Group">
-<meta name="twitter:creator" content="@thevishwa._">
+<meta name="twitter:creator" content="@thevishwakumar">
 ```
 
 ---
@@ -61,7 +61,7 @@ This report documents the Open Graph (OG) and Twitter/X Card metadata implemente
 * **Display Format:** Full-width image card banner stacked above the title and description.
 * **Attributes:**
   * `twitter:card="summary_large_image"` triggers high-engagement visual banner rendering rather than a tiny square thumbnail.
-  * `twitter:creator="@thevishwa._"` links the shared post to the owner's personal brand handle.
+  * `twitter:creator="@thevishwakumar"` links the shared post to the owner's personal brand handle.
 
 ### 3.4 Slack & Discord Rich Snippets
 * **Display Format:** Displays a color-accented embed block with title, site name ("Vishwa K - Zinoin Group"), description, and thumbnail image.

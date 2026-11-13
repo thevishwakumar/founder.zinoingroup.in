@@ -87,7 +87,7 @@ The site utilizes a connected Schema.org graph establishing clear semantic relat
       "sameAs": [
         "https://www.linkedin.com/in/thevishwakumar",
         "https://github.com/thevishwakumar",
-        "https://www.instagram.com/thevishwa._"
+        "https://www.instagram.com/thevishwakumar/"
       ],
       "knowsAbout": [
         "Technology & Development",

@@ -67,10 +67,10 @@ This report documents the strategic integration of external professional network
 ---
 
 ### 2.3 Instagram Integration
-* **Verified Profile URL:** [https://www.instagram.com/thevishwa._](https://www.instagram.com/thevishwa._)
+* **Verified Profile URL:** [https://www.instagram.com/thevishwakumar/](https://www.instagram.com/thevishwakumar/)
 * **Website Placement:**
   1. **Hero Social Bar:** Subtle icon button with `aria-label="Vishwa K Instagram Profile"`.
-  2. **Contact Section Directory:** Verified row with handle `@thevishwa._`.
+  2. **Contact Section Directory:** Verified row with handle `@thevishwakumar`.
   3. **Footer Social Dock:** Verified icon button.
   4. **Structured Data:** Included in JSON-LD `sameAs`.
 * **Privacy & Architecture Decision:** Heavy third-party Instagram feed widgets were deliberately omitted. Instagram widget iframes load over 1.2 MB of external JavaScript, inject persistent third-party cookies, and generate layout shifts that severely penalize Core Web Vitals. The native icon link provides an elegant, lightweight alternative.
