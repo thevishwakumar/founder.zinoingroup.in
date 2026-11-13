@@ -1201,6 +1201,24 @@
             border-radius: var(--radius-sm);
         }
 
+        .project__actions {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .button--small {
+            padding: 0.45rem 0.9rem;
+            font-size: var(--smaller-font-size);
+            border-radius: var(--radius-sm);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-weight: 600;
+        }
+
         /*===== CONTACT SECTION =====*/
         .contact__container {
             display: grid;
@@ -1488,7 +1506,7 @@
                 <a href="#home" class="nav__logo" aria-label="Vishwa K - Founder Homepage">
                     <picture>
                         <source srcset="assets/img/zinoin-logo.webp" type="image/webp">
-                        <img src="assets/img/zinoin-logo.png" alt="Zinoin Group official corporate emblem" class="nav__logo-img" width="32" height="36" loading="eager" decoding="async">
+                        <img src="assets/img/zinoin-logo.webp" alt="Zinoin Group official corporate emblem" class="nav__logo-img" width="32" height="36" loading="eager" decoding="async">
                     </picture>
                     <span class="nav__logo-text">Vishwa K</span>
                     <span class="nav__logo-badge">Founder</span>
@@ -1510,13 +1528,13 @@
                         <a href="#expertise" class="nav__link">Expertise</a>
                     </li>
                     <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects & Ventures</a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#education" class="nav__link">Education</a>
                     </li>
                     <li class="nav__item">
                         <a href="#certifications" class="nav__link">Certifications</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects & Ventures</a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">Contact</a>
@@ -1694,6 +1712,124 @@
                         <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Innovation</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <!--===== PROJECTS & VENTURES =====-->
+        <section class="projects section" id="projects" aria-labelledby="projects-heading">
+            <h2 class="section-title" id="projects-heading">Projects & Ventures</h2>
+
+            <div class="projects__grid bd-grid">
+                <!-- 1. Zinoin Group -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-zinoin.webp" alt="Zinoin Group corporate digital services initiative" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay">Active Venture</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Zinoin Group</h3>
+                        <p class="project__tagline">Founder Initiative & Digital Infrastructure</p>
+                        <p class="project__desc">
+                            Founder-led business group and digital initiatives, orchestrating enterprise technology services, digital infrastructure, and client solutions.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Venture Leadership</span>
+                            <span class="tech-pill">Digital Platforms</span>
+                            <span class="tech-pill">Enterprise Infrastructure</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://zinoingroup.in/" target="_blank" rel="noopener noreferrer" class="button button--small button--primary" aria-label="Visit Zinoin Group corporate website">
+                                <i class='bx bx-globe' aria-hidden="true"></i> Explore Venture
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. DocuMind AI -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-documind.svg" alt="DocuMind AI full-stack RAG and ChromaDB vector search architecture diagram" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay" style="background: rgba(14, 165, 233, 0.9);">AI & Security RAG</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">DocuMind AI</h3>
+                        <p class="project__tagline">Full-Stack Enterprise RAG & Knowledge Assistant</p>
+                        <p class="project__desc">
+                            Document-grounded AI knowledge platform engineered with Google Gemini AI and ChromaDB semantic vector search. Features multi-tenant database isolation, JWT auth, and automated RBAC security test suites.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">ChromaDB</span>
+                            <span class="tech-pill">Gemini AI</span>
+                            <span class="tech-pill">RBAC Security</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/documind" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="View DocuMind AI source code on GitHub">
+                                <i class='bx bxl-github' aria-hidden="true"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. TNT Commercial Platforms -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-tnt.webp" alt="TNT Tamil Calendar and Panchangam mobile application user interface" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay">Client Platform</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">TNT Commercial Platforms</h3>
+                        <p class="project__tagline">Client Order Management & Digital Utilities</p>
+                        <p class="project__desc">
+                            Engineered commercial ordering software with anti-enumeration security for client Shree Taste N Taste Catering, alongside the high-performance TNT Tamil Calendar mobile application.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">JavaScript ES6</span>
+                            <span class="tech-pill">Supabase</span>
+                            <span class="tech-pill">PostgreSQL</span>
+                            <span class="tech-pill">Security Controls</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/tntdiwaliordermanagement" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="View TNT Diwali Order Management source code on GitHub">
+                                <i class='bx bxl-github' aria-hidden="true"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. CampusBridge / SkillTrack -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-campusbridge.svg" alt="CampusBridge Student Certificate Tracking and Verification Engine interface architecture diagram" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay" style="background: rgba(99, 102, 241, 0.9);">In Development</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">CampusBridge / SkillTrack</h3>
+                        <p class="project__tagline">Certificate Tracking & Verification</p>
+                        <p class="project__desc">
+                            Student certificate tracking and verification platform. A secure digital proof platform engineered for students to store and verify symposium and workshop certificates with GPS tracking and administrative validation workflows.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Verification Engine</span>
+                            <span class="tech-pill">GPS Verification</span>
+                            <span class="tech-pill">Digital Records</span>
+                            <span class="tech-pill">Data Integrity</span>
+                        </div>
+                        <div class="project__actions">
+                            <span class="tech-pill" style="color: var(--accent-color); border-color: rgba(56, 189, 248, 0.4);">
+                                <i class='bx bx-time-five' aria-hidden="true"></i> Architecture & Engine In Progress
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Projects Profile CTA -->
+            <div class="projects__cta scroll-animate" style="text-align: center; margin-top: 2.75rem;">
+                <a href="https://github.com/thevishwakumar" class="button button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Explore verified repositories on GitHub">
+                    <i class='bx bxl-github' aria-hidden="true"></i> View Technical Projects on GitHub
+                </a>
             </div>
         </section>
 
@@ -1879,80 +2015,6 @@
             </div>
         </section>
 
-        <!--===== PROJECTS & VENTURES =====-->
-        <section class="projects section" id="projects" aria-labelledby="projects-heading">
-            <h2 class="section-title" id="projects-heading">Projects & Ventures</h2>
-
-            <div class="projects__grid bd-grid">
-                <!-- 1. Zinoin Group -->
-                <div class="project__card scroll-animate">
-                    <div class="project__img-wrapper">
-                        <img src="assets/img/project-zinoin.webp" alt="Zinoin Group corporate digital services initiative" class="project__img" width="380" height="210" loading="lazy" decoding="async">
-                        <span class="project__badge-overlay">Active Venture</span>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">Zinoin Group</h3>
-                        <p class="project__tagline">Zinoin Group Founder Initiative</p>
-                        <p class="project__desc">
-                            Founder-led business group and digital business initiatives, orchestrating technology services, enterprise infrastructure, and digital solutions by Vishwa K (Zinoin Group Founder).
-                        </p>
-                        <div class="project__tech-tags">
-                            <span class="tech-pill">Venture Leadership</span>
-                            <span class="tech-pill">Digital Platforms</span>
-                            <span class="tech-pill">Technology</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. CampusBridge / SkillTrack -->
-                <div class="project__card scroll-animate">
-                    <div class="project__img-wrapper">
-                        <img src="assets/img/project-campusbridge.svg" alt="CampusBridge Student Certificate Tracking and Verification Engine interface architecture diagram" class="project__img" width="380" height="210" loading="lazy" decoding="async">
-                        <span class="project__badge-overlay" style="background: rgba(99, 102, 241, 0.9);">In Development</span>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">CampusBridge / SkillTrack</h3>
-                        <p class="project__tagline">Certificate Tracking & Verification</p>
-                        <p class="project__desc">
-                            Student certificate tracking and verification platform. A secure digital proof platform engineered for students to store and verify symposium and workshop certificates with GPS tracking and administrative validation workflows.
-                        </p>
-                        <div class="project__tech-tags">
-                            <span class="tech-pill">Verification Engine</span>
-                            <span class="tech-pill">GPS Verification</span>
-                            <span class="tech-pill">Digital Records</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. TNT Tamil Calendar -->
-                <div class="project__card scroll-animate">
-                    <div class="project__img-wrapper">
-                        <img src="assets/img/project-tnt.webp" alt="TNT Tamil Calendar and Panchangam mobile application user interface" class="project__img" width="380" height="210" loading="lazy" decoding="async">
-                        <span class="project__badge-overlay">Mobile Application</span>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">TNT Tamil Calendar</h3>
-                        <p class="project__tagline">Tamil Calendar & Panchangam</p>
-                        <p class="project__desc">
-                            Tamil calendar and Panchangam mobile application providing daily traditional timings, auspicious hours, festival notifications, and spiritual calendar schedules.
-                        </p>
-                        <div class="project__tech-tags">
-                            <span class="tech-pill">Mobile Application</span>
-                            <span class="tech-pill">Panchangam</span>
-                            <span class="tech-pill">Utility App</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- GitHub Projects Profile CTA -->
-            <div class="projects__cta scroll-animate" style="text-align: center; margin-top: 2.75rem;">
-                <a href="https://github.com/thevishwakumar" class="button button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Explore verified repositories on GitHub">
-                    <i class='bx bxl-github' aria-hidden="true"></i> View Technical Projects on GitHub
-                </a>
-            </div>
-        </section>
-
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact" aria-labelledby="contact-heading">
             <h2 class="section-title" id="contact-heading">Let's Connect</h2>
@@ -2057,8 +2119,10 @@
                 <ul class="footer__nav-list">
                     <li><a href="#home" class="footer__nav-link">Home</a></li>
                     <li><a href="#about" class="footer__nav-link">About</a></li>
-                    <li><a href="#education" class="footer__nav-link">Education</a></li>
+                    <li><a href="#expertise" class="footer__nav-link">Expertise</a></li>
                     <li><a href="#projects" class="footer__nav-link">Projects</a></li>
+                    <li><a href="#education" class="footer__nav-link">Education</a></li>
+                    <li><a href="#certifications" class="footer__nav-link">Certifications</a></li>
                     <li><a href="#contact" class="footer__nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -2320,7 +2384,9 @@
                         contactForm.reset();
                         trackEvent('contact_form_interaction', { action: 'submit_success' });
                     } else {
-                        contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> " + (resJson.message || "Failed to send message. Please try again.");
+                        contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> ";
+                        const errorText = document.createTextNode(resJson.message || "Failed to send message. Please try again.");
+                        contactResult.appendChild(errorText);
                         contactResult.className = 'contact__result error';
                         trackEvent('contact_form_interaction', { action: 'submit_error' });
                     }
