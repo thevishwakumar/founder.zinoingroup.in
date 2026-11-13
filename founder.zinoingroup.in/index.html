@@ -1416,6 +1416,24 @@
             transform: translateY(-2px);
         }
 
+        .footer__nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .footer__nav-link {
+            font-size: var(--small-font-size);
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .footer__nav-link:hover {
+            color: var(--primary);
+        }
+
         .footer__copy {
             margin-top: 2rem;
             text-align: center;
@@ -1926,6 +1944,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- GitHub Projects Profile CTA -->
+            <div class="projects__cta scroll-animate" style="text-align: center; margin-top: 2.75rem;">
+                <a href="https://github.com/thevishwakumar" class="button button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Explore verified repositories on GitHub">
+                    <i class='bx bxl-github' aria-hidden="true"></i> View Technical Projects on GitHub
+                </a>
+            </div>
         </section>
 
         <!--===== CONTACT =====-->
@@ -2023,10 +2048,21 @@
     <!--===== FOOTER =====-->
     <footer class="footer" role="contentinfo">
         <div class="footer__container bd-grid">
-            <div>
+            <div class="footer__brand">
                 <p class="footer__title">Vishwa K</p>
                 <p class="footer__tagline">Founder & Developer · Zinoin Group</p>
             </div>
+
+            <nav class="footer__nav" aria-label="Footer Quick Links">
+                <ul class="footer__nav-list">
+                    <li><a href="#home" class="footer__nav-link">Home</a></li>
+                    <li><a href="#about" class="footer__nav-link">About</a></li>
+                    <li><a href="#education" class="footer__nav-link">Education</a></li>
+                    <li><a href="#projects" class="footer__nav-link">Projects</a></li>
+                    <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
             <div class="footer__social">
                 <a href="https://www.linkedin.com/in/thevishwakumar" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
                 <a href="https://github.com/thevishwakumar" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="bx bxl-github" aria-hidden="true"></i></a>
