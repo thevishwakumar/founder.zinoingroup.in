@@ -147,3 +147,4 @@ If unexpected issues arise after publication:
   - Extract `c:\Users\Vishw\Downloads\founder.zinoingroup.in\founder_zinoingroup_backup_predeploy.zip` to restore the pre-deployment state.
 * **Purge Cache:**
   - Trigger a Cloudflare **Purge Everything** after rolling back files.
+

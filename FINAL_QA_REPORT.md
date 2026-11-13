@@ -194,3 +194,4 @@ Before initiating live production synchronization:
 > [!IMPORTANT]
 > **STOP — AWAITING EXPLICIT OWNER APPROVAL**  
 > All files are staged and ready in `founder.zinoingroup.in/`. No files have been pushed to external remote servers or live hosts. Review the companion document [DEPLOYMENT_CHECKLIST.md](file:///c:/Users/Vishw/Downloads/founder.zinoingroup.in/DEPLOYMENT_CHECKLIST.md) for exact step-by-step deployment instructions upon your approval.
+

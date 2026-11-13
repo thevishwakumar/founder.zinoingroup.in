@@ -27,17 +27,21 @@
 
     <!-- Technical SEO Meta Tags -->
     <meta name="description" content="Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.">
-    <meta name="keywords" content="Vishwa K, Zinoin Group, Founder Zinoin, Developer, Cybersecurity, Coimbatore, Tamil Nadu, Digital Innovation, Technology, CampusBridge, SkillTrack">
+    <meta name="keywords" content="Vishwa K, Vishwa K Founder, Vishwa K Zinoin Group, Founder & Developer at Zinoin Group, Cybersecurity Engineering, Technology Entrepreneur, Zinoin Group Founder, Digital Innovation, Sri Sai Ranganathan Engineering College, CampusBridge, SkillTrack">
     <meta name="author" content="Vishwa K">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://founder.zinoingroup.in/">
 
-    <!-- Open Graph Metadata -->
+    <!-- Open Graph Metadata (Facebook, LinkedIn, Slack, WhatsApp) -->
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Vishwa K | Founder & Developer at Zinoin Group">
     <meta property="og:description" content="Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.">
     <meta property="og:url" content="https://founder.zinoingroup.in/">
     <meta property="og:image" content="https://founder.zinoingroup.in/assets/img/about.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Vishwa K — Founder & Developer at Zinoin Group">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:site_name" content="Vishwa K - Zinoin Group">
     <meta property="og:locale" content="en_US">
 
@@ -46,6 +50,8 @@
     <meta name="twitter:title" content="Vishwa K | Founder & Developer at Zinoin Group">
     <meta name="twitter:description" content="Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.">
     <meta name="twitter:image" content="https://founder.zinoingroup.in/assets/img/about.jpg">
+    <meta name="twitter:image:alt" content="Vishwa K — Founder & Developer at Zinoin Group">
+    <meta name="twitter:creator" content="@thevishwa._">
 
     <!-- Structured Data (JSON-LD: Person & WebSite Schemas) -->
     <script type="application/ld+json">
@@ -69,7 +75,9 @@
           "name": "Vishwa K",
           "url": "https://founder.zinoingroup.in/",
           "image": "https://founder.zinoingroup.in/assets/img/about.jpg",
-          "jobTitle": "Founder & Developer",
+          "jobTitle": "Founder & Developer at Zinoin Group",
+          "description": "Vishwa K is the Founder & Developer at Zinoin Group and a Technology Entrepreneur pursuing Cybersecurity Engineering at Sri Sai Ranganathan Engineering College.",
+          "disambiguatingDescription": "Vishwa K (Zinoin Group Founder and Technology Entrepreneur)",
           "worksFor": {
             "@type": "Organization",
             "name": "Zinoin Group",
@@ -104,7 +112,9 @@
           ],
           "knowsAbout": [
             "Technology & Development",
-            "Cybersecurity",
+            "Cybersecurity Engineering",
+            "Technology Entrepreneurship",
+            "Digital Innovation",
             "Digital Marketing",
             "Entrepreneurship",
             "Web Development"
@@ -1682,7 +1692,7 @@
                     </div>
                     <h3 class="education__title">Bachelor of Engineering (B.E.)</h3>
                     <p class="education__institution">
-                        <i class='bx bx-certification' aria-hidden="true"></i> Cyber Security Engineering
+                        <i class='bx bx-certification' aria-hidden="true"></i> Cybersecurity Engineering (Cyber Security)
                     </p>
                     <p class="education__location">
                         <i class='bx bx-building-house' aria-hidden="true"></i> Sri Sai Ranganathan Engineering College, Coimbatore, Tamil Nadu, India
@@ -1864,9 +1874,9 @@
                     </div>
                     <div class="project__content">
                         <h3 class="project__title">Zinoin Group</h3>
-                        <p class="project__tagline">Founder-Led Business Group</p>
+                        <p class="project__tagline">Zinoin Group Founder Initiative</p>
                         <p class="project__desc">
-                            Founder-led business group and digital business initiatives, orchestrating technology services, enterprise infrastructure, and digital solutions.
+                            Founder-led business group and digital business initiatives, orchestrating technology services, enterprise infrastructure, and digital solutions by Vishwa K (Zinoin Group Founder).
                         </p>
                         <div class="project__tech-tags">
                             <span class="tech-pill">Venture Leadership</span>
@@ -2200,6 +2210,7 @@
 
             const titles = [
                 "Technology Enthusiast.",
+                "Technology Entrepreneur.",
                 "Founder & Developer.",
                 "Cybersecurity Explorer."
             ];
@@ -2271,15 +2282,18 @@
                         contactResult.innerHTML = "<i class='bx bx-check-circle' aria-hidden='true'></i> Thank you! Your message has been sent successfully.";
                         contactResult.className = 'contact__result success';
                         contactForm.reset();
+                        trackEvent('contact_form_interaction', { action: 'submit_success' });
                     } else {
                         contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> " + (resJson.message || "Failed to send message. Please try again.");
                         contactResult.className = 'contact__result error';
+                        trackEvent('contact_form_interaction', { action: 'submit_error' });
                     }
                 })
                 .catch(error => {
                     console.error('Submission error:', error);
                     contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> A network error occurred. Please try again or email directly.";
                     contactResult.className = 'contact__result error';
+                    trackEvent('contact_form_interaction', { action: 'submit_error' });
                 })
                 .finally(() => {
                     contactSubmit.disabled = false;
@@ -2288,6 +2302,70 @@
                 });
             });
         }
+
+        /*===== PRIVACY-CONSCIOUS GA4 & GTM EVENT TRACKING =====*/
+        function trackEvent(eventName, params = {}) {
+            // Push clean interaction events to GTM dataLayer without PII
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: eventName,
+                ...params
+            });
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', eventName, params);
+            }
+        }
+
+        // Track Contact section visibility (IntersectionObserver)
+        const contactSection = document.getElementById('contact');
+        if (contactSection && 'IntersectionObserver' in window) {
+            let contactViewed = false;
+            const contactObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !contactViewed) {
+                        contactViewed = true;
+                        trackEvent('contact_section_view', { section: 'contact' });
+                    }
+                });
+            }, { threshold: 0.3 });
+            contactObserver.observe(contactSection);
+        }
+
+        // Track Outbound Social / Professional clicks
+        document.querySelectorAll('a[href*="linkedin.com"], a[href*="github.com"], a[href*="instagram.com"]').forEach(link => {
+            link.addEventListener('click', function() {
+                const platform = this.href.includes('linkedin.com') ? 'linkedin' :
+                                 this.href.includes('github.com') ? 'github' : 'instagram';
+                trackEvent('social_click', {
+                    platform: platform,
+                    target_url: this.href
+                });
+            });
+        });
+
+        // Track Project link clicks
+        document.querySelectorAll('.project__link').forEach(link => {
+            link.addEventListener('click', function() {
+                const projectCard = this.closest('.project__card');
+                const projectTitle = projectCard ? projectCard.querySelector('.project__title')?.textContent.trim() : 'Project';
+                trackEvent('project_click', {
+                    project_name: projectTitle,
+                    target_url: this.href
+                });
+            });
+        });
+
+        // Track form interaction start (focus on any input, zero PII)
+        const contactInputs = document.querySelectorAll('.contact__input');
+        let formStarted = false;
+        contactInputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                if (!formStarted) {
+                    formStarted = true;
+                    trackEvent('contact_form_interaction', { action: 'form_start' });
+                }
+            }, { once: true });
+        });
     </script>
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"1c105f76143b459fa149a225654a1140","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
