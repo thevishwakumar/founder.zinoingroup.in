@@ -60,3 +60,4 @@ with open('founder.zinoingroup.in/index.html', 'w', encoding='utf-8') as f:
     f.write(text)
 
 print("Successfully updated scrollActive for dropdowns!")
+

@@ -13,3 +13,4 @@ if nav_match:
 print("\n=== NAV CSS SNIPPETS ===")
 for m in re.finditer(r'(\.nav[^{]*\{[^}]+\})', text):
     print(m.group(0)[:120])
+

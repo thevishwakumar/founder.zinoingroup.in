@@ -8,20 +8,20 @@
 
     <!-- Immediate Theme Initialization (Zero-FOUC Prevention) -->
     <script>
-        (function() {
+        (function () {
             try {
                 var stored = localStorage.getItem('theme-preference') || localStorage.getItem('theme');
                 var pref = (stored === 'dark' || stored === 'light' || stored === 'system') ? stored : 'system';
                 var isDark = pref === 'dark' || (pref === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
                 document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
                 document.documentElement.setAttribute('data-theme-preference', pref);
-            } catch (e) {}
+            } catch (e) { }
         })();
     </script>
 
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -39,8 +39,10 @@
     <!-- End Google Tag Manager -->
 
     <!-- Technical SEO Meta Tags -->
-    <meta name="description" content="Discover Vishwa K (Vishwa Kumar), Founder & Developer at Zinoin Group. Exploring cybersecurity engineering, software development, and digital entrepreneurship.">
-    <meta name="keywords" content="Vishwa K, Vishwa Kumar, thevishwakumar, Founder & Developer at Zinoin Group, Founder and Developer at Zinoin Group, Zinoin Group Founder, Cybersecurity Engineering, Technology Entrepreneur, Digital Innovation, Software and web development, Sri Sai Ranganathan Engineering College, CampusBridge, DocuMind AI">
+    <meta name="description"
+        content="Discover Vishwa K (Vishwa Kumar), Founder & Developer at Zinoin Group. Exploring cybersecurity engineering, software development, and digital entrepreneurship.">
+    <meta name="keywords"
+        content="Vishwa K, Vishwa Kumar, thevishwakumar, Founder & Developer at Zinoin Group, Founder and Developer at Zinoin Group, Zinoin Group Founder, Cybersecurity Engineering, Technology Entrepreneur, Digital Innovation, Software and web development, Sri Sai Ranganathan Engineering College, CampusBridge, DocuMind AI">
     <meta name="author" content="Vishwa K">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://founder.zinoingroup.in/">
@@ -48,7 +50,8 @@
     <!-- Open Graph Metadata (Facebook, LinkedIn, Slack, WhatsApp) -->
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Vishwa Kumar (Vishwa K) | Founder & Developer at Zinoin Group">
-    <meta property="og:description" content="Discover Vishwa K (Vishwa Kumar), Founder & Developer at Zinoin Group. Exploring cybersecurity engineering, technology innovation, software development, and entrepreneurship.">
+    <meta property="og:description"
+        content="Discover Vishwa K (Vishwa Kumar), Founder & Developer at Zinoin Group. Exploring cybersecurity engineering, technology innovation, software development, and entrepreneurship.">
     <meta property="og:url" content="https://founder.zinoingroup.in/">
     <meta property="og:image" content="https://founder.zinoingroup.in/assets/img/about.jpg">
     <meta property="og:image:secure_url" content="https://founder.zinoingroup.in/assets/img/about.jpg">
@@ -65,7 +68,8 @@
     <!-- Twitter/X Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Vishwa Kumar (Vishwa K) | Founder & Developer at Zinoin Group">
-    <meta name="twitter:description" content="Discover Vishwa K (Vishwa Kumar), Founder & Developer at Zinoin Group. Exploring cybersecurity engineering, technology innovation, software development, and entrepreneurship.">
+    <meta name="twitter:description"
+        content="Discover Vishwa K (Vishwa Kumar), Founder & Developer at Zinoin Group. Exploring cybersecurity engineering, technology innovation, software development, and entrepreneurship.">
     <meta name="twitter:image" content="https://founder.zinoingroup.in/assets/img/about.jpg">
     <meta name="twitter:image:alt" content="Vishwa K — Founder & Developer at Zinoin Group portrait photograph">
     <meta name="twitter:creator" content="@thevishwakumar">
@@ -219,14 +223,16 @@
     <!-- Fonts & Icons with font-display: swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 
     <style>
         /*===== CSS VARIABLES & DESIGN SYSTEM =====*/
         :root {
             --header-height: 4.25rem;
-            
+
             /* Zinoin Group Corporate Brand Palette (Logo-Derived) */
             --primary: #2563eb;
             --primary-light: #3b82f6;
@@ -237,7 +243,7 @@
             --secondary: #0f172a;
             --accent: #6366f1;
             --accent-cyan: #0284c7;
-            
+
             /* Light Theme Surfaces & Text (Classic Clean Baseline) */
             --bg-color: #ffffff;
             --surface-color: #f8fafc;
@@ -252,7 +258,7 @@
             --input-bg: #f8fafc;
             --input-border: #cbd5e1;
             --header-bg: rgba(255, 255, 255, 0.92);
-            
+
             /* Elevation & Shadows */
             --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
             --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
@@ -262,7 +268,7 @@
             /* Typography */
             --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            
+
             --big-font-size: 2.25rem;
             --h1-font-size: 1.85rem;
             --h2-font-size: 1.45rem;
@@ -276,7 +282,7 @@
             --radius-md: 10px;
             --radius-lg: 16px;
             --radius-full: 9999px;
-            
+
             --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -287,17 +293,18 @@
             --z-fixed: 100;
         }
 
-        
+
         /* Smooth Theme Switch Cross-Fade */
         html.theme-transitioning,
         html.theme-transitioning *,
         html.theme-transitioning *::before,
         html.theme-transitioning *::after {
             transition: background-color 0.28s var(--ease-standard),
-                        border-color 0.28s var(--ease-standard),
-                        color 0.28s var(--ease-standard),
-                        box-shadow 0.28s var(--ease-standard) !important;
+                border-color 0.28s var(--ease-standard),
+                color 0.28s var(--ease-standard),
+                box-shadow 0.28s var(--ease-standard) !important;
         }
+
         /* Fallback: when OS prefers dark and user has not set explicit light theme */
         @media (prefers-color-scheme: dark) {
             :root:not([data-theme="light"]) {
@@ -329,7 +336,8 @@
         }
 
         /* Explicit Light Theme (Applied to :root or body) */
-        :root[data-theme="light"], body[data-theme="light"] {
+        :root[data-theme="light"],
+        body[data-theme="light"] {
             --primary: #2563eb;
             --primary-light: #3b82f6;
             --primary-dark: #1d4ed8;
@@ -357,7 +365,8 @@
         }
 
         /* Explicit Dark Theme (Applied to :root or body) */
-        :root[data-theme="dark"], body[data-theme="dark"] {
+        :root[data-theme="dark"],
+        body[data-theme="dark"] {
             --primary: #3b82f6;
             --primary-light: #60a5fa;
             --primary-dark: #2563eb;
@@ -396,7 +405,9 @@
         }
 
         /*===== BASE RESET =====*/
-        *, ::before, ::after {
+        *,
+        ::before,
+        ::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -413,7 +424,7 @@
             font-size: var(--normal-font-size);
             color: var(--text-color);
             background-color: var(--bg-color);
-            background-image: 
+            background-image:
                 radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.04) 0px, transparent 50%),
                 radial-gradient(at 0% 100%, rgba(99, 102, 241, 0.03) 0px, transparent 50%);
             background-attachment: fixed;
@@ -424,7 +435,7 @@
         }
 
         [data-theme="dark"] body {
-            background-image: 
+            background-image:
                 radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.07) 0px, transparent 50%),
                 radial-gradient(at 0% 100%, rgba(99, 102, 241, 0.05) 0px, transparent 50%);
         }
@@ -449,7 +460,10 @@
             outline: 3px solid #ffffff;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: var(--font-heading);
             color: var(--text-color);
             font-weight: 700;
@@ -551,6 +565,7 @@
                 margin-left: 0.875rem;
                 margin-right: 0.875rem;
             }
+
             .section {
                 padding: 3.25rem 0 2rem;
             }
@@ -562,6 +577,7 @@
                 margin-left: 0.625rem;
                 margin-right: 0.625rem;
             }
+
             .section {
                 padding: 2.75rem 0 1.75rem;
             }
@@ -625,7 +641,8 @@
             outline-offset: 3px;
         }
 
-        .button:disabled, .button[disabled] {
+        .button:disabled,
+        .button[disabled] {
             opacity: 0.65;
             cursor: not-allowed;
             transform: none !important;
@@ -695,7 +712,7 @@
             width: 32px;
             height: 36px;
             object-fit: contain;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
         }
 
         .nav__logo-text {
@@ -785,7 +802,8 @@
             transition: var(--transition);
         }
 
-        .nav__link:hover, .nav__link.active {
+        .nav__link:hover,
+        .nav__link.active {
             color: var(--primary);
         }
 
@@ -794,7 +812,8 @@
                 gap: 1.35rem;
             }
 
-            .nav__toggle, .nav__toggle-close {
+            .nav__toggle,
+            .nav__toggle-close {
                 display: none;
             }
 
@@ -832,7 +851,7 @@
             }
         }
 
-        
+
         /*===== EXECUTIVE DROPDOWN MENU STYLES =====*/
         .nav__dropdown {
             position: relative;
@@ -866,6 +885,7 @@
 
         /* Desktop Dropdown Styles */
         @media screen and (min-width: 992px) {
+
             .nav__dropdown:hover .nav__dropdown-icon,
             .nav__dropdown.show .nav__dropdown-icon {
                 transform: rotate(180deg);
@@ -887,8 +907,8 @@
                 visibility: hidden;
                 pointer-events: none;
                 transition: opacity 0.22s var(--ease-out-expo),
-                            transform 0.25s var(--ease-out-expo),
-                            visibility 0.22s;
+                    transform 0.25s var(--ease-out-expo),
+                    visibility 0.22s;
                 z-index: 250;
                 backdrop-filter: blur(16px);
                 -webkit-backdrop-filter: blur(16px);
@@ -1022,6 +1042,7 @@
                     opacity: 0;
                     transform: translateY(-6px);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateY(0);
@@ -1089,7 +1110,8 @@
             box-shadow: var(--shadow-sm);
         }
 
-        .theme-toggle:hover, .theme-toggle:focus-visible {
+        .theme-toggle:hover,
+        .theme-toggle:focus-visible {
             color: var(--primary);
             border-color: var(--primary);
             transform: scale(1.05);
@@ -1137,7 +1159,8 @@
             transition: background 0.15s ease, color 0.15s ease;
         }
 
-        .theme-menu-item:hover, .theme-menu-item:focus-visible {
+        .theme-menu-item:hover,
+        .theme-menu-item:focus-visible {
             background: var(--surface-color);
             color: var(--primary);
             outline: none;
@@ -1281,6 +1304,7 @@
                 opacity: 0;
                 transform: translateY(12px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1327,8 +1351,15 @@
         }
 
         @keyframes badgeShimmer {
-            0%, 75% { left: -120%; }
-            100% { left: 220%; }
+
+            0%,
+            75% {
+                left: -120%;
+            }
+
+            100% {
+                left: 220%;
+            }
         }
 
         .pulse-dot {
@@ -1345,10 +1376,12 @@
                 transform: scale(0.95);
                 box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
             }
+
             70% {
                 transform: scale(1);
                 box-shadow: 0 0 0 8px rgba(59, 130, 246, 0);
             }
+
             100% {
                 transform: scale(0.95);
                 box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
@@ -1382,8 +1415,15 @@
         }
 
         @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: var(--primary); }
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: var(--primary);
+            }
         }
 
         .home__description {
@@ -1407,14 +1447,17 @@
             .home {
                 padding: 2.5rem 0 2rem;
             }
+
             .home__headline {
                 font-size: 1.65rem;
                 margin-bottom: 1rem;
             }
+
             .home__description {
                 font-size: 1rem;
                 margin-bottom: 1.75rem;
             }
+
             .home__actions {
                 gap: 0.75rem;
                 margin-bottom: 2rem;
@@ -1427,13 +1470,16 @@
                 width: 100%;
                 gap: 0.65rem;
             }
+
             .home__actions .button {
                 width: 100%;
                 padding: 0.75rem 1.25rem;
             }
+
             .home__headline {
                 font-size: 1.45rem;
             }
+
             .home__name {
                 font-size: 1.95rem;
             }
@@ -1517,6 +1563,7 @@
                 filter: blur(8px);
                 transform: scale(0.98);
             }
+
             100% {
                 opacity: 1;
                 filter: blur(14px);
@@ -1815,6 +1862,7 @@
                 border-color: var(--primary-light);
                 box-shadow: 0 14px 28px -6px rgba(37, 99, 235, 0.14), var(--shadow-md);
             }
+
             .certificate__card:hover .certificate__icon {
                 transform: scale(1.1);
             }
@@ -1993,6 +2041,7 @@
                 border-color: var(--primary-light);
                 box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.22), 0 0 20px rgba(37, 99, 235, 0.16);
             }
+
             .gallery__card:hover .gallery__img {
                 transform: scale(1.05);
             }
@@ -2211,9 +2260,12 @@
         }
 
         @keyframes dotGlow {
-            0%, 100% {
+
+            0%,
+            100% {
                 box-shadow: 0 0 0 4px var(--primary-subtle), 0 0 8px rgba(37, 99, 235, 0.4);
             }
+
             50% {
                 box-shadow: 0 0 0 7px var(--primary-subtle), 0 0 16px rgba(37, 99, 235, 0.7);
             }
@@ -2432,7 +2484,8 @@
             background: var(--surface-color);
             color: var(--text-color);
             font-family: var(--font-body);
-            font-size: 1rem; /* 16px ensures iOS Safari never triggers disruptive auto-zoom */
+            font-size: 1rem;
+            /* 16px ensures iOS Safari never triggers disruptive auto-zoom */
             outline: none;
             transition: var(--transition);
         }
@@ -2574,7 +2627,7 @@
             opacity: 0;
             transform: translateY(24px);
             transition: opacity var(--duration-reveal) var(--ease-out-expo),
-                        transform var(--duration-reveal) var(--ease-out-expo);
+                transform var(--duration-reveal) var(--ease-out-expo);
             will-change: opacity, transform;
         }
 
@@ -2584,40 +2637,98 @@
         }
 
         /* Cascading Micro-stagger Transitions for Grid Elements */
-        .gallery__container > .scroll-animate:nth-child(1) { transition-delay: 0.04s; }
-        .gallery__container > .scroll-animate:nth-child(2) { transition-delay: 0.10s; }
-        .gallery__container > .scroll-animate:nth-child(3) { transition-delay: 0.16s; }
-        .gallery__container > .scroll-animate:nth-child(4) { transition-delay: 0.22s; }
-        .gallery__container > .scroll-animate:nth-child(5) { transition-delay: 0.28s; }
+        .gallery__container>.scroll-animate:nth-child(1) {
+            transition-delay: 0.04s;
+        }
 
-        .expertise__grid > .scroll-animate:nth-child(1) { transition-delay: 0.04s; }
-        .expertise__grid > .scroll-animate:nth-child(2) { transition-delay: 0.10s; }
-        .expertise__grid > .scroll-animate:nth-child(3) { transition-delay: 0.16s; }
-        .expertise__grid > .scroll-animate:nth-child(4) { transition-delay: 0.22s; }
+        .gallery__container>.scroll-animate:nth-child(2) {
+            transition-delay: 0.10s;
+        }
 
-        .projects__grid > .scroll-animate:nth-child(3n+1) { transition-delay: 0.04s; }
-        .projects__grid > .scroll-animate:nth-child(3n+2) { transition-delay: 0.10s; }
-        .projects__grid > .scroll-animate:nth-child(3n) { transition-delay: 0.16s; }
+        .gallery__container>.scroll-animate:nth-child(3) {
+            transition-delay: 0.16s;
+        }
 
-        .certifications__grid > .scroll-animate:nth-child(3n+1) { transition-delay: 0.04s; }
-        .certifications__grid > .scroll-animate:nth-child(3n+2) { transition-delay: 0.08s; }
-        .certifications__grid > .scroll-animate:nth-child(3n) { transition-delay: 0.12s; }
+        .gallery__container>.scroll-animate:nth-child(4) {
+            transition-delay: 0.22s;
+        }
 
-        .experience__timeline > .scroll-animate:nth-child(1) { transition-delay: 0.05s; }
-        .experience__timeline > .scroll-animate:nth-child(2) { transition-delay: 0.12s; }
-        .experience__timeline > .scroll-animate:nth-child(3) { transition-delay: 0.19s; }
+        .gallery__container>.scroll-animate:nth-child(5) {
+            transition-delay: 0.28s;
+        }
 
-        .education__container > .scroll-animate:nth-child(1) { transition-delay: 0.05s; }
-        .education__container > .scroll-animate:nth-child(2) { transition-delay: 0.12s; }
+        .expertise__grid>.scroll-animate:nth-child(1) {
+            transition-delay: 0.04s;
+        }
+
+        .expertise__grid>.scroll-animate:nth-child(2) {
+            transition-delay: 0.10s;
+        }
+
+        .expertise__grid>.scroll-animate:nth-child(3) {
+            transition-delay: 0.16s;
+        }
+
+        .expertise__grid>.scroll-animate:nth-child(4) {
+            transition-delay: 0.22s;
+        }
+
+        .projects__grid>.scroll-animate:nth-child(3n+1) {
+            transition-delay: 0.04s;
+        }
+
+        .projects__grid>.scroll-animate:nth-child(3n+2) {
+            transition-delay: 0.10s;
+        }
+
+        .projects__grid>.scroll-animate:nth-child(3n) {
+            transition-delay: 0.16s;
+        }
+
+        .certifications__grid>.scroll-animate:nth-child(3n+1) {
+            transition-delay: 0.04s;
+        }
+
+        .certifications__grid>.scroll-animate:nth-child(3n+2) {
+            transition-delay: 0.08s;
+        }
+
+        .certifications__grid>.scroll-animate:nth-child(3n) {
+            transition-delay: 0.12s;
+        }
+
+        .experience__timeline>.scroll-animate:nth-child(1) {
+            transition-delay: 0.05s;
+        }
+
+        .experience__timeline>.scroll-animate:nth-child(2) {
+            transition-delay: 0.12s;
+        }
+
+        .experience__timeline>.scroll-animate:nth-child(3) {
+            transition-delay: 0.19s;
+        }
+
+        .education__container>.scroll-animate:nth-child(1) {
+            transition-delay: 0.05s;
+        }
+
+        .education__container>.scroll-animate:nth-child(2) {
+            transition-delay: 0.12s;
+        }
 
         /* Respect Reduced Motion (WCAG 2.2 Level AAA) */
         @media (prefers-reduced-motion: reduce) {
-            *, ::before, ::after {
+
+            *,
+            ::before,
+            ::after {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
                 scroll-behavior: auto !important;
             }
+
             .scroll-animate,
             .has-scroll-observer .scroll-animate {
                 opacity: 1 !important;
@@ -2625,11 +2736,18 @@
                 transition: none !important;
                 transition-delay: 0s !important;
             }
-            .home__badge, .home__name, .home__headline, .home__description, .home__actions, .home__social {
+
+            .home__badge,
+            .home__name,
+            .home__headline,
+            .home__description,
+            .home__actions,
+            .home__social {
                 animation: none !important;
                 opacity: 1 !important;
                 transform: none !important;
             }
+
             .about__img-wrapper::before,
             .home__badge::after,
             .experience__dot--active,
@@ -2645,8 +2763,8 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4T5ZSJJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4T5ZSJJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!--===== HEADER =====-->
@@ -2656,7 +2774,8 @@
                 <a href="#home" class="nav__logo" aria-label="Vishwa K - Founder Homepage">
                     <picture>
                         <source srcset="assets/img/zinoin-logo.webp" type="image/webp">
-                        <img src="assets/img/zinoin-logo.webp" alt="Zinoin Group official corporate emblem" class="nav__logo-img" width="32" height="36" loading="eager" decoding="async">
+                        <img src="assets/img/zinoin-logo.webp" alt="Zinoin Group official corporate emblem"
+                            class="nav__logo-img" width="32" height="36" loading="eager" decoding="async">
                     </picture>
                     <span class="nav__logo-text">Vishwa Kumar</span>
                     <span class="nav__logo-badge">Founder & CEO</span>
@@ -2664,17 +2783,19 @@
             </div>
 
             <div class="nav__menu" id="nav-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
-                <div class="nav__toggle-close" id="nav-close" role="button" tabindex="0" aria-label="Close navigation menu">
+                <div class="nav__toggle-close" id="nav-close" role="button" tabindex="0"
+                    aria-label="Close navigation menu">
                     <i class="bx bx-x"></i>
                 </div>
-                                <ul class="nav__list">
+                <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active">Home</a>
                     </li>
 
                     <!-- Dropdown 1: About & Presence -->
                     <li class="nav__item nav__dropdown" id="nav-dropdown-about">
-                        <button class="nav__link nav__dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu-about">
+                        <button class="nav__link nav__dropdown-trigger" type="button" aria-haspopup="true"
+                            aria-expanded="false" aria-controls="dropdown-menu-about">
                             <span>About</span>
                             <i class='bx bx-chevron-down nav__dropdown-icon' aria-hidden="true"></i>
                         </button>
@@ -2710,11 +2831,13 @@
 
                     <!-- Dropdown 2: Credentials (Experience, Education, Certifications) -->
                     <li class="nav__item nav__dropdown" id="nav-dropdown-credentials">
-                        <button class="nav__link nav__dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu-credentials">
+                        <button class="nav__link nav__dropdown-trigger" type="button" aria-haspopup="true"
+                            aria-expanded="false" aria-controls="dropdown-menu-credentials">
                             <span>Credentials</span>
                             <i class='bx bx-chevron-down nav__dropdown-icon' aria-hidden="true"></i>
                         </button>
-                        <div class="nav__dropdown-menu" id="dropdown-menu-credentials" role="menu" aria-label="Credentials Submenu">
+                        <div class="nav__dropdown-menu" id="dropdown-menu-credentials" role="menu"
+                            aria-label="Credentials Submenu">
                             <a href="#experience" class="nav__dropdown-item" role="menuitem">
                                 <div class="nav__dropdown-item-icon">
                                     <i class='bx bx-briefcase-alt' aria-hidden="true"></i>
@@ -2754,15 +2877,18 @@
                 <div class="nav__mobile-theme">
                     <span class="nav__mobile-theme-title">Theme Preference</span>
                     <div class="theme-segmented-control" role="radiogroup" aria-label="Theme mode selection">
-                        <button type="button" class="theme-segment-btn active" data-theme-val="system" role="radio" aria-checked="true">
+                        <button type="button" class="theme-segment-btn active" data-theme-val="system" role="radio"
+                            aria-checked="true">
                             <i class='bx bx-desktop' aria-hidden="true"></i>
                             <span>System</span>
                         </button>
-                        <button type="button" class="theme-segment-btn" data-theme-val="light" role="radio" aria-checked="false">
+                        <button type="button" class="theme-segment-btn" data-theme-val="light" role="radio"
+                            aria-checked="false">
                             <i class='bx bx-sun' aria-hidden="true"></i>
                             <span>Light</span>
                         </button>
-                        <button type="button" class="theme-segment-btn" data-theme-val="dark" role="radio" aria-checked="false">
+                        <button type="button" class="theme-segment-btn" data-theme-val="dark" role="radio"
+                            aria-checked="false">
                             <i class='bx bx-moon' aria-hidden="true"></i>
                             <span>Dark</span>
                         </button>
@@ -2772,28 +2898,35 @@
 
             <div style="display: flex; align-items: center; gap: 0.5rem;">
                 <div class="theme-dropdown-wrapper" id="theme-dropdown-wrapper">
-                    <button class="theme-toggle" id="theme-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Color theme: System (Auto). Click to change theme" title="Current theme: System (Auto)">
+                    <button class="theme-toggle" id="theme-toggle" type="button" aria-haspopup="listbox"
+                        aria-expanded="false" aria-label="Color theme: System (Auto). Click to change theme"
+                        title="Current theme: System (Auto)">
                         <i class='bx bx-desktop' id="theme-icon" aria-hidden="true"></i>
                     </button>
-                    <div class="theme-dropdown-menu" id="theme-dropdown-menu" role="listbox" aria-label="Theme selection options">
-                        <button type="button" class="theme-menu-item active" data-theme-val="system" role="option" aria-selected="true">
+                    <div class="theme-dropdown-menu" id="theme-dropdown-menu" role="listbox"
+                        aria-label="Theme selection options">
+                        <button type="button" class="theme-menu-item active" data-theme-val="system" role="option"
+                            aria-selected="true">
                             <i class='bx bx-desktop' aria-hidden="true"></i>
                             <span class="theme-item-text">System</span>
                             <i class='bx bx-check theme-item-check' aria-hidden="true"></i>
                         </button>
-                        <button type="button" class="theme-menu-item" data-theme-val="light" role="option" aria-selected="false">
+                        <button type="button" class="theme-menu-item" data-theme-val="light" role="option"
+                            aria-selected="false">
                             <i class='bx bx-sun' aria-hidden="true"></i>
                             <span class="theme-item-text">Light</span>
                             <i class='bx bx-check theme-item-check' aria-hidden="true"></i>
                         </button>
-                        <button type="button" class="theme-menu-item" data-theme-val="dark" role="option" aria-selected="false">
+                        <button type="button" class="theme-menu-item" data-theme-val="dark" role="option"
+                            aria-selected="false">
                             <i class='bx bx-moon' aria-hidden="true"></i>
                             <span class="theme-item-text">Dark</span>
                             <i class='bx bx-check theme-item-check' aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
-                <div class="nav__toggle" id="nav-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+                <div class="nav__toggle" id="nav-toggle" role="button" tabindex="0" aria-expanded="false"
+                    aria-controls="nav-menu" aria-label="Open navigation menu">
                     <i class="bx bx-menu"></i>
                 </div>
             </div>
@@ -2818,27 +2951,34 @@
                     </span>
                 </div>
                 <p class="home__description">
-                    Founder & CEO at Zinoin Group (established August 2025). Building enterprise software solutions, performance marketing funnels, and exploring cybersecurity engineering.
+                    Founder & CEO at Zinoin Group (established August 2025). Building enterprise software solutions,
+                    performance marketing funnels, and exploring cybersecurity engineering.
                 </p>
 
                 <div class="home__actions">
-                    <a href="#projects" class="button">Explore My Work <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/thevishwakumar" class="button button--secondary" target="_blank" rel="noopener noreferrer">
+                    <a href="#projects" class="button">Explore My Work <i class='bx bx-right-arrow-alt'
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/thevishwakumar" class="button button--secondary"
+                        target="_blank" rel="noopener noreferrer">
                         <i class='bx bxl-linkedin-square' aria-hidden="true"></i> Connect on LinkedIn
                     </a>
                 </div>
 
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/thevishwakumar" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Vishwa K LinkedIn Profile">
+                    <a href="https://www.linkedin.com/in/thevishwakumar" class="home__social-icon" target="_blank"
+                        rel="noopener noreferrer" aria-label="Vishwa K LinkedIn Profile">
                         <i class="bx bxl-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="https://github.com/thevishwakumar" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Vishwa K GitHub Profile">
+                    <a href="https://github.com/thevishwakumar" class="home__social-icon" target="_blank"
+                        rel="noopener noreferrer" aria-label="Vishwa K GitHub Profile">
                         <i class="bx bxl-github" aria-hidden="true"></i>
                     </a>
-                    <a href="mailto:thevishwaofficial@gmail.com" class="home__social-icon" aria-label="Email Vishwa K directly">
+                    <a href="mailto:thevishwaofficial@gmail.com" class="home__social-icon"
+                        aria-label="Email Vishwa K directly">
                         <i class="bx bx-envelope" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.instagram.com/thevishwakumar/" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Vishwa K Instagram Profile">
+                    <a href="https://www.instagram.com/thevishwakumar/" class="home__social-icon" target="_blank"
+                        rel="noopener noreferrer" aria-label="Vishwa K Instagram Profile">
                         <i class="bx bxl-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -2853,23 +2993,33 @@
                 <div class="about__img-wrapper scroll-animate">
                     <picture>
                         <source srcset="assets/img/vishwa-executive-standing.webp" type="image/webp">
-                        <img src="assets/img/vishwa-executive-standing.jpg" alt="Vishwa Kumar — Founder & CEO at Zinoin Group, executive portrait" class="about__img" width="400" height="500" loading="lazy" decoding="async">
+                        <img src="assets/img/vishwa.jpg"
+                            alt="Vishwa Kumar — Founder & CEO at Zinoin Group, executive portrait" class="about__img"
+                            width="400" height="500" loading="lazy" decoding="async">
                     </picture>
                 </div>
 
                 <div class="scroll-animate">
                     <h3 class="about__subtitle">Technology · Entrepreneurship · Cybersecurity · Marketing</h3>
                     <p class="about__text">
-                        I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in August 2025. My core focus spans cybersecurity engineering, full-stack software development, performance digital marketing, and venture building.
+                        I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in August
+                        2025. My core focus spans cybersecurity engineering, full-stack software development,
+                        performance digital marketing, and venture building.
                     </p>
                     <p class="about__text">
-                        My journey combines commercial strategic thinking with hands-on technical architecture. From building enterprise AI retrieval systems like DocuMind to delivering production e-commerce platforms and multi-channel marketing campaigns, I engineer practical solutions that bridge technology and business growth.
+                        My journey combines commercial strategic thinking with hands-on technical architecture. From
+                        building enterprise AI retrieval systems like DocuMind to delivering production e-commerce
+                        platforms and multi-channel marketing campaigns, I engineer practical solutions that bridge
+                        technology and business growth.
                     </p>
                     <p class="about__text">
-                        Currently pursuing my engineering degree in Cyber Security at Sri Sai Ranganathan Engineering College, Coimbatore, I combine rigorous computer science fundamentals with real-world venture operations.
+                        Currently pursuing my engineering degree in Cyber Security at Sri Sai Ranganathan Engineering
+                        College, Coimbatore, I combine rigorous computer science fundamentals with real-world venture
+                        operations.
                     </p>
                     <p class="about__text">
-                        I believe in building scalable digital infrastructure, maintaining defensive security hygiene, and delivering measurable commercial impact.
+                        I believe in building scalable digital infrastructure, maintaining defensive security hygiene,
+                        and delivering measurable commercial impact.
                     </p>
 
                     <div class="about__badges">
@@ -2909,7 +3059,9 @@
                     <div class="gallery__img-box">
                         <picture>
                             <source srcset="assets/img/vishwa-ceo-full.webp" type="image/webp">
-                            <img src="assets/img/vishwa-ceo-full.jpg" alt="Vishwa Kumar, Founder & CEO at Zinoin Group in executive office suite" class="gallery__img" width="718" height="1096" loading="lazy" decoding="async">
+                            <img src="assets/img/vishwa-ceo-full.jpg"
+                                alt="Vishwa Kumar, Founder & CEO at Zinoin Group in executive office suite"
+                                class="gallery__img" width="718" height="1096" loading="lazy" decoding="async">
                         </picture>
                         <span class="gallery__badge">Founder & CEO</span>
                     </div>
@@ -2924,13 +3076,16 @@
                     <div class="gallery__img-box">
                         <picture>
                             <source srcset="assets/img/vishwa-executive-standing.webp" type="image/webp">
-                            <img src="assets/img/vishwa-executive-standing.jpg" alt="Vishwa Kumar, executive leadership portrait" class="gallery__img" width="798" height="1002" loading="lazy" decoding="async">
+                            <img src="assets/img/vishwa-executive-standing.jpg"
+                                alt="Vishwa Kumar, executive leadership portrait" class="gallery__img" width="798"
+                                height="1002" loading="lazy" decoding="async">
                         </picture>
                         <span class="gallery__badge">Leadership</span>
                     </div>
                     <div class="gallery__caption">
                         <h3 class="gallery__title">Corporate Leadership</h3>
-                        <p class="gallery__desc">Driving software engineering, performance marketing, and digital infrastructure.</p>
+                        <p class="gallery__desc">Driving software engineering, performance marketing, and digital
+                            infrastructure.</p>
                     </div>
                 </div>
 
@@ -2939,13 +3094,16 @@
                     <div class="gallery__img-box">
                         <picture>
                             <source srcset="assets/img/vishwa-executive-seated.webp" type="image/webp">
-                            <img src="assets/img/vishwa-executive-seated.jpg" alt="Vishwa Kumar at executive workspace desk" class="gallery__img" width="946" height="742" loading="lazy" decoding="async">
+                            <img src="assets/img/vishwa-executive-seated.jpg"
+                                alt="Vishwa Kumar at executive workspace desk" class="gallery__img" width="946"
+                                height="742" loading="lazy" decoding="async">
                         </picture>
                         <span class="gallery__badge">Workspace</span>
                     </div>
                     <div class="gallery__caption">
                         <h3 class="gallery__title">Development & Strategy Desk</h3>
-                        <p class="gallery__desc">Hands-on architecture of AI knowledge systems and commercial platforms.</p>
+                        <p class="gallery__desc">Hands-on architecture of AI knowledge systems and commercial platforms.
+                        </p>
                     </div>
                 </div>
 
@@ -2954,13 +3112,16 @@
                     <div class="gallery__img-box">
                         <picture>
                             <source srcset="assets/img/vishwa-business-strategy.webp" type="image/webp">
-                            <img src="assets/img/vishwa-business-strategy.jpg" alt="Vishwa Kumar presenting business strategy and digital growth" class="gallery__img" width="667" height="370" loading="lazy" decoding="async">
+                            <img src="assets/img/vishwa-business-strategy.jpg"
+                                alt="Vishwa Kumar presenting business strategy and digital growth" class="gallery__img"
+                                width="667" height="370" loading="lazy" decoding="async">
                         </picture>
                         <span class="gallery__badge">Strategy</span>
                     </div>
                     <div class="gallery__caption">
                         <h3 class="gallery__title">Business Strategy & Growth</h3>
-                        <p class="gallery__desc">Presenting digital innovation, client growth funnels, and enterprise execution.</p>
+                        <p class="gallery__desc">Presenting digital innovation, client growth funnels, and enterprise
+                            execution.</p>
                     </div>
                 </div>
 
@@ -2969,7 +3130,9 @@
                     <div class="gallery__img-box">
                         <picture>
                             <source srcset="assets/img/vishwa-window-skyline.webp" type="image/webp">
-                            <img src="assets/img/vishwa-window-skyline.jpg" alt="Vishwa Kumar, digital innovation and vision portrait" class="gallery__img" width="622" height="671" loading="lazy" decoding="async">
+                            <img src="assets/img/vishwa-window-skyline.jpg"
+                                alt="Vishwa Kumar, digital innovation and vision portrait" class="gallery__img"
+                                width="622" height="671" loading="lazy" decoding="async">
                         </picture>
                         <span class="gallery__badge">Innovation</span>
                     </div>
@@ -2992,15 +3155,24 @@
                     </div>
                     <h3 class="expertise__title">Technology & Software Development</h3>
                     <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Full-Stack Web Development</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Frontend Development (HTML5, CSS3, ES6+)</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Python & FastAPI Architecture</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>React & Modern UI Frameworks</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>WordPress & Custom CMS Development</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Generative AI & Prompt Engineering</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Vector Databases & Semantic RAG Search</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Data Analysis & Business Telemetry</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>REST APIs & Cloudflare Serverless</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Full-Stack Web Development</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Frontend
+                                Development (HTML5, CSS3, ES6+)</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Python &
+                                FastAPI Architecture</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>React &
+                                Modern UI Frameworks</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>WordPress & Custom CMS Development</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Generative AI & Prompt Engineering</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Vector
+                                Databases & Semantic RAG Search</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Data
+                                Analysis & Business Telemetry</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>REST
+                                APIs & Cloudflare Serverless</span></li>
                     </ul>
                 </div>
                 <div class="expertise__card scroll-animate">
@@ -3009,15 +3181,24 @@
                     </div>
                     <h3 class="expertise__title">Cybersecurity & Systems Engineering</h3>
                     <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Defensive Security & Threat Hunting</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Identity & Access Management (RBAC)</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Multi-Tenant Database Isolation</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Network Security & Packet Inspection</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Linux Server Administration & Hardening</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Ethical Hacking & Vulnerability Assessment</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Security Risk Management (ISO 27001)</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Automated Security Test Suites</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Anti-Enumeration Access Controls</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Defensive Security & Threat Hunting</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Identity
+                                & Access Management (RBAC)</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Multi-Tenant Database Isolation</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Network
+                                Security & Packet Inspection</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Linux
+                                Server Administration & Hardening</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Ethical
+                                Hacking & Vulnerability Assessment</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Security
+                                Risk Management (ISO 27001)</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Automated Security Test Suites</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Anti-Enumeration Access Controls</span></li>
                     </ul>
                 </div>
                 <div class="expertise__card scroll-animate">
@@ -3026,15 +3207,24 @@
                     </div>
                     <h3 class="expertise__title">Digital Marketing & Performance Ads</h3>
                     <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Meta Ads Manager (Facebook & Instagram)</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Google Ads (Search & Display Networks)</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Campaign Manager 360 & Ad Operations</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Technical & Entity SEO Optimization</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Social Media Marketing & Brand Reach</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Google Analytics 4 & Tag Manager</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Automated Email Lead Nurturing</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>PPC Advertising & Keyword Strategy</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Conversion Rate Optimization (CRO)</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Meta Ads
+                                Manager (Facebook & Instagram)</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Google
+                                Ads (Search & Display Networks)</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Campaign
+                                Manager 360 & Ad Operations</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Technical & Entity SEO Optimization</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Social
+                                Media Marketing & Brand Reach</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Google
+                                Analytics 4 & Tag Manager</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Automated Email Lead Nurturing</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>PPC
+                                Advertising & Keyword Strategy</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Conversion Rate Optimization (CRO)</span></li>
                     </ul>
                 </div>
                 <div class="expertise__card scroll-animate">
@@ -3043,15 +3233,24 @@
                     </div>
                     <h3 class="expertise__title">Entrepreneurship & Corporate Leadership</h3>
                     <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Founder & Executive Venture Leadership</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Commercial Client Software Delivery</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Business Administration & Operations</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Financial Planning & Risk Governance</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Strategic Market Research & Scoping</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Banking Processes & Collateral Evaluation</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Business Ideation & Innovation Thinking</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Agile Team & Project Management</span></li>
-                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>B2B Partnership & Ecosystem Strategy</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Founder
+                                & Executive Venture Leadership</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Commercial Client Software Delivery</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Business
+                                Administration & Operations</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Financial Planning & Risk Governance</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i>
+                            <span>Strategic Market Research & Scoping</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Banking
+                                Processes & Collateral Evaluation</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Business
+                                Ideation & Innovation Thinking</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>Agile
+                                Team & Project Management</span></li>
+                        <li class="expertise__item"><i class="bx bx-check-circle" aria-hidden="true"></i> <span>B2B
+                                Partnership & Ecosystem Strategy</span></li>
                     </ul>
                 </div>
             </div>
@@ -3062,246 +3261,345 @@
             <h2 class="section-title" id="projects-heading">Projects & Ventures</h2>
 
             <div class="projects__grid bd-grid">
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-bot' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">GitHub Featured · AI & Security</span>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-bot' aria-hidden="true"></i>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">DocuMind AI</h3>
-                            <span class="project__tagline">Full-Stack Enterprise RAG & Knowledge Assistant</span>
-                            <p class="project__desc">Document-grounded AI knowledge platform engineered with Python, FastAPI, React, ChromaDB semantic vector search, and Google Gemini AI. Features multi-tenant database isolation, JWT auth, and automated RBAC security test suites.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">FastAPI</span><span class="tech-pill">React</span><span class="tech-pill">ChromaDB</span><span class="tech-pill">Gemini AI</span><span class="tech-pill">RBAC Security</span><span class="tech-pill">PostgreSQL</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://github.com/thevishwakumar/documind" target="_blank" rel="noopener noreferrer" class="button button--small button--primary" aria-label="View DocuMind AI source code on GitHub">View on GitHub <i class="bx bxl-github" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+                        <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">GitHub Featured ·
+                            AI & Security</span>
                     </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-cart' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Production Client System</span>
+                    <div class="project__content">
+                        <h3 class="project__title">DocuMind AI</h3>
+                        <span class="project__tagline">Full-Stack Enterprise RAG & Knowledge Assistant</span>
+                        <p class="project__desc">Document-grounded AI knowledge platform engineered with Python,
+                            FastAPI, React, ChromaDB semantic vector search, and Google Gemini AI. Features multi-tenant
+                            database isolation, JWT auth, and automated RBAC security test suites.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">FastAPI</span><span class="tech-pill">React</span><span
+                                class="tech-pill">ChromaDB</span><span class="tech-pill">Gemini AI</span><span
+                                class="tech-pill">RBAC Security</span><span class="tech-pill">PostgreSQL</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">TNT Commercial Platforms</h3>
-                            <span class="project__tagline">Client Order Management & Digital Utilities</span>
-                            <p class="project__desc">Commercial ordering software with anti-enumeration security engineered for client Shree Taste N Taste Catering, alongside the lightweight TNT Tamil Calendar utility app. Built with vanilla ES modules and Supabase backend.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">JavaScript ES Modules</span><span class="tech-pill">Supabase</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Security Controls</span><span class="tech-pill">Netlify Functions</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://github.com/thevishwakumar/tntdiwaliordermanagement" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="View TNT Diwali Order Management source code on GitHub">View on GitHub <i class="bx bxl-github" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-brain' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(139, 92, 246, 0.9);">GitHub Machine Learning</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Fashion Item CNN Classifier</h3>
-                            <span class="project__tagline">Interactive Deep Learning & Computer Vision</span>
-                            <p class="project__desc">Deep learning convolutional neural network (CNN) trained on the Fashion-MNIST dataset. Features an interactive 28x28 HTML5 Canvas for real-time user sketching and instant softmax probability classifications via a Python Flask backend.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">TensorFlow</span><span class="tech-pill">Keras</span><span class="tech-pill">Python Flask</span><span class="tech-pill">HTML5 Canvas</span><span class="tech-pill">Computer Vision</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://github.com/thevishwakumar/Fashion-Item-Classification-Convolutional-Neural-Networks" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="View Fashion Item CNN Classifier on GitHub">View on GitHub <i class="bx bxl-github" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-pulse' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(236, 72, 153, 0.9);">GitHub TypeScript</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">MediGuide AI</h3>
-                            <span class="project__tagline">Autonomous Healthcare AI Frontend</span>
-                            <p class="project__desc">Autonomous healthcare frontend platform engineered with TypeScript, React, Vite, and Bun for rapid symptom analysis, clinical triage recommendations, and interactive patient guidance.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">TypeScript</span><span class="tech-pill">React</span><span class="tech-pill">Vite</span><span class="tech-pill">Bun</span><span class="tech-pill">Healthcare AI</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://github.com/thevishwakumar/mediguideai" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="View MediGuide AI on GitHub">View on GitHub <i class="bx bxl-github" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-globe' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Active Enterprise (Est. Aug 2025)</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Zinoin Group</h3>
-                            <span class="project__tagline">Founder & CEO Initiative & Digital Infrastructure</span>
-                            <p class="project__desc">Founder & CEO-led business group and digital initiatives (established August 2025), orchestrating enterprise technology services, digital infrastructure, client solutions, and commercial web platforms.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">Venture Leadership</span><span class="tech-pill">Digital Infrastructure</span><span class="tech-pill">Enterprise Architecture</span><span class="tech-pill">Cloud Hosting</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://zinoingroup.in/" target="_blank" rel="noopener noreferrer" class="button button--small button--primary" aria-label="Visit Zinoin Group corporate website">Explore Venture <i class="bx bx-globe" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-target-lock' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(245, 158, 11, 0.9);">Digital Marketing</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Performance Marketing & Acquisition Funnel</h3>
-                            <span class="project__tagline">Paid Social, Search & Multi-Channel Growth</span>
-                            <p class="project__desc">Engineered high-converting digital advertising campaigns across Meta Ads Manager, Google Ads (Search & Display), and Campaign Manager 360, driving scalable commercial lead generation and ROAS.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">Meta Ads</span><span class="tech-pill">Google Ads</span><span class="tech-pill">Campaign Manager 360</span><span class="tech-pill">Conversion Tracking</span><span class="tech-pill">ROAS Optimization</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="Contact Vishwa Kumar about marketing strategy">Discuss Marketing <i class="bx bx-envelope" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-search-alt' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Growth & Analytics</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Enterprise SEO & Growth Architecture</h3>
-                            <span class="project__tagline">Technical SEO, Knowledge Graphs & Telemetry</span>
-                            <p class="project__desc">Full-funnel search engine optimization, semantic Schema.org entity graph engineering, Google Search Console telemetry, and Core Web Vitals performance tuning to capture top search engine positions.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">Technical SEO</span><span class="tech-pill">Schema.org JSON-LD</span><span class="tech-pill">Google Analytics 4</span><span class="tech-pill">Core Web Vitals</span><span class="tech-pill">Entity SEO</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="Inquire about SEO & Growth">Inquire via Contact <i class="bx bx-search" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-chip' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(99, 102, 241, 0.9);">AI Innovation</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">GenAI & Applied Prompt Engineering Platform</h3>
-                            <span class="project__tagline">LLM Workflows, Context Engineering & AI Automation</span>
-                            <p class="project__desc">Practical generative AI pipelines and multi-turn prompt engineering platforms connecting large language models with enterprise document search, automated summaries, and conversational knowledge extraction.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">Generative AI</span><span class="tech-pill">Prompt Engineering</span><span class="tech-pill">LLM Pipelines</span><span class="tech-pill">Gemini API</span><span class="tech-pill">Knowledge Workflows</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="Contact about GenAI and Prompt Engineering solutions">Explore AI Workflows <i class="bx bx-bot" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-trending-up' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Financial Systems</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Financial Risk & Corporate Valuation Systems</h3>
-                            <span class="project__tagline">Collateral Governance, Market Analysis & Financial Strategy</span>
-                            <p class="project__desc">Corporate action evaluation, banking collateral management workflows, and financial risk governance models structured according to SEBI standards, TCS iON frameworks, and MTF Institute business administration.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">Risk Governance</span><span class="tech-pill">Financial Analysis</span><span class="tech-pill">Collateral Management</span><span class="tech-pill">Business Analytics</span><span class="tech-pill">SEBI Compliance</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="Consult on Financial Risk and Corporate Strategy">Consult on Strategy <i class="bx bx-bar-chart" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bxl-wordpress' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(59, 130, 246, 0.9);">CMS Solutions</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">WordPress & CMS Performance Engineering</h3>
-                            <span class="project__tagline">Enterprise Security Hardening, Speed & Custom Architecture</span>
-                            <p class="project__desc">Professional WordPress architecture and custom theme development featuring rigorous security hardening, database query optimization, Cloudflare edge caching, and mobile speed scores exceeding 95+.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">WordPress Core</span><span class="tech-pill">PHP & MySQL</span><span class="tech-pill">Security Hardening</span><span class="tech-pill">Edge Caching</span><span class="tech-pill">Speed Optimization</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="Review WordPress and CMS services">Review CMS Services <i class="bx bx-layer" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-shield-quarter' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(220, 38, 38, 0.9);">Security Engineering</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Defensive Cybersecurity & Security Audit Framework</h3>
-                            <span class="project__tagline">Access Governance, RBAC Isolation & Threat Auditing</span>
-                            <p class="project__desc">Defensive security utilities and security test automation frameworks embodying ISO/IEC 27001 principles, password hashing, JWT session security, and multi-tenant database isolation to defeat enumeration attacks.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">RBAC Verification</span><span class="tech-pill">JWT Security</span><span class="tech-pill">ISO/IEC 27001</span><span class="tech-pill">Network Defense</span><span class="tech-pill">Security Test Automation</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="Inquire about Cybersecurity Consultation">Security Consultation <i class="bx bx-shield-alt" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box">
-                                <i class='bx bx-certification' aria-hidden="true"></i>
-                            </div>
-                            <span class="project__badge-pill" style="background: rgba(100, 116, 139, 0.9);">In Development</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">CampusBridge / SkillTrack</h3>
-                            <span class="project__tagline">Student Certificate Tracking & Verification Engine</span>
-                            <p class="project__desc">Secure digital proof platform engineered for students to store and verify symposium and workshop certificates with GPS event validation and administrative cryptographic verification.</p>
-                            <div class="project__tech-tags">
-                                <span class="tech-pill">Verification Engine</span><span class="tech-pill">GPS Validation</span><span class="tech-pill">Digital Proof</span><span class="tech-pill">Access Controls</span>
-                            </div>
-                            <div class="project__actions">
-                                <span class="button--small" style="background: rgba(100, 116, 139, 0.2); color: var(--text-muted); font-size: var(--smaller-font-size); font-weight: 600; padding: 6px 12px; border-radius: var(--radius-full); display: inline-flex; align-items: center;"><i class="bx bx-time" aria-hidden="true"></i> In Development</span>
-                            </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/documind" target="_blank"
+                                rel="noopener noreferrer" class="button button--small button--primary"
+                                aria-label="View DocuMind AI source code on GitHub">View on GitHub <i
+                                    class="bx bxl-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-cart' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Production Client
+                            System</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">TNT Commercial Platforms</h3>
+                        <span class="project__tagline">Client Order Management & Digital Utilities</span>
+                        <p class="project__desc">Commercial ordering software with anti-enumeration security engineered
+                            for client Shree Taste N Taste Catering, alongside the lightweight TNT Tamil Calendar
+                            utility app. Built with vanilla ES modules and Supabase backend.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">JavaScript ES Modules</span><span
+                                class="tech-pill">Supabase</span><span class="tech-pill">PostgreSQL</span><span
+                                class="tech-pill">Security Controls</span><span class="tech-pill">Netlify
+                                Functions</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/tntdiwaliordermanagement" target="_blank"
+                                rel="noopener noreferrer" class="button button--small button--secondary"
+                                aria-label="View TNT Diwali Order Management source code on GitHub">View on GitHub <i
+                                    class="bx bxl-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-brain' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(139, 92, 246, 0.9);">GitHub Machine
+                            Learning</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Fashion Item CNN Classifier</h3>
+                        <span class="project__tagline">Interactive Deep Learning & Computer Vision</span>
+                        <p class="project__desc">Deep learning convolutional neural network (CNN) trained on the
+                            Fashion-MNIST dataset. Features an interactive 28x28 HTML5 Canvas for real-time user
+                            sketching and instant softmax probability classifications via a Python Flask backend.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">TensorFlow</span><span class="tech-pill">Keras</span><span
+                                class="tech-pill">Python Flask</span><span class="tech-pill">HTML5 Canvas</span><span
+                                class="tech-pill">Computer Vision</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/Fashion-Item-Classification-Convolutional-Neural-Networks"
+                                target="_blank" rel="noopener noreferrer" class="button button--small button--secondary"
+                                aria-label="View Fashion Item CNN Classifier on GitHub">View on GitHub <i
+                                    class="bx bxl-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-pulse' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(236, 72, 153, 0.9);">GitHub
+                            TypeScript</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">MediGuide AI</h3>
+                        <span class="project__tagline">Autonomous Healthcare AI Frontend</span>
+                        <p class="project__desc">Autonomous healthcare frontend platform engineered with TypeScript,
+                            React, Vite, and Bun for rapid symptom analysis, clinical triage recommendations, and
+                            interactive patient guidance.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">TypeScript</span><span class="tech-pill">React</span><span
+                                class="tech-pill">Vite</span><span class="tech-pill">Bun</span><span
+                                class="tech-pill">Healthcare AI</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/mediguideai" target="_blank"
+                                rel="noopener noreferrer" class="button button--small button--secondary"
+                                aria-label="View MediGuide AI on GitHub">View on GitHub <i class="bx bxl-github"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-globe' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Active Enterprise
+                            (Est. Aug 2025)</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Zinoin Group</h3>
+                        <span class="project__tagline">Founder & CEO Initiative & Digital Infrastructure</span>
+                        <p class="project__desc">Founder & CEO-led business group and digital initiatives (established
+                            August 2025), orchestrating enterprise technology services, digital infrastructure, client
+                            solutions, and commercial web platforms.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Venture Leadership</span><span class="tech-pill">Digital
+                                Infrastructure</span><span class="tech-pill">Enterprise Architecture</span><span
+                                class="tech-pill">Cloud Hosting</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://zinoingroup.in/" target="_blank" rel="noopener noreferrer"
+                                class="button button--small button--primary"
+                                aria-label="Visit Zinoin Group corporate website">Explore Venture <i class="bx bx-globe"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-target-lock' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(245, 158, 11, 0.9);">Digital
+                            Marketing</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Performance Marketing & Acquisition Funnel</h3>
+                        <span class="project__tagline">Paid Social, Search & Multi-Channel Growth</span>
+                        <p class="project__desc">Engineered high-converting digital advertising campaigns across Meta
+                            Ads Manager, Google Ads (Search & Display), and Campaign Manager 360, driving scalable
+                            commercial lead generation and ROAS.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Meta Ads</span><span class="tech-pill">Google Ads</span><span
+                                class="tech-pill">Campaign Manager 360</span><span class="tech-pill">Conversion
+                                Tracking</span><span class="tech-pill">ROAS Optimization</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer"
+                                class="button button--small button--secondary"
+                                aria-label="Contact Vishwa Kumar about marketing strategy">Discuss Marketing <i
+                                    class="bx bx-envelope" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-search-alt' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Growth &
+                            Analytics</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Enterprise SEO & Growth Architecture</h3>
+                        <span class="project__tagline">Technical SEO, Knowledge Graphs & Telemetry</span>
+                        <p class="project__desc">Full-funnel search engine optimization, semantic Schema.org entity
+                            graph engineering, Google Search Console telemetry, and Core Web Vitals performance tuning
+                            to capture top search engine positions.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Technical SEO</span><span class="tech-pill">Schema.org
+                                JSON-LD</span><span class="tech-pill">Google Analytics 4</span><span
+                                class="tech-pill">Core Web Vitals</span><span class="tech-pill">Entity SEO</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer"
+                                class="button button--small button--secondary"
+                                aria-label="Inquire about SEO & Growth">Inquire via Contact <i class="bx bx-search"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-chip' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(99, 102, 241, 0.9);">AI
+                            Innovation</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">GenAI & Applied Prompt Engineering Platform</h3>
+                        <span class="project__tagline">LLM Workflows, Context Engineering & AI Automation</span>
+                        <p class="project__desc">Practical generative AI pipelines and multi-turn prompt engineering
+                            platforms connecting large language models with enterprise document search, automated
+                            summaries, and conversational knowledge extraction.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Generative AI</span><span class="tech-pill">Prompt
+                                Engineering</span><span class="tech-pill">LLM Pipelines</span><span
+                                class="tech-pill">Gemini API</span><span class="tech-pill">Knowledge Workflows</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer"
+                                class="button button--small button--secondary"
+                                aria-label="Contact about GenAI and Prompt Engineering solutions">Explore AI Workflows
+                                <i class="bx bx-bot" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-trending-up' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Financial
+                            Systems</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Financial Risk & Corporate Valuation Systems</h3>
+                        <span class="project__tagline">Collateral Governance, Market Analysis & Financial
+                            Strategy</span>
+                        <p class="project__desc">Corporate action evaluation, banking collateral management workflows,
+                            and financial risk governance models structured according to SEBI standards, TCS iON
+                            frameworks, and MTF Institute business administration.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Risk Governance</span><span class="tech-pill">Financial
+                                Analysis</span><span class="tech-pill">Collateral Management</span><span
+                                class="tech-pill">Business Analytics</span><span class="tech-pill">SEBI
+                                Compliance</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer"
+                                class="button button--small button--secondary"
+                                aria-label="Consult on Financial Risk and Corporate Strategy">Consult on Strategy <i
+                                    class="bx bx-bar-chart" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bxl-wordpress' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(59, 130, 246, 0.9);">CMS
+                            Solutions</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">WordPress & CMS Performance Engineering</h3>
+                        <span class="project__tagline">Enterprise Security Hardening, Speed & Custom Architecture</span>
+                        <p class="project__desc">Professional WordPress architecture and custom theme development
+                            featuring rigorous security hardening, database query optimization, Cloudflare edge caching,
+                            and mobile speed scores exceeding 95+.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">WordPress Core</span><span class="tech-pill">PHP & MySQL</span><span
+                                class="tech-pill">Security Hardening</span><span class="tech-pill">Edge
+                                Caching</span><span class="tech-pill">Speed Optimization</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer"
+                                class="button button--small button--secondary"
+                                aria-label="Review WordPress and CMS services">Review CMS Services <i
+                                    class="bx bx-layer" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-shield-quarter' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(220, 38, 38, 0.9);">Security
+                            Engineering</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Defensive Cybersecurity & Security Audit Framework</h3>
+                        <span class="project__tagline">Access Governance, RBAC Isolation & Threat Auditing</span>
+                        <p class="project__desc">Defensive security utilities and security test automation frameworks
+                            embodying ISO/IEC 27001 principles, password hashing, JWT session security, and multi-tenant
+                            database isolation to defeat enumeration attacks.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">RBAC Verification</span><span class="tech-pill">JWT
+                                Security</span><span class="tech-pill">ISO/IEC 27001</span><span
+                                class="tech-pill">Network Defense</span><span class="tech-pill">Security Test
+                                Automation</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://founder.zinoingroup.in/#contact" target="_blank" rel="noopener noreferrer"
+                                class="button button--small button--secondary"
+                                aria-label="Inquire about Cybersecurity Consultation">Security Consultation <i
+                                    class="bx bx-shield-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box">
+                            <i class='bx bx-certification' aria-hidden="true"></i>
+                        </div>
+                        <span class="project__badge-pill" style="background: rgba(100, 116, 139, 0.9);">In
+                            Development</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">CampusBridge / SkillTrack</h3>
+                        <span class="project__tagline">Student Certificate Tracking & Verification Engine</span>
+                        <p class="project__desc">Secure digital proof platform engineered for students to store and
+                            verify symposium and workshop certificates with GPS event validation and administrative
+                            cryptographic verification.</p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Verification Engine</span><span class="tech-pill">GPS
+                                Validation</span><span class="tech-pill">Digital Proof</span><span
+                                class="tech-pill">Access Controls</span>
+                        </div>
+                        <div class="project__actions">
+                            <span class="button--small"
+                                style="background: rgba(100, 116, 139, 0.2); color: var(--text-muted); font-size: var(--smaller-font-size); font-weight: 600; padding: 6px 12px; border-radius: var(--radius-full); display: inline-flex; align-items: center;"><i
+                                    class="bx bx-time" aria-hidden="true"></i> In Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--===== PROFESSIONAL EXPERIENCE TIMELINE =====-->
@@ -3321,23 +3619,30 @@
                                         <i class='bx bx-building-house' aria-hidden="true"></i> Zinoin Group
                                     </span>
                                 </div>
-                                <span class="experience__badge"><i class='bx bx-check-circle' aria-hidden="true"></i> 2024 — Present · Active Venture</span>
+                                <span class="experience__badge"><i class='bx bx-check-circle' aria-hidden="true"></i>
+                                    2024 — Present · Active Venture</span>
                             </div>
                             <p class="experience__desc">
-                                Directing technical strategy, digital systems architecture, and business initiatives. Leading the engineering of modern digital platforms and client solutions combining defensive security principles with practical business growth.
+                                Directing technical strategy, digital systems architecture, and business initiatives.
+                                Leading the engineering of modern digital platforms and client solutions combining
+                                defensive security principles with practical business growth.
                             </p>
                             <div class="experience__bullets">
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-check-shield' aria-hidden="true"></i>
-                                    <span>Engineered full-stack responsive web systems and enterprise utility tools using vanilla standards and modern cloud architectures.</span>
+                                    <span>Engineered full-stack responsive web systems and enterprise utility tools
+                                        using vanilla standards and modern cloud architectures.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-data' aria-hidden="true"></i>
-                                    <span>Spearheaded AI knowledge platform development (DocuMind AI) incorporating vector search, JWT authentication, and automated RBAC security test suites.</span>
+                                    <span>Spearheaded AI knowledge platform development (DocuMind AI) incorporating
+                                        vector search, JWT authentication, and automated RBAC security test
+                                        suites.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-line-chart' aria-hidden="true"></i>
-                                    <span>Orchestrated technical scoping, digital brand architecture, and client-centric digital transformation workflows.</span>
+                                    <span>Orchestrated technical scoping, digital brand architecture, and client-centric
+                                        digital transformation workflows.</span>
                                 </div>
                             </div>
                             <div class="experience__tech-chips">
@@ -3358,26 +3663,36 @@
                                 <div>
                                     <h3 class="experience__role-title">Technical Consultant & Web Developer</h3>
                                     <span class="experience__company">
-                                        <i class='bx bx-briefcase-alt-2' aria-hidden="true"></i> Commercial Platforms & Client Solutions
+                                        <i class='bx bx-briefcase-alt-2' aria-hidden="true"></i> Commercial Platforms &
+                                        Client Solutions
                                     </span>
                                 </div>
-                                <span class="experience__badge" style="background: rgba(99, 102, 241, 0.1); color: var(--accent); border-color: rgba(99, 102, 241, 0.25);"><i class='bx bx-time-five' aria-hidden="true"></i> 2023 — 2024 · Completed Projects</span>
+                                <span class="experience__badge"
+                                    style="background: rgba(99, 102, 241, 0.1); color: var(--accent); border-color: rgba(99, 102, 241, 0.25);"><i
+                                        class='bx bx-time-five' aria-hidden="true"></i> 2023 — 2024 · Completed
+                                    Projects</span>
                             </div>
                             <p class="experience__desc">
-                                Developed custom web applications and business workflow solutions for commercial clients, focusing on secure transaction ordering, inventory management, and search visibility.
+                                Developed custom web applications and business workflow solutions for commercial
+                                clients, focusing on secure transaction ordering, inventory management, and search
+                                visibility.
                             </p>
                             <div class="experience__bullets">
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-check-shield' aria-hidden="true"></i>
-                                    <span>Engineered commercial catering order management system (TNT Commercial Platform) featuring Supabase data storage and anti-enumeration protections.</span>
+                                    <span>Engineered commercial catering order management system (TNT Commercial
+                                        Platform) featuring Supabase data storage and anti-enumeration
+                                        protections.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-devices' aria-hidden="true"></i>
-                                    <span>Designed responsive, mobile-first web interfaces adhering to WCAG accessibility guidelines and modern performance benchmarks.</span>
+                                    <span>Designed responsive, mobile-first web interfaces adhering to WCAG
+                                        accessibility guidelines and modern performance benchmarks.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-search-alt' aria-hidden="true"></i>
-                                    <span>Implemented technical on-page SEO, analytics event telemetry, and structured business data.</span>
+                                    <span>Implemented technical on-page SEO, analytics event telemetry, and structured
+                                        business data.</span>
                                 </div>
                             </div>
                             <div class="experience__tech-chips">
@@ -3406,17 +3721,20 @@
                     </div>
                     <h3 class="education__title">Bachelor of Engineering (B.E.)</h3>
                     <p class="education__institution">
-                        <i class='bx bx-certification' aria-hidden="true"></i> Cybersecurity Engineering (Cyber Security)
+                        <i class='bx bx-certification' aria-hidden="true"></i> Cybersecurity Engineering (Cyber
+                        Security)
                     </p>
                     <p class="education__location">
-                        <i class='bx bx-building-house' aria-hidden="true"></i> Sri Sai Ranganathan Engineering College, Coimbatore, Tamil Nadu, India
+                        <i class='bx bx-building-house' aria-hidden="true"></i> Sri Sai Ranganathan Engineering College,
+                        Coimbatore, Tamil Nadu, India
                     </p>
                     <div class="education__meta">
                         <div class="education__meta-item">
                             <span>CGPA:</span> <strong>8.5 / 10</strong>
                         </div>
                         <div class="education__meta-item">
-                            <span>Status:</span> <strong class="education__status"><i class='bx bx-loader-circle' aria-hidden="true"></i> Currently Pursuing</strong>
+                            <span>Status:</span> <strong class="education__status"><i class='bx bx-loader-circle'
+                                    aria-hidden="true"></i> Currently Pursuing</strong>
                         </div>
                     </div>
                 </div>
@@ -3425,7 +3743,8 @@
                 <div class="education__card scroll-animate">
                     <div class="education__card-header">
                         <span class="education__badge">Secondary Education</span>
-                        <span class="education__date"><i class='bx bx-check-shield' aria-hidden="true"></i> Completed</span>
+                        <span class="education__date"><i class='bx bx-check-shield' aria-hidden="true"></i>
+                            Completed</span>
                     </div>
                     <h3 class="education__title">Higher Secondary</h3>
                     <p class="education__location">
@@ -3449,20 +3768,24 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-shield-quarter certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Cybersecurity & Ethical Hacking</h3>
                         <span class="certificate__org">CappricioSec University</span>
                     </div>
                     <div class="certificate__footer">
-                        <a href="https://university.cappriciosec.com/" target="_blank" rel="noopener noreferrer" class="certificate__link" title="Verify Certificate on CappricioSec University portal">ID: b093c0aab1b34503a711 <i class="bx bx-link-external" aria-hidden="true"></i></a>
+                        <a href="https://university.cappriciosec.com/" target="_blank" rel="noopener noreferrer"
+                            class="certificate__link" title="Verify Certificate on CappricioSec University portal">ID:
+                            b093c0aab1b34503a711 <i class="bx bx-link-external" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="certificate__card scroll-animate">
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-award certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Introduction to Cybersecurity</h3>
                         <span class="certificate__org">Cisco Networking Academy</span>
@@ -3475,7 +3798,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-shield-alt certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Ethical Hacking 101: Beginner's Guide</h3>
                         <span class="certificate__org">Simplilearn SkillUp</span>
@@ -3488,7 +3812,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-check-shield certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">ISO/IEC 27001 Information Security Associate</h3>
                         <span class="certificate__org">SkillFront</span>
@@ -3501,7 +3826,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-briefcase certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Corporate Actions & Entrepreneurship</h3>
                         <span class="certificate__org">TCS iON</span>
@@ -3514,7 +3840,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxs-bank certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">SEBI Investor Awareness Test</h3>
                         <span class="certificate__org">Securities and Exchange Board of India</span>
@@ -3527,7 +3854,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-line-chart certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital Marketing Certified</h3>
                         <span class="certificate__org">HubSpot Academy</span>
@@ -3540,7 +3868,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-dollar-circle certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Risk Management in Financial Sector</h3>
                         <span class="certificate__org">Webul</span>
@@ -3553,7 +3882,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-stats certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Business Analytics with Excel</h3>
                         <span class="certificate__org">Microsoft</span>
@@ -3566,7 +3896,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-group certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Effective Leadership & Social Entrepreneurship</h3>
                         <span class="certificate__org">HP LIFE Foundation</span>
@@ -3579,7 +3910,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-target-lock certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital Marketing & Social Media</h3>
                         <span class="certificate__org">Accenture</span>
@@ -3592,7 +3924,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-google certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Google Ads Display Certification</h3>
                         <span class="certificate__org">Google</span>
@@ -3605,7 +3938,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-google certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Google Ads Search Certification</h3>
                         <span class="certificate__org">Google</span>
@@ -3618,7 +3952,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-analyse certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Fundamentals of Marketing Analytics</h3>
                         <span class="certificate__org">Semrush Academy</span>
@@ -3631,7 +3966,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-trending-up certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital & Social Media Marketing</h3>
                         <span class="certificate__org">Study Badshah (Accredited by ACTD)</span>
@@ -3644,7 +3980,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-linkedin-square certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Entrepreneurship Foundations</h3>
                         <span class="certificate__org">LinkedIn Learning</span>
@@ -3657,7 +3994,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-google certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Campaign Manager 360 Certificate</h3>
                         <span class="certificate__org">Google</span>
@@ -3670,7 +4008,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-buildings certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Business Administration</h3>
                         <span class="certificate__org">MTF Institute of Management</span>
@@ -3683,7 +4022,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-money certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Advanced Financial Analysis and Management</h3>
                         <span class="certificate__org">Udemy</span>
@@ -3696,7 +4036,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-certification certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital Marketing Professional Certificate</h3>
                         <span class="certificate__org">Content Marketing Institute</span>
@@ -3709,7 +4050,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-facebook-square certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Master Facebook Ads In 90 Minutes</h3>
                         <span class="certificate__org">WsCube Tech</span>
@@ -3722,7 +4064,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-bot certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Introduction to GenAI & Prompting</h3>
                         <span class="certificate__org">Lets Upgrade</span>
@@ -3735,7 +4078,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-wordpress certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Advanced WordPress Course for Professionals</h3>
                         <span class="certificate__org">Udemy</span>
@@ -3748,7 +4092,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-globe certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital Skills: Digital Marketing</h3>
                         <span class="certificate__org">Future Learn (Accenture)</span>
@@ -3761,7 +4106,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-share-alt certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital Skills: Social Media</h3>
                         <span class="certificate__org">Future Learn (Accenture)</span>
@@ -3774,7 +4120,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-google certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Campaign Manager 360 Certification Exam</h3>
                         <span class="certificate__org">Google Digital Academy</span>
@@ -3787,7 +4134,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-shield-quarter certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Understanding Collateral Management</h3>
                         <span class="certificate__org">TCS iON</span>
@@ -3800,7 +4148,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-briefcase-alt certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Introduction to Corporate Actions</h3>
                         <span class="certificate__org">TCS iON</span>
@@ -3813,7 +4162,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-table certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Business Analytics with Excel (Beginner to Pro)</h3>
                         <span class="certificate__org">Simplilearn</span>
@@ -3826,7 +4176,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-bulb certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Social Entrepreneurship</h3>
                         <span class="certificate__org">HP LIFE Foundation</span>
@@ -3839,7 +4190,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-user-voice certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Effective Leadership Principles</h3>
                         <span class="certificate__org">HP LIFE Foundation</span>
@@ -3852,7 +4204,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-chart certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Maximizing Your Social Impact with Semrush Toolkit</h3>
                         <span class="certificate__org">Semrush Academy</span>
@@ -3865,7 +4218,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-check-shield certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Understanding Risk Management in Financial Sector</h3>
                         <span class="certificate__org">TCS iON</span>
@@ -3878,7 +4232,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-chip certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital Marketing with AI</h3>
                         <span class="certificate__org">Lets Upgrade</span>
@@ -3891,7 +4246,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-book-bookmark certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">BUS200 – Business Ethics</h3>
                         <span class="certificate__org">Saylor Academy</span>
@@ -3904,7 +4260,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-linkedin certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Digital Marketing Professional Certificate</h3>
                         <span class="certificate__org">LinkedIn Learning</span>
@@ -3917,7 +4274,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-certification certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">National Institute of Securities Markets (NISM) Awareness</h3>
                         <span class="certificate__org">NISM (SEBI)</span>
@@ -3930,7 +4288,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bx-shield certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Network Defense & Threat Hunting Fundamentals</h3>
                         <span class="certificate__org">CyberSec Foundation</span>
@@ -3943,7 +4302,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-python certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Python for Defensive Cybersecurity & Automation</h3>
                         <span class="certificate__org">CodeCraft Academy</span>
@@ -3956,7 +4316,8 @@
                     <div>
                         <div class="certificate__header">
                             <i class='bx bxl-tux certificate__icon' aria-hidden="true"></i>
-                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i> Verified</span>
+                            <span class="certificate__verified"><i class="bx bx-check" aria-hidden="true"></i>
+                                Verified</span>
                         </div>
                         <h3 class="certificate__title">Linux System Administration & Server Hardening</h3>
                         <span class="certificate__org">Enterprise Linux</span>
@@ -3976,11 +4337,13 @@
                 <div class="scroll-animate">
                     <h3 class="contact__info-title">Let's build together</h3>
                     <p class="contact__info-desc">
-                        I'm always interested in connecting with people, exploring meaningful opportunities, discussing technology, and collaborating on innovative ideas.
+                        I'm always interested in connecting with people, exploring meaningful opportunities, discussing
+                        technology, and collaborating on innovative ideas.
                     </p>
 
                     <div class="contact__links-list">
-                        <a href="https://www.linkedin.com/in/thevishwakumar" class="contact__link-item" target="_blank" rel="noopener noreferrer" aria-label="Connect with Vishwa K on LinkedIn">
+                        <a href="https://www.linkedin.com/in/thevishwakumar" class="contact__link-item" target="_blank"
+                            rel="noopener noreferrer" aria-label="Connect with Vishwa K on LinkedIn">
                             <div class="contact__link-icon" aria-hidden="true"><i class='bx bxl-linkedin'></i></div>
                             <div>
                                 <span class="contact__link-label">LinkedIn</span>
@@ -3988,7 +4351,8 @@
                             </div>
                         </a>
 
-                        <a href="https://github.com/thevishwakumar" class="contact__link-item" target="_blank" rel="noopener noreferrer" aria-label="Explore Vishwa K's projects on GitHub">
+                        <a href="https://github.com/thevishwakumar" class="contact__link-item" target="_blank"
+                            rel="noopener noreferrer" aria-label="Explore Vishwa K's projects on GitHub">
                             <div class="contact__link-icon" aria-hidden="true"><i class='bx bxl-github'></i></div>
                             <div>
                                 <span class="contact__link-label">GitHub</span>
@@ -3996,7 +4360,8 @@
                             </div>
                         </a>
 
-                        <a href="mailto:thevishwaofficial@gmail.com" class="contact__link-item" aria-label="Send direct email to Vishwa K">
+                        <a href="mailto:thevishwaofficial@gmail.com" class="contact__link-item"
+                            aria-label="Send direct email to Vishwa K">
                             <div class="contact__link-icon" aria-hidden="true"><i class='bx bx-envelope'></i></div>
                             <div>
                                 <span class="contact__link-label">Email</span>
@@ -4004,7 +4369,8 @@
                             </div>
                         </a>
 
-                        <a href="https://www.instagram.com/thevishwakumar/" class="contact__link-item" target="_blank" rel="noopener noreferrer" aria-label="Follow Vishwa K on Instagram">
+                        <a href="https://www.instagram.com/thevishwakumar/" class="contact__link-item" target="_blank"
+                            rel="noopener noreferrer" aria-label="Follow Vishwa K on Instagram">
                             <div class="contact__link-icon" aria-hidden="true"><i class='bx bxl-instagram'></i></div>
                             <div>
                                 <span class="contact__link-label">Instagram</span>
@@ -4012,7 +4378,8 @@
                             </div>
                         </a>
 
-                        <a href="https://founder.zinoingroup.in/" class="contact__link-item" aria-label="Visit official founder website">
+                        <a href="https://founder.zinoingroup.in/" class="contact__link-item"
+                            aria-label="Visit official founder website">
                             <div class="contact__link-icon" aria-hidden="true"><i class='bx bx-globe'></i></div>
                             <div>
                                 <span class="contact__link-label">Website</span>
@@ -4025,32 +4392,39 @@
                 <!-- Preserved Contact Form -->
                 <div class="contact__form-card scroll-animate">
                     <h3>Send a Direct Message</h3>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" aria-label="Founder Contact Form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form"
+                        aria-label="Founder Contact Form">
                         <input type="hidden" name="access_key" value="eb8f26d7-359a-4d92-a252-7851ef76b341">
                         <input type="hidden" name="subject" value="New Inquiry from founder.zinoingroup.in">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1"
+                            autocomplete="off">
 
                         <div class="contact__input-group">
                             <label for="contact-name" class="contact__input-label">Your Name</label>
-                            <input type="text" id="contact-name" placeholder="Your Full Name" class="contact__input" name="name" required autocomplete="name">
+                            <input type="text" id="contact-name" placeholder="Your Full Name" class="contact__input"
+                                name="name" required autocomplete="name">
                         </div>
 
                         <div class="contact__input-group">
                             <label for="contact-email" class="contact__input-label">Email Address</label>
-                            <input type="email" id="contact-email" placeholder="name@example.com" class="contact__input" name="email" required autocomplete="email">
+                            <input type="email" id="contact-email" placeholder="name@example.com" class="contact__input"
+                                name="email" required autocomplete="email">
                         </div>
 
                         <div class="contact__input-group">
                             <label for="contact-phone" class="contact__input-label">Phone Number (Optional)</label>
-                            <input type="tel" id="contact-phone" placeholder="+91 ..." class="contact__input" name="phone" autocomplete="tel">
+                            <input type="tel" id="contact-phone" placeholder="+91 ..." class="contact__input"
+                                name="phone" autocomplete="tel">
                         </div>
 
                         <div class="contact__input-group">
                             <label for="contact-message" class="contact__input-label">Your Message</label>
-                            <textarea id="contact-message" name="message" cols="0" rows="5" class="contact__input" placeholder="Share your message or inquiry..." required></textarea>
+                            <textarea id="contact-message" name="message" cols="0" rows="5" class="contact__input"
+                                placeholder="Share your message or inquiry..." required></textarea>
                         </div>
 
-                        <button type="submit" class="button contact__button" id="contact-submit" aria-label="Send message inquiry">
+                        <button type="submit" class="button contact__button" id="contact-submit"
+                            aria-label="Send message inquiry">
                             <i class='bx bx-paper-plane' aria-hidden="true"></i> Send Message
                         </button>
                         <div id="contact-result" class="contact__result" role="status" aria-live="polite"></div>
@@ -4083,13 +4457,21 @@
             </nav>
 
             <div class="footer__social">
-                <a href="https://www.linkedin.com/in/thevishwakumar" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
-                <a href="https://github.com/thevishwakumar" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="bx bxl-github" aria-hidden="true"></i></a>
-                <a href="mailto:thevishwaofficial@gmail.com" class="footer__icon" aria-label="Direct Email"><i class="bx bx-envelope" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/thevishwakumar/" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="bx bxl-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/thevishwakumar" class="footer__icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="bx bxl-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/thevishwakumar" class="footer__icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub Profile"><i class="bx bxl-github"
+                        aria-hidden="true"></i></a>
+                <a href="mailto:thevishwaofficial@gmail.com" class="footer__icon" aria-label="Direct Email"><i
+                        class="bx bx-envelope" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/thevishwakumar/" class="footer__icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram Profile"><i class="bx bxl-instagram"
+                        aria-hidden="true"></i></a>
             </div>
         </div>
-        <p class="footer__copy">&#169; <span id="current-year">2026</span> Vishwa K · Zinoin Group. All rights reserved.</p>
+        <p class="footer__copy">&#169; <span id="current-year">2026</span> Vishwa K · Zinoin Group. All rights reserved.
+        </p>
     </footer>
 
     <!-- Scripts -->
@@ -4176,7 +4558,7 @@
             });
         });
 
-        
+
         /*===== DROPDOWN SUBMENU LOGIC (DESKTOP & MOBILE ACCORDION) =====*/
         const navDropdowns = document.querySelectorAll('.nav__dropdown');
 
@@ -4187,7 +4569,7 @@
             if (!trigger || !menu) return;
 
             // Mobile accordion toggle
-            trigger.addEventListener('click', function(e) {
+            trigger.addEventListener('click', function (e) {
                 if (window.innerWidth < 992) {
                     e.preventDefault();
                     const isOpen = dropdown.classList.toggle('open');
@@ -4196,7 +4578,7 @@
             });
 
             // Keyboard accessibility
-            trigger.addEventListener('keydown', function(e) {
+            trigger.addEventListener('keydown', function (e) {
                 if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown') {
                     e.preventDefault();
                     dropdown.classList.add('show');
@@ -4209,7 +4591,7 @@
                 }
             });
 
-            dropdown.addEventListener('keydown', function(e) {
+            dropdown.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') {
                     dropdown.classList.remove('show');
                     trigger.setAttribute('aria-expanded', 'false');
@@ -4219,7 +4601,7 @@
         });
 
         // Close dropdown when clicking outside on desktop
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             navDropdowns.forEach(dropdown => {
                 if (!dropdown.contains(e.target)) {
                     dropdown.classList.remove('show');
@@ -4288,7 +4670,7 @@
         const THEME_STORAGE_KEY = 'theme-preference';
         const LEGACY_STORAGE_KEY = 'theme';
         const mediaDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        
+
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeDropdownMenu = document.getElementById('theme-dropdown-menu');
         const themeIcon = document.getElementById('theme-icon');
@@ -4329,7 +4711,7 @@
             }
 
             // Update Dropdown Items
-            themeMenuItems.forEach(function(item) {
+            themeMenuItems.forEach(function (item) {
                 var val = item.getAttribute('data-theme-val');
                 var isSelected = (val === validPref);
                 item.classList.toggle('active', isSelected);
@@ -4337,7 +4719,7 @@
             });
 
             // Update Mobile Drawer Segmented Buttons
-            themeSegmentBtns.forEach(function(btn) {
+            themeSegmentBtns.forEach(function (btn) {
                 var val = btn.getAttribute('data-theme-val');
                 var isChecked = (val === validPref);
                 btn.classList.toggle('active', isChecked);
@@ -4350,11 +4732,11 @@
             try {
                 localStorage.setItem(THEME_STORAGE_KEY, validPref);
                 localStorage.setItem(LEGACY_STORAGE_KEY, validPref);
-            } catch (e) {}
+            } catch (e) { }
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
                 document.documentElement.classList.add('theme-transitioning');
                 window.clearTimeout(window.__themeTransitionTimeout);
-                window.__themeTransitionTimeout = window.setTimeout(function() {
+                window.__themeTransitionTimeout = window.setTimeout(function () {
                     document.documentElement.classList.remove('theme-transitioning');
                 }, 320);
             }
@@ -4365,7 +4747,7 @@
         applyTheme(getStoredThemePreference());
 
         // Dynamic OS listener: react when preference is 'system'
-        var handleMediaChange = function() {
+        var handleMediaChange = function () {
             if (getStoredThemePreference() === 'system') {
                 applyTheme('system');
             }
@@ -4379,14 +4761,14 @@
 
         // Dropdown toggle logic
         if (themeToggleBtn && themeDropdownMenu) {
-            themeToggleBtn.addEventListener('click', function(e) {
+            themeToggleBtn.addEventListener('click', function (e) {
                 e.stopPropagation();
                 var isExpanded = themeDropdownMenu.classList.toggle('show');
                 themeToggleBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
             });
 
             // Close when clicking outside
-            document.addEventListener('click', function(e) {
+            document.addEventListener('click', function (e) {
                 if (!themeDropdownMenu.contains(e.target) && e.target !== themeToggleBtn) {
                     themeDropdownMenu.classList.remove('show');
                     themeToggleBtn.setAttribute('aria-expanded', 'false');
@@ -4394,7 +4776,7 @@
             });
 
             // Keyboard navigation
-            themeToggleBtn.addEventListener('keydown', function(e) {
+            themeToggleBtn.addEventListener('keydown', function (e) {
                 if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
                     themeDropdownMenu.classList.add('show');
@@ -4404,7 +4786,7 @@
                 }
             });
 
-            themeDropdownMenu.addEventListener('keydown', function(e) {
+            themeDropdownMenu.addEventListener('keydown', function (e) {
                 var items = Array.from(themeMenuItems);
                 var currentIndex = items.indexOf(document.activeElement);
 
@@ -4425,8 +4807,8 @@
             });
 
             // Dropdown menu item click
-            themeMenuItems.forEach(function(item) {
-                item.addEventListener('click', function(e) {
+            themeMenuItems.forEach(function (item) {
+                item.addEventListener('click', function (e) {
                     e.stopPropagation();
                     var val = item.getAttribute('data-theme-val');
                     setThemePreference(val);
@@ -4438,8 +4820,8 @@
         }
 
         // Mobile drawer segmented button click
-        themeSegmentBtns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
+        themeSegmentBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
                 var val = btn.getAttribute('data-theme-val');
                 setThemePreference(val);
             });
@@ -4520,7 +4902,7 @@
         const contactResult = document.getElementById('contact-result');
 
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
 
                 contactSubmit.disabled = true;
@@ -4542,32 +4924,32 @@
                     },
                     body: json
                 })
-                .then(async (response) => {
-                    let resJson = await response.json();
-                    if (response.status == 200) {
-                        contactResult.innerHTML = "<i class='bx bx-check-circle' aria-hidden='true'></i> Thank you! Your message has been sent successfully.";
-                        contactResult.className = 'contact__result success';
-                        contactForm.reset();
-                        trackEvent('contact_form_interaction', { action: 'submit_success' });
-                    } else {
-                        contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> ";
-                        const errorText = document.createTextNode(resJson.message || "Failed to send message. Please try again.");
-                        contactResult.appendChild(errorText);
+                    .then(async (response) => {
+                        let resJson = await response.json();
+                        if (response.status == 200) {
+                            contactResult.innerHTML = "<i class='bx bx-check-circle' aria-hidden='true'></i> Thank you! Your message has been sent successfully.";
+                            contactResult.className = 'contact__result success';
+                            contactForm.reset();
+                            trackEvent('contact_form_interaction', { action: 'submit_success' });
+                        } else {
+                            contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> ";
+                            const errorText = document.createTextNode(resJson.message || "Failed to send message. Please try again.");
+                            contactResult.appendChild(errorText);
+                            contactResult.className = 'contact__result error';
+                            trackEvent('contact_form_interaction', { action: 'submit_error' });
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Submission error:', error);
+                        contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> A network error occurred. Please try again or email directly.";
                         contactResult.className = 'contact__result error';
                         trackEvent('contact_form_interaction', { action: 'submit_error' });
-                    }
-                })
-                .catch(error => {
-                    console.error('Submission error:', error);
-                    contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> A network error occurred. Please try again or email directly.";
-                    contactResult.className = 'contact__result error';
-                    trackEvent('contact_form_interaction', { action: 'submit_error' });
-                })
-                .finally(() => {
-                    contactSubmit.disabled = false;
-                    contactSubmit.innerHTML = originalHtml;
-                    contactResult.style.display = 'block';
-                });
+                    })
+                    .finally(() => {
+                        contactSubmit.disabled = false;
+                        contactSubmit.innerHTML = originalHtml;
+                        contactResult.style.display = 'block';
+                    });
             });
         }
 
@@ -4601,9 +4983,9 @@
 
         // Track Outbound Social / Professional clicks
         document.querySelectorAll('a[href*="linkedin.com"], a[href*="github.com"], a[href*="instagram.com"]').forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 const platform = this.href.includes('linkedin.com') ? 'linkedin' :
-                                 this.href.includes('github.com') ? 'github' : 'instagram';
+                    this.href.includes('github.com') ? 'github' : 'instagram';
                 trackEvent('social_click', {
                     platform: platform,
                     target_url: this.href
@@ -4613,7 +4995,7 @@
 
         // Track Project link clicks
         document.querySelectorAll('.project__link').forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 const projectCard = this.closest('.project__card');
                 const projectTitle = projectCard ? projectCard.querySelector('.project__title')?.textContent.trim() : 'Project';
                 trackEvent('project_click', {
@@ -4627,7 +5009,7 @@
         const contactInputs = document.querySelectorAll('.contact__input');
         let formStarted = false;
         contactInputs.forEach(input => {
-            input.addEventListener('focus', function() {
+            input.addEventListener('focus', function () {
                 if (!formStarted) {
                     formStarted = true;
                     trackEvent('contact_form_interaction', { action: 'form_start' });
@@ -4635,7 +5017,11 @@
             }, { once: true });
         });
     </script>
-    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"1c105f76143b459fa149a225654a1140","r":1,"spa":2}' crossorigin="anonymous"></script>
+    <script type="module"
+        src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+        integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw=="
+        data-cf-beacon='{"version":"2024.11.0","token":"1c105f76143b459fa149a225654a1140","r":1,"spa":2}'
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

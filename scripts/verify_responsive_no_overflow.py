@@ -31,3 +31,4 @@ assert '@media screen and (max-width: 991px)' in text
 print("[PASS] Mobile drawer accordion rules verified")
 
 print("\nRESPONSIVE & OVERFLOW CHECKS PASSED!")
+
