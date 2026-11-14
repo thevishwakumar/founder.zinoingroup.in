@@ -6,7 +6,7 @@
       "title": "Cybersecurity & Ethical Hacking",
       "organization": "CappricioSec University",
       "orgIcon": "bx bx-shield-quarter",
-      "footerLabel": null,
+      "footerLabel": "Issued: Apr 2026",
       "status": "Verified",
       "isVerified": true,
       "link": {
@@ -26,11 +26,39 @@
       "link": null
     },
     {
+      "id": "ibm-getting-started-cybersecurity",
+      "title": "Getting Started with Cybersecurity",
+      "organization": "IBM SkillsBuild",
+      "orgIcon": "bx bx-lock-alt",
+      "footerLabel": "Issued: Aug 2026",
+      "status": "Verified",
+      "isVerified": true,
+      "link": {
+        "url": "https://skillsbuild.org/",
+        "text": "IBM SkillsBuild Credential",
+        "title": "Verify credential on IBM SkillsBuild"
+      }
+    },
+    {
+      "id": "ibm-cybersecurity-fundamentals",
+      "title": "Cybersecurity Fundamentals",
+      "organization": "IBM SkillsBuild",
+      "orgIcon": "bx bx-shield-quarter",
+      "footerLabel": "Issued: Aug 2026",
+      "status": "Verified",
+      "isVerified": true,
+      "link": {
+        "url": "https://skillsbuild.org/",
+        "text": "IBM SkillsBuild Credential",
+        "title": "Verify credential on IBM SkillsBuild"
+      }
+    },
+    {
       "id": "simplilearn-ethical-hacking",
-      "title": "Ethical Hacking 101: Beginner's Guide",
+      "title": "Ethical Hacking 101: Beginners Guide to Ethical Hacking",
       "organization": "Simplilearn SkillUp",
       "orgIcon": "bx bx-shield-alt",
-      "footerLabel": "SkillUp Certification",
+      "footerLabel": "Issued: Aug 2026",
       "status": "Verified",
       "isVerified": true,
       "link": null
@@ -197,7 +225,7 @@
     },
     {
       "id": "cmi-digital-marketing",
-      "title": "Digital Marketing Professional Certificate",
+      "title": "Content Marketing Professional Certificate",
       "organization": "Content Marketing Institute",
       "orgIcon": "bx bx-certification",
       "footerLabel": "Content & Campaigns",
@@ -347,7 +375,7 @@
     },
     {
       "id": "saylor-business-ethics",
-      "title": "BUS200 \u2013 Business Ethics",
+      "title": "BUS200 – Business Ethics",
       "organization": "Saylor Academy",
       "orgIcon": "bx bx-book-bookmark",
       "footerLabel": "Corporate Governance",

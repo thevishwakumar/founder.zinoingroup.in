@@ -311,6 +311,84 @@
           "ariaLabel": "Project in active development"
         }
       ]
+    },
+    {
+      "id": "autonomous-ai-defense",
+      "title": "Autonomous AI Defense & Trap Network",
+      "tagline": "Autonomous Cyber Defense & Deception Environment",
+      "badge": "Cybersecurity / AI",
+      "badgeStyle": "background: rgba(14, 165, 233, 0.9);",
+      "icon": "bx bx-shield-quarter",
+      "description": "Autonomous cyber-defense architecture engineered to continuously monitor suspicious activity and trigger automated containment responses. Features controlled deception and honeypot trap mechanisms to attract, observe, and profile threat actors while neutralizing lateral movement.",
+      "technologies": [
+        "Autonomous Cyber Defense",
+        "Deception & Trap Networks",
+        "Behavioral Analysis",
+        "Automated Response",
+        "Python"
+      ],
+      "actions": [
+        {
+          "type": "link",
+          "label": "Architecture Repo",
+          "url": "https://github.com/thevishwakumar",
+          "icon": "bx bxl-github",
+          "buttonClass": "button button--ghost",
+          "ariaLabel": "Explore Autonomous AI Defense repository on GitHub"
+        }
+      ]
+    },
+    {
+      "id": "cyberguard-threat-detection",
+      "title": "CyberGuard – AI Threat Detection",
+      "tagline": "Phishing, Spam & Log Threat Analysis Engine",
+      "badge": "Cybersecurity / AI",
+      "badgeStyle": "background: rgba(59, 130, 246, 0.9);",
+      "icon": "bx bx-radar",
+      "description": "Multi-vector security intelligence system developed to inspect spam communications, analyze live security logs, and flag phishing URLs. Features automated threat classification workflows and behavioral pattern heuristics for proactive security monitoring.",
+      "technologies": [
+        "Phishing & Spam Detection",
+        "Security Log Analysis",
+        "Threat Classification",
+        "Security Monitoring",
+        "Python"
+      ],
+      "actions": [
+        {
+          "type": "link",
+          "label": "Source Code",
+          "url": "https://github.com/thevishwakumar",
+          "icon": "bx bxl-github",
+          "buttonClass": "button button--ghost",
+          "ariaLabel": "Explore CyberGuard Threat Detection on GitHub"
+        }
+      ]
+    },
+    {
+      "id": "ethos-ai-shield",
+      "title": "ETHOS – AI Data Confidentiality Shield",
+      "tagline": "AI Data Privacy, DLP & Enterprise Compliance Shield",
+      "badge": "AI Security / DLP",
+      "badgeStyle": "background: rgba(99, 102, 241, 0.9);",
+      "icon": "bx bx-lock-alt",
+      "description": "Specialized enterprise security layer preventing confidential business data and sensitive corporate assets from being leaked to external AI tools and LLMs. Incorporates real-time policy inspection, sensitive token redaction, and automated compliance enforcement.",
+      "technologies": [
+        "AI Data Protection",
+        "Data Loss Prevention (DLP)",
+        "Compliance Shield",
+        "Policy Enforcement",
+        "Data Inspection"
+      ],
+      "actions": [
+        {
+          "type": "link",
+          "label": "Project Overview",
+          "url": "https://github.com/thevishwakumar",
+          "icon": "bx bxl-github",
+          "buttonClass": "button button--ghost",
+          "ariaLabel": "Explore ETHOS AI Data Shield on GitHub"
+        }
+      ]
     }
   ]
 }

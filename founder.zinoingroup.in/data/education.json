@@ -20,9 +20,14 @@
         },
         {
           "label": "Status:",
-          "value": "Currently Pursuing",
+          "value": "Pursuing (Graduation: 2028)",
           "isHighlight": true,
           "statusIcon": "bx bx-loader-circle"
+        },
+        {
+          "label": "Coursework:",
+          "value": "Computer Networks, Network Security, Cybersecurity Fundamentals, Operating Systems, DBMS",
+          "isHighlight": false
         }
       ]
     },
