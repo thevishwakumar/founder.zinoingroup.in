@@ -8,12 +8,32 @@
       "companyIcon": "bx bx-building-house",
       "period": "Aug 2025 – Present",
       "status": "Active Enterprise",
-      "badgeStyle": "background: rgba(14, 165, 233, 0.15); color: var(--accent);",
+      "badgeStyle": "background: rgba(14, 165, 233, 0.15); color: var(--accent); border-color: rgba(14, 165, 233, 0.3);",
+      "description": "Leading corporate strategy, software architecture, and venture operations across Zinoin Group (established Aug 2025). Spearheading enterprise AI solutions, cybersecurity engineering, and high-performance digital marketing systems.",
       "bullets": [
-        "Founded and established Zinoin Group in August 2025 as Founder & CEO, leading corporate strategy, digital infrastructure, and client software delivery.",
-        "Architected and engineered enterprise full-stack platforms including DocuMind AI (RAG knowledge platform) and commercial order management systems.",
-        "Designed and managed performance digital marketing campaigns across Meta Ads, Google Ads, and analytics attribution models.",
-        "Established cybersecurity hygiene, identity governance, and role-based access control (RBAC) security frameworks across internal and client platforms."
+        {
+          "icon": "bx bx-check-shield",
+          "text": "Founded and established Zinoin Group in August 2025 as Founder & CEO, leading corporate strategy, digital infrastructure, and client software delivery."
+        },
+        {
+          "icon": "bx bx-data",
+          "text": "Architected and engineered enterprise full-stack platforms including DocuMind AI (RAG knowledge platform) and commercial order management systems."
+        },
+        {
+          "icon": "bx bx-line-chart",
+          "text": "Designed and managed performance digital marketing campaigns across Meta Ads, Google Ads, and analytics attribution models."
+        },
+        {
+          "icon": "bx bx-lock-alt",
+          "text": "Established cybersecurity hygiene, identity governance, and role-based access control (RBAC) security frameworks across internal and client platforms."
+        }
+      ],
+      "technologies": [
+        "Venture Leadership",
+        "Full-Stack Architecture",
+        "Cybersecurity Engineering",
+        "Performance Marketing",
+        "RBAC & Cloud Systems"
       ]
     },
     {
@@ -23,11 +43,28 @@
       "companyIcon": "bx bx-laptop",
       "period": "2023 – Aug 2025",
       "status": "Commercial Practice",
-      "badgeStyle": "",
+      "badgeStyle": "background: rgba(99, 102, 241, 0.1); color: var(--accent); border-color: rgba(99, 102, 241, 0.25);",
+      "description": "Delivered custom web applications, responsive websites, and digital marketing setups for commercial and retail clients, prioritizing data integrity and conversion performance.",
       "bullets": [
-        "Delivered custom web applications, responsive websites, and digital marketing setups for commercial and retail clients.",
-        "Engineered secure commercial order management software with anti-enumeration database controls for catering operations.",
-        "Conducted website performance optimization audits, Core Web Vitals remediation, and technical SEO architecture."
+        {
+          "icon": "bx bx-check-shield",
+          "text": "Delivered custom web applications, responsive websites, and digital marketing setups for commercial and retail clients."
+        },
+        {
+          "icon": "bx bx-server",
+          "text": "Engineered secure commercial order management software with anti-enumeration database controls for catering operations."
+        },
+        {
+          "icon": "bx bx-trending-up",
+          "text": "Conducted website performance optimization audits, Core Web Vitals remediation, and technical SEO architecture."
+        }
+      ],
+      "technologies": [
+        "Commercial Web Apps",
+        "JavaScript ES6+",
+        "Data Integrity",
+        "Anti-Enumeration",
+        "Technical SEO"
       ]
     }
   ]

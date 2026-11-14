@@ -264,12 +264,16 @@
                 if (Array.isArray(exp.bullets) && exp.bullets.length > 0) {
                     const bulletsDiv = el('div', { className: 'experience__bullets' });
                     exp.bullets.forEach(b => {
-                        bulletsDiv.appendChild(
-                            el('div', { className: 'experience__bullet-item' },
-                                icon(b.icon || 'bx bx-check-shield'),
-                                el('span', {}, b.text)
-                            )
-                        );
+                        const bulletText = typeof b === 'string' ? b : (b && b.text ? b.text : '');
+                        const bulletIcon = (typeof b === 'object' && b && b.icon) ? b.icon : 'bx bx-check-shield';
+                        if (bulletText) {
+                            bulletsDiv.appendChild(
+                                el('div', { className: 'experience__bullet-item' },
+                                    icon(bulletIcon),
+                                    el('span', {}, bulletText)
+                                )
+                            );
+                        }
                     });
                     card.appendChild(bulletsDiv);
                 }
