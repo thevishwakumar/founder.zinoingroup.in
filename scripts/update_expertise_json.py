@@ -74,3 +74,4 @@ with open('founder.zinoingroup.in/data/expertise.json', 'w', encoding='utf-8') a
     json.dump(expertise_data, f, indent=2)
 
 print("Updated data/expertise.json with 36 categorized skills!")
+

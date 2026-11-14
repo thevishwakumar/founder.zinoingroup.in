@@ -418,3 +418,4 @@ with open('founder.zinoingroup.in/data/certifications.json', 'w', encoding='utf-
     json.dump(cert_data, f, indent=2)
 
 print(f"Updated data/certifications.json with {len(raw_certs)} verified certificates!")
+

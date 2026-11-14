@@ -15,3 +15,4 @@ if certs_sec:
         org_str = org.group(1).strip() if org else ""
         date_str = date.group(1).strip() if date else ""
         print(f"{i:2d}. {title_str} | {org_str} | {date_str}")
+

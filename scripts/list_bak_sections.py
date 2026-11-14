@@ -10,3 +10,4 @@ for sec_id, content in sections:
     # Print h2 or h3
     h = re.findall(r'<h[23][^>]*>([^<]+)</h[23]>', content)
     print("  Headings:", h[:8])
+

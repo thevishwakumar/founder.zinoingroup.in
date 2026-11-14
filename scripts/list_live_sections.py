@@ -8,3 +8,4 @@ for sec_id, content in sections:
     print(f"Section ID: #{sec_id} ({len(content)} chars)")
     h = re.findall(r'<h[23][^>]*>([^<]+)</h[23]>', content)
     print("  Headings:", h[:8])
+

@@ -38,3 +38,4 @@ for i, p in enumerate(proj_cards, 1):
     t = re.search(r'<h[234][^>]*>([^<]+)</h[234]>', p)
     desc = re.search(r'<p[^>]*>([^<]+)</p>', p)
     print(f"{i}. Title: {t.group(1) if t else 'N/A'} | Desc: {desc.group(1) if desc else 'N/A'}")
+

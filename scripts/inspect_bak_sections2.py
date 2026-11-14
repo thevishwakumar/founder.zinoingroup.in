@@ -24,3 +24,4 @@ if not works_sec:
 if works_sec:
     print("\n--- Work/Projects Section Snippet in index.html.bak ---")
     print(works_sec.group(1)[:1500])
+

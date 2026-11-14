@@ -121,3 +121,4 @@ with open('founder.zinoingroup.in/index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
 print("index.html static fallbacks successfully synchronized!")
+
