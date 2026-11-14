@@ -221,3 +221,4 @@ location = /assets/docs/Vishwa_K_Resume.pdf {
 - [ ] 5. Test download behavior in Chrome DevTools (verify 200 OK and correct MIME type `application/pdf`).
 - [ ] 6. Test on mobile viewports (ensure button wraps responsively).
 - [ ] 7. Commit changes to Git and await owner deployment sign-off.
+

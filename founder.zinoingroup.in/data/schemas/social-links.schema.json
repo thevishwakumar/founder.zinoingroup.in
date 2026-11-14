@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SocialLinksContentSchema",
+  "description": "Schema for social and professional profile links",
+  "type": "object",
+  "required": ["links"],
+  "properties": {
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["platform", "label", "url", "icon"],
+        "properties": {
+          "platform": { "type": "string" },
+          "label": { "type": "string" },
+          "handle": { "type": "string" },
+          "displayValue": { "type": "string" },
+          "url": { "type": "string" },
+          "icon": { "type": "string" },
+          "ctaText": { "type": "string" },
+          "isPrimary": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

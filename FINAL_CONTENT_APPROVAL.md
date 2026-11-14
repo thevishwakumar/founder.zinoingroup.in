@@ -54,7 +54,7 @@
 ## 4. Education & Academic Details Verification (Candidate Review)
 
 > [!CAUTION]
-> **STRICT RULE ON ACADEMIC LABELS:** All transient labels (e.g. *"second-year student"*, *"2nd year"*) have been completely purged from the staged code to prevent obsolescence.
+> **STRICT RULE ON ACADEMIC LABELS:** All transient labels (e.g. *"second-year student"*, *"3rd Year"*) have been completely purged from the staged code to prevent obsolescence.
 
 | Academic Parameter | Candidate Value on Staged Website | Primary Source Evidence | Verification Status | Owner Sign-Off |
 | :--- | :--- | :--- | :---: | :---: |
@@ -110,3 +110,4 @@ Please review each section above. To authorize production deployment, check the 
 
 **Owner Signature:** ___________________________  
 **Date:** ___________________________
+

@@ -1,0 +1,34 @@
+{
+  "$schema": "./schemas/experience.schema.json",
+  "experiences": [
+    {
+      "id": "zinoin-founder-ceo",
+      "role": "Founder & CEO",
+      "company": "Zinoin Group",
+      "companyIcon": "bx bx-building-house",
+      "period": "Aug 2025 – Present",
+      "status": "Active Enterprise",
+      "badgeStyle": "background: rgba(14, 165, 233, 0.15); color: var(--accent);",
+      "bullets": [
+        "Founded and established Zinoin Group in August 2025 as Founder & CEO, leading corporate strategy, digital infrastructure, and client software delivery.",
+        "Architected and engineered enterprise full-stack platforms including DocuMind AI (RAG knowledge platform) and commercial order management systems.",
+        "Designed and managed performance digital marketing campaigns across Meta Ads, Google Ads, and analytics attribution models.",
+        "Established cybersecurity hygiene, identity governance, and role-based access control (RBAC) security frameworks across internal and client platforms."
+      ]
+    },
+    {
+      "id": "freelance-developer-consultant",
+      "role": "Freelance Web Developer & Digital Consultant",
+      "company": "Independent Practice",
+      "companyIcon": "bx bx-laptop",
+      "period": "2023 – Aug 2025",
+      "status": "Commercial Practice",
+      "badgeStyle": "",
+      "bullets": [
+        "Delivered custom web applications, responsive websites, and digital marketing setups for commercial and retail clients.",
+        "Engineered secure commercial order management software with anti-enumeration database controls for catering operations.",
+        "Conducted website performance optimization audits, Core Web Vitals remediation, and technical SEO architecture."
+      ]
+    }
+  ]
+}

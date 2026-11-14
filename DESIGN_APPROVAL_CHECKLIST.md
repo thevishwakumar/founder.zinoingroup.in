@@ -66,3 +66,4 @@
 * **Touch Targets:** All interactive links and buttons have touch areas $\ge 48 \times 48\text{ px}$.
 * **Mobile Drawer:** Smooth slide-down menu with backdrop blur, full-width overlay, accessible close icon, and automatic dismissal on link click.
 * **Horizontal Overflow:** Strictly $0\text{ px}$ across all device widths.
+

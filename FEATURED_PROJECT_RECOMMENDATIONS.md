@@ -149,3 +149,4 @@ Before any code edits are applied to `index.html`:
   Confirm whether technical project cards should include a direct "View on GitHub" button linking directly to the respective repository.
 - [ ] **Decision 4: CampusBridge Repository Status**  
   Confirm whether `CampusBridge / SkillTrack` is a private proprietary repository or will be published to GitHub under `thevishwakumar`.
+

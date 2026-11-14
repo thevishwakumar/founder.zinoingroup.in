@@ -1,0 +1,51 @@
+{
+  "$schema": "./schemas/profile.schema.json",
+  "name": "Vishwa Kumar",
+  "alternateName": "Vishwa K",
+  "handle": "thevishwakumar",
+  "role": "Founder & CEO",
+  "organization": "Zinoin Group (Est. Aug 2025)",
+  "location": "Tamil Nadu, India",
+  "badgeText": "Founder & CEO at Zinoin Group (Est. Aug 2025)",
+  "headlinePrefix": "Founder & CEO.",
+  "typingTitles": [
+    "Founder & CEO.",
+    "Technology Entrepreneur.",
+    "Full-Stack Developer.",
+    "Cybersecurity Explorer."
+  ],
+  "description": "Founder & CEO at Zinoin Group (established August 2025). Building enterprise software solutions, performance marketing funnels, and exploring cybersecurity engineering.",
+  "about": {
+    "subtitle": "Technology · Entrepreneurship · Cybersecurity · Marketing",
+    "paragraphs": [
+      "I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in August 2025. My core focus spans cybersecurity engineering, full-stack software development, performance digital marketing, and venture building.",
+      "My journey combines commercial strategic thinking with hands-on technical architecture. From building enterprise AI retrieval systems like DocuMind to delivering production e-commerce platforms and multi-channel marketing campaigns, I engineer practical solutions that bridge technology and business growth.",
+      "Currently pursuing my engineering degree in Cyber Security at Sri Sai Ranganathan Engineering College, Coimbatore, I combine rigorous computer science fundamentals with real-world venture operations.",
+      "I believe in building scalable digital infrastructure, maintaining defensive security hygiene, and delivering measurable commercial impact."
+    ],
+    "badges": [
+      {
+        "icon": "bx bx-briefcase-alt-2",
+        "label": "Role",
+        "value": "Founder & CEO"
+      },
+      {
+        "icon": "bx bx-building-house",
+        "label": "Organization",
+        "value": "Zinoin Group (Est. Aug 2025)"
+      },
+      {
+        "icon": "bx bx-map-pin",
+        "label": "Location",
+        "value": "Tamil Nadu, India"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let's Connect",
+    "subheading": "Let's build together",
+    "description": "I'm always interested in connecting with people, exploring meaningful opportunities, discussing technology, and collaborating on innovative ideas.",
+    "email": "thevishwaofficial@gmail.com",
+    "website": "founder.zinoingroup.in"
+  }
+}

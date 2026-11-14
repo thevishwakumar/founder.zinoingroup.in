@@ -1,0 +1,6 @@
+# Backup Archives
+*.zip
+
+# Logs
+*.log
+.system_generated/

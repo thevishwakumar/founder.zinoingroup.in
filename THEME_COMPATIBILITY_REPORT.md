@@ -82,3 +82,4 @@ Mathematically verified against WCAG 2.1 / 2.2 AA standards:
 2. **Restrained Gradients:** No jarring multi-color rainbow gradients. Gradients are strictly limited to the brand's primary-to-cyan accent underline bar (`linear-gradient(90deg, var(--primary), var(--accent-cyan))`) and a very faint radial ambient glow (`rgba(59,130,246,0.04)`).
 3. **Zero FOUC:** The synchronous `<head>` script executes in **0.1ms** prior to initial paint, eliminating white-to-dark flashes during page load.
 4. **Smooth Cubic-Bezier Transitions:** Theme changes transition in `0.25s` using `cubic-bezier(0.4, 0, 0.2, 1)`, providing an elegant, smooth visual shift.
+

@@ -91,3 +91,4 @@ To elevate the simulated mobile lab score from 70 to 90+:
    Downloading Boxicons WOFF2 locally eliminates the round-trip DNS resolution to `cdn.jsdelivr.net`, saving ~150ms of lab network time.
 2. **Add `fetchpriority="high"` on Above-The-Fold Assets:**  
    Tagging the header logo with `fetchpriority="high"` instructs the browser to prioritize the emblem ahead of background fonts.
+

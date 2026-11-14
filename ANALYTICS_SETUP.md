@@ -94,3 +94,4 @@ The website includes Google Tag Manager with container ID `GTM-N4T5ZSJJ`.
    * Click on the Zinoin Group project card -> Verify `project_click` fires with `project_name: "Zinoin Group"`.
    * Click into the name field on the contact form -> Verify `contact_form_interaction` fires with `action: "form_start"`.
 4. In Google Analytics 4, open **Realtime Overview** to verify live event streams.
+

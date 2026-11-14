@@ -10,7 +10,7 @@
 
 > [!IMPORTANT]
 > **ACCURACY & INTEGRITY NOTICE**
-> - **Degree Status:** Currently pursuing (B.E. 2024–2028, 2nd Year). The degree is **not** presented as completed.
+> - **Degree Status:** Currently pursuing (B.E. 2024–2028, 3rd Year). The degree is **not** presented as completed.
 > - **Skills Differentiation:** Applied production skills (JavaScript, Python, Supabase, HTML/CSS) are strictly separated from foundational/academic skills (C, Java, Linux) and learning-level skills.
 > - **Project Classification:** Projects are clearly categorized into **Client Commercial Projects**, **AI / Full-Stack Applications**, **Deep Learning Research**, **Consumer Utilities**, and **Academic Proof Engines**. Zero metrics or client achievements have been fabricated.
 > - **Unverified Items:** Items awaiting credential URLs or registration IDs are explicitly marked as `[OWNER VERIFICATION REQUIRED]`.
@@ -44,7 +44,7 @@ Entrepreneurial technologist and developer with a strong foundation in cybersecu
 --------------------------------------------------------------------------------
 BACHELOR OF ENGINEERING (B.E.) — COMPUTER SCIENCE AND ENGINEERING (CYBER SECURITY)
 Sri Sai Ranganathan Engineering College | Coimbatore, Tamil Nadu, India
-Tenure: 2024 – 2028 (Currently Pursuing — 2nd Year)
+Tenure: 2024 – 2028 (Currently Pursuing — 3rd Year)
 Academic Standing: Cumulative GPA 8.5 / 10
 Core Coursework: Network Security Architectures, Operating Systems, Database Management Systems (DBMS), Cryptography & Information Security Fundamentals, Linux System Administration, Computer Networks, Object-Oriented Programming.
 

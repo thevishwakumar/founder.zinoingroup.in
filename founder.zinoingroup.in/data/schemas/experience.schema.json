@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExperienceContentSchema",
+  "description": "Schema for professional experience and founder timeline on founder.zinoingroup.in",
+  "type": "object",
+  "required": ["experiences"],
+  "properties": {
+    "experiences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "role", "company", "period"],
+        "properties": {
+          "id": { "type": "string" },
+          "role": { "type": "string" },
+          "company": { "type": "string" },
+          "companyIcon": { "type": "string" },
+          "period": { "type": "string" },
+          "status": { "type": "string" },
+          "badgeStyle": { "type": "string" },
+          "description": { "type": "string" },
+          "bullets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "icon": { "type": "string" },
+                "text": { "type": "string" }
+              }
+            }
+          },
+          "technologies": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

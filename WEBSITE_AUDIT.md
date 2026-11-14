@@ -116,7 +116,7 @@ founder.zinoingroup.in/
 ### 3.4 Education Section
 * **Current Content:**
   * Item 1: `B.E Cyber Security`, `Sri Sai Ranganathan Engineering College, Coimbatore`, `Currently Pursuing (Second Year)`
-  * Item 2: `Higher Secondary (2nd Year)`, `Krishnagiri District Model School, Krishnagiri`, `Completed with 72.83%`
+  * Item 2: `Higher Secondary (3rd Year)`, `Krishnagiri District Model School, Krishnagiri`, `Completed with 72.83%`
 * **Critique:**
   * Missing official degree title: *Bachelor of Engineering in Cyber Security Engineering*.
   * Missing official academic standing: *CGPA: 8.5 / 10*.

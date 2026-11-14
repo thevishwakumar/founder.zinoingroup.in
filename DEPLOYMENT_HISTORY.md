@@ -77,7 +77,7 @@
 ### Version 1.1.0 (Content Rebuild & Accuracy Alignment) — *November 2026*
 * **Changes:**
   - Replaced junior student copy with authoritative corporate founder voice: *"Founder & Developer at Zinoin Group"*.
-  - Corrected academic details: B.E. Cyber Security Engineering at Sri Sai Ranganathan Engineering College (2024–2028 | Currently Pursuing, 2nd Year | CGPA: 8.5 / 10).
+  - Corrected academic details: B.E. Cyber Security Engineering at Sri Sai Ranganathan Engineering College (2024–2028 | Currently Pursuing, 3rd Year | CGPA: 8.5 / 10).
   - Corrected Higher Secondary details: Krishnagiri District Model School (Completed 2024 | 72.83%).
   - Curated 40 redundant and duplicate certificates down to 8 verified high-value technical credentials.
 
@@ -90,3 +90,4 @@
   - 18 redundant or duplicate certificate entries.
   - Non-existent `apple-touch-icon.png` 404 error.
   - Outdated contact information and unoptimized image payloads.
+

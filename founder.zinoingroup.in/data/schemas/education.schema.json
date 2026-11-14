@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EducationContentSchema",
+  "description": "Schema for educational milestones on founder.zinoingroup.in",
+  "type": "object",
+  "required": ["education"],
+  "properties": {
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "degree", "institution"],
+        "properties": {
+          "id": { "type": "string" },
+          "degree": { "type": "string" },
+          "field": { "type": "string" },
+          "institution": { "type": "string" },
+          "location": { "type": "string" },
+          "period": { "type": "string" },
+          "badge": { "type": "string" },
+          "dateIcon": { "type": "string" },
+          "institutionIcon": { "type": "string" },
+          "fieldIcon": { "type": "string" },
+          "meta": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["label", "value"],
+              "properties": {
+                "label": { "type": "string" },
+                "value": { "type": "string" },
+                "isHighlight": { "type": "boolean" },
+                "statusIcon": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

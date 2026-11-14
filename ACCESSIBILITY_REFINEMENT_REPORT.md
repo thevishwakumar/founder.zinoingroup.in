@@ -139,3 +139,4 @@ When the user's OS preference is set to `Reduce Motion`:
 - **Audit Result:** **100% PASS**
 - **WCAG Level:** **WCAG 2.2 AA / AAA Compliant**
 - **Automated Score:** **100 / 100 on Google Lighthouse Accessibility Audit**
+

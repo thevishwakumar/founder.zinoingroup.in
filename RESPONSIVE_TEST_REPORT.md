@@ -114,3 +114,4 @@ A comprehensive responsive design and cross-browser evaluation was conducted on 
 ### Documented Browser Considerations & Minor Limitations
 1. **Backdrop Filter Support on Older WebKit:** Older versions of iOS Safari (< iOS 13) do not render CSS `backdrop-filter`. The stylesheet provides an opaque background fallback (`background: rgba(11, 17, 32, 0.95)`) so text remains perfectly legible even without blur support.
 2. **Scrollbar Gutter:** Firefox on Linux/Windows can introduce subtle layout shifts when a scrollbar appears. Adding `scrollbar-gutter: stable` to `html` in future iterations will ensure identical page width across all operating systems.
+

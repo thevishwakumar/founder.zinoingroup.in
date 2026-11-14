@@ -139,3 +139,4 @@ All 5 images rendered on the site were audited for programmatic alt descriptions
    Add dynamic `aria-expanded="true"` / `aria-expanded="false"` toggle on `.nav__toggle` button via JavaScript when the mobile menu is opened/closed.
 2. **Phone Input Mode (P3):**  
    Add `inputmode="tel"` to `#contact-phone` to trigger the numerical dialpad on mobile devices.
+

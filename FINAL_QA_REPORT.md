@@ -45,7 +45,7 @@ Every identified item from initial audits through automated QA has been categori
 | **Academic Status** | Currently pursuing | Explicitly declared: `Currently pursuing · 2024–2028`. | ✅ PASS |
 | **Higher Secondary** | Krishnagiri District Model School | Verified with accurate score: `72.83%`. | ✅ PASS |
 | **Outdated Bangalore Address** | Must be completely removed | Zero occurrences of "Bangalore" or "Bengaluru" in the codebase. | ✅ PURGED |
-| **Outdated "2nd Year" Claim** | Must be completely removed | Zero occurrences of "second-year" or "2nd year". | ✅ PURGED |
+| **Outdated "3rd Year" Claim** | Must be completely removed | Zero occurrences of "second-year" or "3rd Year". | ✅ PURGED |
 | **Duplicate Certifications** | Remove duplicate credentials | Reduced from 12+ redundant entries to 9 distinct verified credentials. | ✅ PURGED |
 | **Fabricated Achievements** | Zero unsupported claims | All metrics, project scopes, and certs verified against source evidence. | ✅ PASS |
 | **Project Statuses** | Accurate representation | Zinoin Group (Active), CampusBridge / SkillTrack (Architecture & Engine), TNT Tamil Calendar (Application UI). | ✅ PASS |

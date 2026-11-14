@@ -116,7 +116,7 @@
 * **Card 1: Undergraduate Degree**  
   - *Title:* Bachelor of Engineering in Cyber Security Engineering  
   - *Institution:* Sri Sai Ranganathan Engineering College, Coimbatore, Tamil Nadu  
-  - *Tenure:* 2024 – 2028 | Status: Currently Pursuing (2nd Year)  
+  - *Tenure:* 2024 – 2028 | Status: Currently Pursuing (3rd Year)  
   - *Academic Standing:* **CGPA: 8.5 / 10**  
   - *Focus:* Defensive Security, Cryptography, OS Internals, Computer Networks, Database Systems.
 * **Card 2: Higher Secondary Education**  
@@ -158,3 +158,4 @@
   - Submission endpoint: Web3Forms with Honeypot anti-spam protection
 * **Footer:**  
   *© 2026 Vishwa K. All rights reserved. Founder & Developer at Zinoin Group.*
+

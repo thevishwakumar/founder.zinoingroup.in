@@ -64,7 +64,7 @@ In strict adherence to the project instructions:
 | **Location** | `Coimbatore, Tamil Nadu, India` | `OWNER INPUT REQUIRED` | Institutional location | Verify location on LinkedIn is set to Coimbatore, Tamil Nadu. | ⏳ Candidate — Awaiting Owner Sign-Off |
 | **Duration** | `2024 – 2028` | `OWNER INPUT REQUIRED` | Candidate specification | Ensure dates on LinkedIn are **2024 – 2028**. Do not show past dates (e.g. 2022–2026). | ⏳ Candidate — Awaiting Owner Sign-Off |
 | **Academic Standing (CGPA)** | `CGPA: 8.5 / 10` | `OWNER INPUT REQUIRED` | Candidate specification | Add "Grade: 8.5 / 10 CGPA" to the LinkedIn education entry. | ⏳ Candidate — Awaiting Owner Sign-Off |
-| **Status / Year Label** | `Currently pursuing · 2024–2028` *(Zero outdated "2nd year" claims)* | `OWNER INPUT REQUIRED` | Strict prompt rule | Check LinkedIn intro to ensure no outdated phrases like *"Second Year Student"* remain. | ⏳ Candidate — Awaiting Owner Sign-Off |
+| **Status / Year Label** | `Currently pursuing · 2024–2028` *(Zero outdated "3rd Year" claims)* | `OWNER INPUT REQUIRED` | Strict prompt rule | Check LinkedIn intro to ensure no outdated phrases like *"Second Year Student"* remain. | ⏳ Candidate — Awaiting Owner Sign-Off |
 | **Secondary School** | `Krishnagiri District Model School` | `OWNER INPUT REQUIRED` | Candidate specification | Add or verify Class 12 / HSC entry on LinkedIn: Krishnagiri District Model School (Score: 72.83%). | ⏳ Candidate — Awaiting Owner Sign-Off |
 
 ---
@@ -153,3 +153,4 @@ In strict adherence to the project instructions:
   9. Cross-Profile Links                 ✅ WEBSITE FULLY CONVERGED
 ===================================================================
 ```
+

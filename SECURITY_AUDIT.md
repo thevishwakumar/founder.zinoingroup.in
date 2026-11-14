@@ -130,3 +130,4 @@ A comprehensive security and technical health audit was performed on the persona
   - Insecure `http://` calls: **0**
   - All font links, CDN assets, Open Graph URLs, and Schema.org context URIs use explicit `https://`.
 * **Severity:** **None (100% Secure HTTPS)**
+

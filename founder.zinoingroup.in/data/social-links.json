@@ -1,0 +1,55 @@
+{
+  "$schema": "./schemas/social-links.schema.json",
+  "links": [
+    {
+      "platform": "linkedin",
+      "label": "LinkedIn",
+      "handle": "thevishwakumar",
+      "displayValue": "linkedin.com/in/thevishwakumar",
+      "url": "https://www.linkedin.com/in/thevishwakumar",
+      "icon": "bx bxl-linkedin",
+      "ctaText": "Connect on LinkedIn",
+      "isPrimary": true
+    },
+    {
+      "platform": "github",
+      "label": "GitHub",
+      "handle": "thevishwakumar",
+      "displayValue": "github.com/thevishwakumar",
+      "url": "https://github.com/thevishwakumar",
+      "icon": "bx bxl-github",
+      "ctaText": "Explore on GitHub",
+      "isPrimary": true
+    },
+    {
+      "platform": "email",
+      "label": "Email",
+      "handle": "thevishwaofficial",
+      "displayValue": "thevishwaofficial@gmail.com",
+      "url": "mailto:thevishwaofficial@gmail.com",
+      "icon": "bx bx-envelope",
+      "ctaText": "Send Direct Email",
+      "isPrimary": true
+    },
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "handle": "@thevishwakumar",
+      "displayValue": "@thevishwakumar",
+      "url": "https://www.instagram.com/thevishwakumar/",
+      "icon": "bx bxl-instagram",
+      "ctaText": "Follow on Instagram",
+      "isPrimary": true
+    },
+    {
+      "platform": "website",
+      "label": "Website",
+      "handle": "founder.zinoingroup.in",
+      "displayValue": "founder.zinoingroup.in",
+      "url": "https://founder.zinoingroup.in/",
+      "icon": "bx bx-globe",
+      "ctaText": "Visit Founder Website",
+      "isPrimary": false
+    }
+  ]
+}

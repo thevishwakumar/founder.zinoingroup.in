@@ -43,7 +43,7 @@ A granular comparison between the existing website (`founder.zinoingroup.in/inde
 | **Academic Performance (CGPA)** | **Completely Omitted** | **CGPA: 8.5 / 10** | The existing website fails to highlight the owner's strong academic performance (8.5/10). |
 | **Tenure & Status** | *"Currently Pursuing (Second Year)"* | *"2024 – 2028 \| Currently pursuing"* | The phrase *"Second Year"* is transient and degrades over time. Stating the 2024–2028 tenure provides permanent accuracy. |
 | **Institution Location** | *"Coimbatore"* (State omitted) | *"Coimbatore, Tamil Nadu"* | Formal state inclusion provides geographical clarity. |
-| **Secondary Education Title** | *"Higher Secondary (2nd Year)"* | *"Higher Secondary Education (HSC)"* | Confusing phrasing in existing site (*"2nd Year"* instead of Class 12 / HSC completion). |
+| **Secondary Education Title** | *"Higher Secondary (3rd Year)"* | *"Higher Secondary Education (HSC)"* | Confusing phrasing in existing site (*"3rd Year"* instead of Class 12 / HSC completion). |
 
 ---
 

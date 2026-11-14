@@ -1,0 +1,2846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N4T5ZSJJ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Immediate Theme Initialization (Zero-FOUC Prevention) -->
+    <script>
+        (function() {
+            try {
+                var stored = localStorage.getItem('theme-preference') || localStorage.getItem('theme');
+                var pref = (stored === 'dark' || stored === 'light' || stored === 'system') ? stored : 'system';
+                var isDark = pref === 'dark' || (pref === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme-preference', pref);
+            } catch (e) {}
+        })();
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwa K | Founder & Developer at Zinoin Group</title>
+
+    <!-- Technical SEO Meta Tags -->
+    <meta name="description" content="Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.">
+    <meta name="keywords" content="Vishwa K, Vishwa K Founder, Vishwa K Zinoin Group, Founder & Developer at Zinoin Group, Cybersecurity Engineering, Technology Entrepreneur, Zinoin Group Founder, Digital Innovation, Sri Sai Ranganathan Engineering College, CampusBridge, SkillTrack">
+    <meta name="author" content="Vishwa K">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://founder.zinoingroup.in/">
+
+    <!-- Open Graph Metadata (Facebook, LinkedIn, Slack, WhatsApp) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Vishwa K | Founder & Developer at Zinoin Group">
+    <meta property="og:description" content="Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.">
+    <meta property="og:url" content="https://founder.zinoingroup.in/">
+    <meta property="og:image" content="https://founder.zinoingroup.in/assets/img/about.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Vishwa K — Founder & Developer at Zinoin Group">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Vishwa K - Zinoin Group">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter/X Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vishwa K | Founder & Developer at Zinoin Group">
+    <meta name="twitter:description" content="Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.">
+    <meta name="twitter:image" content="https://founder.zinoingroup.in/assets/img/about.jpg">
+    <meta name="twitter:image:alt" content="Vishwa K — Founder & Developer at Zinoin Group">
+    <meta name="twitter:creator" content="@thevishwakumar">
+
+    <!-- Structured Data (JSON-LD: Person & WebSite Schemas) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://founder.zinoingroup.in/#website",
+          "url": "https://founder.zinoingroup.in/",
+          "name": "Vishwa K | Founder & Developer at Zinoin Group",
+          "description": "Discover Vishwa K, Founder & Developer at Zinoin Group, exploring technology, cybersecurity, digital innovation and entrepreneurship.",
+          "publisher": {
+            "@id": "https://founder.zinoingroup.in/#person"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://founder.zinoingroup.in/#person",
+          "name": "Vishwa K",
+          "url": "https://founder.zinoingroup.in/",
+          "image": "https://founder.zinoingroup.in/assets/img/about.jpg",
+          "jobTitle": "Founder & Developer at Zinoin Group",
+          "description": "Vishwa K is the Founder & Developer at Zinoin Group and a Technology Entrepreneur pursuing Cybersecurity Engineering at Sri Sai Ranganathan Engineering College.",
+          "disambiguatingDescription": "Vishwa K (Zinoin Group Founder and Technology Entrepreneur)",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Zinoin Group",
+            "url": "https://zinoingroup.in/"
+          },
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Sri Sai Ranganathan Engineering College",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Coimbatore",
+                "addressRegion": "Tamil Nadu",
+                "addressCountry": "India"
+              }
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Krishnagiri District Model School",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Krishnagiri",
+                "addressRegion": "Tamil Nadu",
+                "addressCountry": "India"
+              }
+            }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/thevishwakumar",
+            "https://github.com/thevishwakumar",
+            "https://www.instagram.com/thevishwakumar/"
+          ],
+          "knowsAbout": [
+            "Technology & Development",
+            "Cybersecurity Engineering",
+            "Technology Entrepreneurship",
+            "Digital Innovation",
+            "Digital Marketing",
+            "Entrepreneurship",
+            "Web Development"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/webp" href="assets/img/zinoin-logo.webp">
+    <link rel="icon" type="image/png" href="assets/img/zinoin-logo.png">
+    <link rel="apple-touch-icon" href="assets/img/zinoin-logo.png">
+
+    <!-- Fonts & Icons with font-display: swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+    <style>
+        /*===== CSS VARIABLES & DESIGN SYSTEM =====*/
+        :root {
+            --header-height: 4.25rem;
+            
+            /* Zinoin Group Corporate Brand Palette (Logo-Derived) */
+            --primary: #2563eb;
+            --primary-light: #3b82f6;
+            --primary-dark: #1d4ed8;
+            --primary-hover: #1e40af;
+            --primary-subtle: rgba(37, 99, 235, 0.08);
+            --primary-border: rgba(37, 99, 235, 0.22);
+            --secondary: #0f172a;
+            --accent: #6366f1;
+            --accent-cyan: #0284c7;
+            
+            /* Light Theme Surfaces & Text (Classic Clean Baseline) */
+            --bg-color: #ffffff;
+            --surface-color: #f8fafc;
+            --surface-subtle: #f1f5f9;
+            --card-bg: #ffffff;
+            --card-hover-bg: #ffffff;
+            --text-color: #0f172a;
+            --text-body: #334155;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --border-subtle: #f1f5f9;
+            --input-bg: #f8fafc;
+            --input-border: #cbd5e1;
+            --header-bg: rgba(255, 255, 255, 0.92);
+            
+            /* Elevation & Shadows */
+            --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.09), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+            --shadow-glow: 0 0 24px rgba(37, 99, 235, 0.22);
+
+            /* Typography */
+            --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            
+            --big-font-size: 2.25rem;
+            --h1-font-size: 1.85rem;
+            --h2-font-size: 1.45rem;
+            --h3-font-size: 1.15rem;
+            --normal-font-size: 0.95rem;
+            --small-font-size: 0.85rem;
+            --smaller-font-size: 0.75rem;
+
+            /* Radii */
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --radius-full: 9999px;
+            
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            --z-fixed: 100;
+        }
+
+        /* Fallback: when OS prefers dark and user has not set explicit light theme */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --primary: #3b82f6;
+                --primary-light: #60a5fa;
+                --primary-dark: #2563eb;
+                --primary-hover: #1d4ed8;
+                --primary-subtle: rgba(59, 130, 246, 0.12);
+                --primary-border: rgba(59, 130, 246, 0.32);
+                --accent-cyan: #38bdf8;
+                --bg-color: #090d16;
+                --surface-color: #0f172a;
+                --surface-subtle: #1e293b;
+                --card-bg: #111827;
+                --card-hover-bg: #151e30;
+                --text-color: #f8fafc;
+                --text-body: #cbd5e1;
+                --text-muted: #94a3b8;
+                --border-color: rgba(255, 255, 255, 0.09);
+                --border-subtle: rgba(255, 255, 255, 0.05);
+                --input-bg: #0f172a;
+                --input-border: #334155;
+                --header-bg: rgba(9, 13, 22, 0.92);
+                --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+                --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.45);
+                --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.55);
+                --shadow-glow: 0 0 28px rgba(59, 130, 246, 0.35);
+            }
+        }
+
+        /* Explicit Light Theme (Applied to :root or body) */
+        :root[data-theme="light"], body[data-theme="light"] {
+            --primary: #2563eb;
+            --primary-light: #3b82f6;
+            --primary-dark: #1d4ed8;
+            --primary-hover: #1e40af;
+            --primary-subtle: rgba(37, 99, 235, 0.08);
+            --primary-border: rgba(37, 99, 235, 0.22);
+            --accent-cyan: #0284c7;
+            --bg-color: #ffffff;
+            --surface-color: #f8fafc;
+            --surface-subtle: #f1f5f9;
+            --card-bg: #ffffff;
+            --card-hover-bg: #ffffff;
+            --text-color: #0f172a;
+            --text-body: #334155;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --border-subtle: #f1f5f9;
+            --input-bg: #f8fafc;
+            --input-border: #cbd5e1;
+            --header-bg: rgba(255, 255, 255, 0.92);
+            --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.09), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+            --shadow-glow: 0 0 24px rgba(37, 99, 235, 0.22);
+        }
+
+        /* Explicit Dark Theme (Applied to :root or body) */
+        :root[data-theme="dark"], body[data-theme="dark"] {
+            --primary: #3b82f6;
+            --primary-light: #60a5fa;
+            --primary-dark: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-subtle: rgba(59, 130, 246, 0.12);
+            --primary-border: rgba(59, 130, 246, 0.32);
+            --accent-cyan: #38bdf8;
+            --bg-color: #090d16;
+            --surface-color: #0f172a;
+            --surface-subtle: #1e293b;
+            --card-bg: #111827;
+            --card-hover-bg: #151e30;
+            --text-color: #f8fafc;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.09);
+            --border-subtle: rgba(255, 255, 255, 0.05);
+            --input-bg: #0f172a;
+            --input-border: #334155;
+            --header-bg: rgba(9, 13, 22, 0.92);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.45);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.55);
+            --shadow-glow: 0 0 28px rgba(59, 130, 246, 0.35);
+        }
+
+        @media screen and (min-width: 768px) {
+            :root {
+                --big-font-size: 3.25rem;
+                --h1-font-size: 2.35rem;
+                --h2-font-size: 1.75rem;
+                --h3-font-size: 1.25rem;
+                --normal-font-size: 1rem;
+                --small-font-size: 0.875rem;
+            }
+        }
+
+        /*===== BASE RESET =====*/
+        *, ::before, ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--header-height) + 1.25rem);
+        }
+
+        body {
+            margin: var(--header-height) 0 0 0;
+            font-family: var(--font-body);
+            font-size: var(--normal-font-size);
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.04) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(99, 102, 241, 0.03) 0px, transparent 50%);
+            background-attachment: fixed;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        [data-theme="dark"] body {
+            background-image: 
+                radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.07) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(99, 102, 241, 0.05) 0px, transparent 50%);
+        }
+
+        /* Skip to Main Content Link (Accessibility) */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1.25rem;
+            background: var(--primary);
+            color: #ffffff !important;
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            z-index: 1000;
+            transition: top 0.2s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+            outline: 3px solid #ffffff;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            color: var(--text-color);
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 3px;
+        }
+
+        /*===== LAYOUT CONTAINERS =====*/
+        .section {
+            padding: 5rem 0 3.5rem;
+        }
+
+        .section-title {
+            position: relative;
+            font-size: var(--h2-font-size);
+            color: var(--text-color);
+            margin-bottom: 2.75rem;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            width: 44px;
+            height: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: var(--radius-full);
+        }
+
+        .bd-grid {
+            max-width: 1140px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-column-gap: 2rem;
+            width: calc(100% - 2.5rem);
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .bd-grid {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        /*===== BUTTONS =====*/
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: var(--primary-dark);
+            color: #ffffff !important;
+            padding: 0.8rem 1.6rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-family: var(--font-body);
+            font-size: var(--small-font-size);
+            transition: var(--transition);
+            border: 1px solid transparent;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.28);
+            min-height: 44px;
+        }
+
+        .button:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .button--secondary {
+            background: transparent;
+            color: var(--text-color) !important;
+            border: 1px solid var(--border-color);
+            box-shadow: none;
+        }
+
+        .button--secondary:hover {
+            background: var(--surface-color);
+            border-color: var(--primary);
+            color: var(--primary) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /*===== HEADER & NAVIGATION =====*/
+        .l-header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: var(--z-fixed);
+            background-color: var(--header-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .l-header.scroll-header {
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav {
+            height: var(--header-height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav__logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            min-height: 44px;
+        }
+
+        .nav__logo-img {
+            width: 32px;
+            height: 36px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+        }
+
+        .nav__logo-text {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+            color: var(--text-color);
+        }
+
+        .nav__logo-badge {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: var(--radius-full);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid var(--primary-border);
+        }
+
+        @media screen and (max-width: 991px) {
+            .nav__menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 82%;
+                max-width: 360px;
+                height: 100vh;
+                padding: 3rem 1.75rem 2rem;
+                background-color: var(--card-bg);
+                transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -4px 0 24px rgba(0, 0, 0, 0.2);
+                z-index: 105;
+                overflow-y: auto;
+            }
+
+            .nav__menu.show {
+                right: 0;
+            }
+
+            .nav__item {
+                margin-bottom: 1.25rem;
+            }
+
+            .nav__link {
+                font-size: 1.05rem;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                min-height: 44px;
+            }
+
+            .nav__toggle-close {
+                position: absolute;
+                top: 1.25rem;
+                right: 1.25rem;
+                font-size: 1.75rem;
+                color: var(--text-color);
+                cursor: pointer;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .nav__list {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__link {
+            position: relative;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: var(--small-font-size);
+            transition: var(--transition);
+        }
+
+        .nav__link:hover, .nav__link.active {
+            color: var(--primary);
+        }
+
+        @media screen and (min-width: 992px) {
+            .nav__list {
+                gap: 1.85rem;
+            }
+
+            .nav__toggle, .nav__toggle-close {
+                display: none;
+            }
+
+            .nav__link.active::after {
+                content: "";
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: var(--primary);
+                border-radius: var(--radius-full);
+            }
+        }
+
+        /*===== THEME SWITCHER COMPONENT =====*/
+        .theme-dropdown-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-md);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .theme-toggle:hover, .theme-toggle:focus-visible {
+            color: var(--primary);
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .theme-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 6px;
+            min-width: 150px;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.2s;
+            z-index: 200;
+        }
+
+        .theme-dropdown-menu.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .theme-menu-item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            padding: 8px 10px;
+            border: none;
+            background: transparent;
+            color: var(--text-color);
+            font-family: var(--font-body);
+            font-size: var(--small-font-size);
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            text-align: left;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+
+        .theme-menu-item:hover, .theme-menu-item:focus-visible {
+            background: var(--surface-color);
+            color: var(--primary);
+            outline: none;
+        }
+
+        .theme-menu-item.active {
+            color: var(--primary);
+            font-weight: 600;
+            background: var(--primary-subtle);
+        }
+
+        .theme-menu-item i:first-child {
+            font-size: 1.15rem;
+        }
+
+        .theme-item-text {
+            flex: 1;
+        }
+
+        .theme-item-check {
+            font-size: 1.1rem;
+            color: var(--primary);
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+
+        .theme-menu-item.active .theme-item-check {
+            opacity: 1;
+        }
+
+        /* Mobile Drawer Theme Control */
+        .nav__mobile-theme {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            display: block;
+        }
+
+        @media screen and (min-width: 992px) {
+            .nav__mobile-theme {
+                display: none;
+            }
+        }
+
+        .nav__mobile-theme-title {
+            display: block;
+            font-size: var(--smaller-font-size);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .theme-segmented-control {
+            display: flex;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 3px;
+            gap: 2px;
+        }
+
+        .theme-segment-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+            padding: 8px 4px;
+            font-family: var(--font-body);
+            font-size: var(--smaller-font-size);
+            font-weight: 600;
+            color: var(--text-muted);
+            background: transparent;
+            border: none;
+            border-radius: calc(var(--radius-md) - 2px);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .theme-segment-btn:hover {
+            color: var(--text-color);
+        }
+
+        .theme-segment-btn.active {
+            background: var(--card-bg);
+            color: var(--primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav__toggle {
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-md);
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s ease;
+            z-index: 101;
+        }
+
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /*===== HERO SECTION =====*/
+        .home {
+            min-height: calc(100vh - var(--header-height));
+            display: flex;
+            align-items: center;
+            padding: 3.5rem 0 2.5rem;
+            position: relative;
+        }
+
+        .home__data {
+            max-width: 800px;
+        }
+
+        .home__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--primary-subtle);
+            border: 1px solid var(--primary-border);
+            color: var(--primary);
+            padding: 0.4rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: var(--small-font-size);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 8px rgba(59, 130, 246, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+
+        .home__name {
+            font-size: var(--big-font-size);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.4rem;
+            color: var(--text-color);
+        }
+
+        .home__headline {
+            font-size: var(--h1-font-size);
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 1.25rem;
+            line-height: 1.3;
+        }
+
+        .typing-container {
+            display: inline-block;
+            color: var(--primary);
+            border-right: 3px solid var(--primary);
+            animation: blink-caret 0.75s step-end infinite;
+            padding-right: 4px;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: var(--primary); }
+        }
+
+        .home__description {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 2.25rem;
+            max-width: 680px;
+            line-height: 1.7;
+        }
+
+        .home__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .home__social {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .home__social-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .home__social-icon:hover {
+            color: #ffffff;
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.25);
+        }
+
+        /*===== ABOUT SECTION =====*/
+        .about__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.75rem;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 860px) {
+            .about__container {
+                grid-template-columns: 0.9fr 1.1fr;
+                gap: 3.5rem;
+            }
+        }
+
+        .about__img-wrapper {
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .about__img-wrapper::before {
+            content: "";
+            position: absolute;
+            inset: -10px;
+            border-radius: var(--radius-lg);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(99, 102, 241, 0.08));
+            z-index: 0;
+            filter: blur(6px);
+        }
+
+        .about__img {
+            position: relative;
+            z-index: 1;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+
+        .about__subtitle {
+            font-size: var(--h3-font-size);
+            color: var(--primary);
+            margin-bottom: 1.15rem;
+            font-weight: 700;
+        }
+
+        .about__text {
+            color: var(--text-muted);
+            margin-bottom: 1.15rem;
+            font-size: var(--normal-font-size);
+            line-height: 1.75;
+        }
+
+        .about__badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.85rem;
+            margin-top: 1.75rem;
+        }
+
+        .about__badge-item {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 0.85rem 1rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .about__badge-item i {
+            font-size: 1.35rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .about__badge-label {
+            font-size: var(--smaller-font-size);
+            color: var(--text-muted);
+            display: block;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .about__badge-val {
+            font-size: var(--small-font-size);
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        /*===== EXPERTISE SECTION =====*/
+        .expertise__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media screen and (min-width: 640px) {
+            .expertise__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .expertise__grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .expertise__card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.5rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .expertise__card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .expertise__icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            background: var(--primary-subtle);
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            transition: var(--transition);
+            border: 1px solid var(--primary-border);
+        }
+
+        .expertise__card:hover .expertise__icon {
+            background: var(--primary);
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .expertise__card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 1.15rem;
+            color: var(--text-color);
+        }
+
+        .expertise__list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+
+        .expertise__item {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            font-size: var(--small-font-size);
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .expertise__item i {
+            color: var(--primary);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        /*===== EDUCATION SECTION =====*/
+        .education__container {
+            max-width: 820px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .education__card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .education__card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .education__card-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .education__badge {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: var(--smaller-font-size);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid var(--primary-border);
+        }
+
+        .education__date {
+            font-size: var(--small-font-size);
+            color: var(--text-muted);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .education__title {
+            font-size: var(--h3-font-size);
+            margin-bottom: 0.35rem;
+            color: var(--text-color);
+        }
+
+        .education__institution {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: var(--normal-font-size);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .education__location {
+            color: var(--text-muted);
+            font-size: var(--small-font-size);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .education__meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .education__meta-item {
+            font-size: var(--small-font-size);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .education__status {
+            color: #10b981;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        /*===== CERTIFICATIONS SECTION =====*/
+        .certifications__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        @media screen and (min-width: 640px) {
+            .certifications__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            .certifications__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .certificate__card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .certificate__card:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .certificate__org-badge {
+            font-size: var(--smaller-font-size);
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .certificate__card-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            color: var(--text-color);
+        }
+
+        .certificate__footer {
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border-subtle);
+            font-size: var(--smaller-font-size);
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .certificate__status-verified {
+            color: #10b981;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .certificate__link {
+            color: var(--primary);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            transition: var(--transition);
+        }
+
+        .certificate__link:hover {
+            text-decoration: underline;
+        }
+
+        /*===== PROJECTS & VENTURES SECTION =====*/
+        .projects__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            .projects__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .projects__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .project__card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project__card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project__img-wrapper {
+            position: relative;
+            width: 100%;
+            height: 210px;
+            overflow: hidden;
+            background: var(--surface-color);
+        }
+
+        .project__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .project__card:hover .project__img {
+            transform: scale(1.04);
+        }
+
+        .project__badge-overlay {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #ffffff;
+            font-size: var(--smaller-font-size);
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            letter-spacing: 0.05em;
+        }
+
+        .project__content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project__title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--text-color);
+        }
+
+        .project__tagline {
+            color: var(--primary);
+            font-size: var(--small-font-size);
+            font-weight: 600;
+            margin-bottom: 0.85rem;
+        }
+
+        .project__desc {
+            font-size: var(--small-font-size);
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .project__tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: auto;
+        }
+
+        .tech-pill {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: var(--smaller-font-size);
+            font-weight: 600;
+            padding: 3px 9px;
+            border-radius: var(--radius-sm);
+        }
+
+        .project__actions {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .button--small {
+            padding: 0.45rem 0.9rem;
+            font-size: var(--smaller-font-size);
+            border-radius: var(--radius-sm);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-weight: 600;
+        }
+
+        /*===== CONTACT SECTION =====*/
+        .contact__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        @media screen and (min-width: 860px) {
+            .contact__container {
+                grid-template-columns: 0.9fr 1.1fr;
+                gap: 3.5rem;
+            }
+        }
+
+        .contact__info-title {
+            font-size: var(--h2-font-size);
+            margin-bottom: 1rem;
+        }
+
+        .contact__info-desc {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .contact__links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact__link-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.85rem 1.15rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+            min-height: 48px;
+        }
+
+        .contact__link-item:hover {
+            border-color: var(--primary);
+            transform: translateX(4px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact__link-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-md);
+            background: var(--primary-subtle);
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            flex-shrink: 0;
+            border: 1px solid var(--primary-border);
+        }
+
+        .contact__link-label {
+            font-size: var(--smaller-font-size);
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 600;
+            display: block;
+        }
+
+        .contact__link-value {
+            font-size: var(--normal-font-size);
+            font-weight: 600;
+            color: var(--text-color);
+            word-break: break-all;
+        }
+
+        .contact__form-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2.25rem 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact__form-card h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .contact__input-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .contact__input-label {
+            display: block;
+            font-size: var(--small-font-size);
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 0.4rem;
+        }
+
+        .contact__input {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            background: var(--surface-color);
+            color: var(--text-color);
+            font-family: var(--font-body);
+            font-size: var(--normal-font-size);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .contact__input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+            background: var(--card-bg);
+        }
+
+        .contact__button {
+            width: 100%;
+            padding: 0.95rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .contact__result {
+            margin-top: 1rem;
+            padding: 0.85rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: var(--small-font-size);
+            display: none;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .contact__result.success {
+            display: block;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #10b981;
+        }
+
+        .contact__result.error {
+            display: block;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+
+        /*===== FOOTER =====*/
+        .footer {
+            background-color: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            padding: 3.5rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            .footer__container {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+
+        .footer__title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .footer__tagline {
+            font-size: var(--small-font-size);
+            color: var(--text-muted);
+        }
+
+        .footer__social {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .footer__icon {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-md);
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .footer__icon:hover {
+            color: #ffffff;
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .footer__nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .footer__nav-link {
+            font-size: var(--small-font-size);
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .footer__nav-link:hover {
+            color: var(--primary);
+        }
+
+        .footer__copy {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: var(--smaller-font-size);
+            color: var(--text-muted);
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        /*===== SCROLL REVEAL ANIMATIONS =====*/
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+            will-change: opacity, transform;
+        }
+
+        .scroll-animate.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Respect Reduced Motion (WCAG 2.2) */
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .scroll-animate {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip to Main Content Link for Keyboard & Screen Reader Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4T5ZSJJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header" role="banner">
+        <nav class="nav bd-grid" aria-label="Main Navigation">
+            <div>
+                <a href="#home" class="nav__logo" aria-label="Vishwa K - Founder Homepage">
+                    <picture>
+                        <source srcset="assets/img/zinoin-logo.webp" type="image/webp">
+                        <img src="assets/img/zinoin-logo.webp" alt="Zinoin Group official corporate emblem" class="nav__logo-img" width="32" height="36" loading="eager" decoding="async">
+                    </picture>
+                    <span class="nav__logo-text">Vishwa K</span>
+                    <span class="nav__logo-badge">Founder</span>
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+                <div class="nav__toggle-close" id="nav-close" role="button" tabindex="0" aria-label="Close navigation menu">
+                    <i class="bx bx-x"></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#expertise" class="nav__link">Expertise</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects & Ventures</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certifications" class="nav__link">Certifications</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Drawer Theme Control -->
+                <div class="nav__mobile-theme">
+                    <span class="nav__mobile-theme-title">Theme Preference</span>
+                    <div class="theme-segmented-control" role="radiogroup" aria-label="Theme mode selection">
+                        <button type="button" class="theme-segment-btn active" data-theme-val="system" role="radio" aria-checked="true">
+                            <i class='bx bx-desktop' aria-hidden="true"></i>
+                            <span>System</span>
+                        </button>
+                        <button type="button" class="theme-segment-btn" data-theme-val="light" role="radio" aria-checked="false">
+                            <i class='bx bx-sun' aria-hidden="true"></i>
+                            <span>Light</span>
+                        </button>
+                        <button type="button" class="theme-segment-btn" data-theme-val="dark" role="radio" aria-checked="false">
+                            <i class='bx bx-moon' aria-hidden="true"></i>
+                            <span>Dark</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div class="theme-dropdown-wrapper" id="theme-dropdown-wrapper">
+                    <button class="theme-toggle" id="theme-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Color theme: System (Auto). Click to change theme" title="Current theme: System (Auto)">
+                        <i class='bx bx-desktop' id="theme-icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="theme-dropdown-menu" id="theme-dropdown-menu" role="listbox" aria-label="Theme selection options">
+                        <button type="button" class="theme-menu-item active" data-theme-val="system" role="option" aria-selected="true">
+                            <i class='bx bx-desktop' aria-hidden="true"></i>
+                            <span class="theme-item-text">System</span>
+                            <i class='bx bx-check theme-item-check' aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="theme-menu-item" data-theme-val="light" role="option" aria-selected="false">
+                            <i class='bx bx-sun' aria-hidden="true"></i>
+                            <span class="theme-item-text">Light</span>
+                            <i class='bx bx-check theme-item-check' aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="theme-menu-item" data-theme-val="dark" role="option" aria-selected="false">
+                            <i class='bx bx-moon' aria-hidden="true"></i>
+                            <span class="theme-item-text">Dark</span>
+                            <i class='bx bx-check theme-item-check' aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="nav__toggle" id="nav-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile menu overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <main class="l-main" id="main-content" role="main">
+        <!--===== HOME / HERO =====-->
+        <section class="home bd-grid" id="home" aria-labelledby="hero-name">
+            <div class="home__data">
+                <div class="home__badge">
+                    <span class="pulse-dot" aria-hidden="true"></span> Founder & Developer at Zinoin Group
+                </div>
+                <h1 class="home__name" id="hero-name">Vishwa K</h1>
+                <div class="home__headline">
+                    Founder. Developer.<br />
+                    <span class="typing-container">
+                        <span class="typing-text">Technology Enthusiast.</span>
+                    </span>
+                </div>
+                <p class="home__description">
+                    I build digital solutions and explore the intersection of technology, cybersecurity, and entrepreneurship.
+                </p>
+
+                <div class="home__actions">
+                    <a href="#projects" class="button">Explore My Work <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/thevishwakumar" class="button button--secondary" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bxl-linkedin-square' aria-hidden="true"></i> Connect on LinkedIn
+                    </a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/thevishwakumar" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Vishwa K LinkedIn Profile">
+                        <i class="bx bxl-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/thevishwakumar" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Vishwa K GitHub Profile">
+                        <i class="bx bxl-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:thevishwaofficial@gmail.com" class="home__social-icon" aria-label="Email Vishwa K directly">
+                        <i class="bx bx-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thevishwakumar/" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Vishwa K Instagram Profile">
+                        <i class="bx bxl-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== ABOUT ME =====-->
+        <section class="about section" id="about" aria-labelledby="about-heading">
+            <h2 class="section-title" id="about-heading">About Me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img-wrapper scroll-animate">
+                    <picture>
+                        <source srcset="assets/img/about.webp" type="image/webp">
+                        <img src="assets/img/about.jpg" alt="Vishwa K — Founder & Developer at Zinoin Group, portrait photograph" class="about__img" width="400" height="400" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="scroll-animate">
+                    <h3 class="about__subtitle">Technology · Entrepreneurship · Cybersecurity</h3>
+                    <p class="about__text">
+                        I'm Vishwa K, Founder & Developer at Zinoin Group, with an interest in technology, entrepreneurship, digital innovation, and cybersecurity.
+                    </p>
+                    <p class="about__text">
+                        My journey combines business thinking with technology-driven problem-solving. I enjoy exploring new ideas, developing digital platforms, understanding business needs, and turning concepts into practical solutions.
+                    </p>
+                    <p class="about__text">
+                        Through my work and learning journey, I continue to explore web development, digital marketing, cybersecurity, and emerging technologies.
+                    </p>
+                    <p class="about__text">
+                        I believe in building solutions that are practical, scalable, and meaningful.
+                    </p>
+
+                    <div class="about__badges">
+                        <div class="about__badge-item">
+                            <i class='bx bx-briefcase-alt-2' aria-hidden="true"></i>
+                            <div>
+                                <span class="about__badge-label">Role</span>
+                                <span class="about__badge-val">Founder & Developer</span>
+                            </div>
+                        </div>
+                        <div class="about__badge-item">
+                            <i class='bx bx-building-house' aria-hidden="true"></i>
+                            <div>
+                                <span class="about__badge-label">Organization</span>
+                                <span class="about__badge-val">Zinoin Group</span>
+                            </div>
+                        </div>
+                        <div class="about__badge-item">
+                            <i class='bx bx-map-pin' aria-hidden="true"></i>
+                            <div>
+                                <span class="about__badge-label">Location</span>
+                                <span class="about__badge-val">Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== EXPERTISE =====-->
+        <section class="expertise section" id="expertise" aria-labelledby="expertise-heading">
+            <h2 class="section-title" id="expertise-heading">Expertise</h2>
+
+            <div class="expertise__grid bd-grid">
+                <!-- 1. Technology & Development -->
+                <div class="expertise__card scroll-animate">
+                    <div class="expertise__icon" aria-hidden="true">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <h3 class="expertise__card-title">Technology & Development</h3>
+                    <ul class="expertise__list">
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Web Development</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Digital Platforms</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Frontend Development</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> UI/UX</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Cybersecurity -->
+                <div class="expertise__card scroll-animate">
+                    <div class="expertise__icon" aria-hidden="true">
+                        <i class='bx bx-shield-quarter'></i>
+                    </div>
+                    <h3 class="expertise__card-title">Cybersecurity</h3>
+                    <ul class="expertise__list">
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Networking</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Linux Fundamentals</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Ethical Hacking Fundamentals</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Security Awareness</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Digital Marketing -->
+                <div class="expertise__card scroll-animate">
+                    <div class="expertise__icon" aria-hidden="true">
+                        <i class='bx bx-line-chart'></i>
+                    </div>
+                    <h3 class="expertise__card-title">Digital Marketing</h3>
+                    <ul class="expertise__list">
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> SEO</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Email Marketing</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Social Media Marketing</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Advertising</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Entrepreneurship -->
+                <div class="expertise__card scroll-animate">
+                    <div class="expertise__icon" aria-hidden="true">
+                        <i class='bx bx-bulb'></i>
+                    </div>
+                    <h3 class="expertise__card-title">Entrepreneurship</h3>
+                    <ul class="expertise__list">
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Business Development</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Market Research</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Strategic Planning</li>
+                        <li class="expertise__item"><i class='bx bx-check' aria-hidden="true"></i> Innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--===== PROJECTS & VENTURES =====-->
+        <section class="projects section" id="projects" aria-labelledby="projects-heading">
+            <h2 class="section-title" id="projects-heading">Projects & Ventures</h2>
+
+            <div class="projects__grid bd-grid">
+                <!-- 1. Zinoin Group -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-zinoin.webp" alt="Zinoin Group corporate digital services initiative" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay">Active Venture</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Zinoin Group</h3>
+                        <p class="project__tagline">Founder Initiative & Digital Infrastructure</p>
+                        <p class="project__desc">
+                            Founder-led business group and digital initiatives, orchestrating enterprise technology services, digital infrastructure, and client solutions.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Venture Leadership</span>
+                            <span class="tech-pill">Digital Platforms</span>
+                            <span class="tech-pill">Enterprise Infrastructure</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://zinoingroup.in/" target="_blank" rel="noopener noreferrer" class="button button--small button--primary" aria-label="Visit Zinoin Group corporate website">
+                                <i class='bx bx-globe' aria-hidden="true"></i> Explore Venture
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. DocuMind AI -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-documind.svg" alt="DocuMind AI full-stack RAG and ChromaDB vector search architecture diagram" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay" style="background: rgba(14, 165, 233, 0.9);">AI & Security RAG</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">DocuMind AI</h3>
+                        <p class="project__tagline">Full-Stack Enterprise RAG & Knowledge Assistant</p>
+                        <p class="project__desc">
+                            Document-grounded AI knowledge platform engineered with Google Gemini AI and ChromaDB semantic vector search. Features multi-tenant database isolation, JWT auth, and automated RBAC security test suites.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">ChromaDB</span>
+                            <span class="tech-pill">Gemini AI</span>
+                            <span class="tech-pill">RBAC Security</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/documind" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="View DocuMind AI source code on GitHub">
+                                <i class='bx bxl-github' aria-hidden="true"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. TNT Commercial Platforms -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-tnt.webp" alt="TNT Tamil Calendar and Panchangam mobile application user interface" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay">Client Platform</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">TNT Commercial Platforms</h3>
+                        <p class="project__tagline">Client Order Management & Digital Utilities</p>
+                        <p class="project__desc">
+                            Engineered commercial ordering software with anti-enumeration security for client Shree Taste N Taste Catering, alongside the high-performance TNT Tamil Calendar mobile application.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">JavaScript ES6</span>
+                            <span class="tech-pill">Supabase</span>
+                            <span class="tech-pill">PostgreSQL</span>
+                            <span class="tech-pill">Security Controls</span>
+                        </div>
+                        <div class="project__actions">
+                            <a href="https://github.com/thevishwakumar/tntdiwaliordermanagement" target="_blank" rel="noopener noreferrer" class="button button--small button--secondary" aria-label="View TNT Diwali Order Management source code on GitHub">
+                                <i class='bx bxl-github' aria-hidden="true"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. CampusBridge / SkillTrack -->
+                <div class="project__card scroll-animate">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/project-campusbridge.svg" alt="CampusBridge Student Certificate Tracking and Verification Engine interface architecture diagram" class="project__img" width="380" height="210" loading="lazy" decoding="async">
+                        <span class="project__badge-overlay" style="background: rgba(99, 102, 241, 0.9);">In Development</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">CampusBridge / SkillTrack</h3>
+                        <p class="project__tagline">Certificate Tracking & Verification</p>
+                        <p class="project__desc">
+                            Student certificate tracking and verification platform. A secure digital proof platform engineered for students to store and verify symposium and workshop certificates with GPS tracking and administrative validation workflows.
+                        </p>
+                        <div class="project__tech-tags">
+                            <span class="tech-pill">Verification Engine</span>
+                            <span class="tech-pill">GPS Verification</span>
+                            <span class="tech-pill">Digital Records</span>
+                            <span class="tech-pill">Data Integrity</span>
+                        </div>
+                        <div class="project__actions">
+                            <span class="tech-pill" style="color: var(--accent-color); border-color: rgba(56, 189, 248, 0.4);">
+                                <i class='bx bx-time-five' aria-hidden="true"></i> Architecture & Engine In Progress
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Projects Profile CTA -->
+            <div class="projects__cta scroll-animate" style="text-align: center; margin-top: 2.75rem;">
+                <a href="https://github.com/thevishwakumar" class="button button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Explore verified repositories on GitHub">
+                    <i class='bx bxl-github' aria-hidden="true"></i> View Technical Projects on GitHub
+                </a>
+            </div>
+        </section>
+
+        <!--===== EDUCATION =====-->
+        <section class="education section" id="education" aria-labelledby="education-heading">
+            <h2 class="section-title" id="education-heading">Education</h2>
+
+            <div class="education__container bd-grid">
+                <!-- Primary Education -->
+                <div class="education__card scroll-animate">
+                    <div class="education__card-header">
+                        <span class="education__badge">Undergraduate Degree</span>
+                        <span class="education__date"><i class='bx bx-calendar' aria-hidden="true"></i> 2024–2028</span>
+                    </div>
+                    <h3 class="education__title">Bachelor of Engineering (B.E.)</h3>
+                    <p class="education__institution">
+                        <i class='bx bx-certification' aria-hidden="true"></i> Cybersecurity Engineering (Cyber Security)
+                    </p>
+                    <p class="education__location">
+                        <i class='bx bx-building-house' aria-hidden="true"></i> Sri Sai Ranganathan Engineering College, Coimbatore, Tamil Nadu, India
+                    </p>
+                    <div class="education__meta">
+                        <div class="education__meta-item">
+                            <span>CGPA:</span> <strong>8.5 / 10</strong>
+                        </div>
+                        <div class="education__meta-item">
+                            <span>Status:</span> <strong class="education__status"><i class='bx bx-loader-circle' aria-hidden="true"></i> Currently Pursuing</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Higher Secondary -->
+                <div class="education__card scroll-animate">
+                    <div class="education__card-header">
+                        <span class="education__badge">Secondary Education</span>
+                        <span class="education__date"><i class='bx bx-check-shield' aria-hidden="true"></i> Completed</span>
+                    </div>
+                    <h3 class="education__title">Higher Secondary</h3>
+                    <p class="education__location">
+                        <i class='bx bx-building-house' aria-hidden="true"></i> Krishnagiri District Model School
+                    </p>
+                    <div class="education__meta">
+                        <div class="education__meta-item">
+                            <span>Performance:</span> <strong>72.83%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CERTIFICATIONS =====-->
+        <section class="certifications section" id="certifications" aria-labelledby="certifications-heading">
+            <h2 class="section-title" id="certifications-heading">Certifications</h2>
+
+            <div class="certifications__grid bd-grid">
+                <!-- 1. Cisco Networking Academy -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> Cisco Networking Academy
+                        </div>
+                        <h3 class="certificate__card-title">Introduction to Cybersecurity</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>Candidate Record</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Academic Track</span>
+                    </div>
+                </div>
+
+                <!-- 2. CappricioSec University -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> CappricioSec University
+                        </div>
+                        <h3 class="certificate__card-title">Cybersecurity & Ethical Hacking</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <a href="https://university.cappriciosec.com/" target="_blank" rel="noopener noreferrer" class="certificate__link" title="Verify Certificate on CappricioSec University portal">
+                            ID: b093c0aab1b34503a711 <i class='bx bx-external-link' aria-hidden="true"></i>
+                        </a>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Verified</span>
+                    </div>
+                </div>
+
+                <!-- 3. Ethical Hacking 101 -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> Simplilearn SkillUp
+                        </div>
+                        <h3 class="certificate__card-title">Ethical Hacking 101: Beginner's Guide</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>SkillUp Certification</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Verified</span>
+                    </div>
+                </div>
+
+                <!-- 4. Google Ads Search -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> Google
+                        </div>
+                        <h3 class="certificate__card-title">Google Ads Search Certification</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>Skillshop</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Certified</span>
+                    </div>
+                </div>
+
+                <!-- 5. Google Ads Display -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> Google
+                        </div>
+                        <h3 class="certificate__card-title">Google Ads Display Certification</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>Skillshop</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Certified</span>
+                    </div>
+                </div>
+
+                <!-- 6. HubSpot Academy -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> HubSpot Academy
+                        </div>
+                        <h3 class="certificate__card-title">Digital Marketing Certified</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>Academy Certification</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Verified</span>
+                    </div>
+                </div>
+
+                <!-- 7. Semrush Academy -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> Semrush Academy
+                        </div>
+                        <h3 class="certificate__card-title">Fundamentals of Marketing Analytics</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>Analytics Track</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Verified</span>
+                    </div>
+                </div>
+
+                <!-- 8. HP LIFE -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> HP LIFE Foundation
+                        </div>
+                        <h3 class="certificate__card-title">Effective Leadership</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>Leadership Track</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Completed</span>
+                    </div>
+                </div>
+
+                <!-- 9. LinkedIn Learning -->
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class='bx bx-award' aria-hidden="true"></i> LinkedIn Learning
+                        </div>
+                        <h3 class="certificate__card-title">Entrepreneurship Foundations</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span>Business Strategy</span>
+                        <span class="certificate__status-verified"><i class='bx bx-check-circle' aria-hidden="true"></i> Completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact" aria-labelledby="contact-heading">
+            <h2 class="section-title" id="contact-heading">Let's Connect</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="scroll-animate">
+                    <h3 class="contact__info-title">Let's build together</h3>
+                    <p class="contact__info-desc">
+                        I'm always interested in connecting with people, exploring meaningful opportunities, discussing technology, and collaborating on innovative ideas.
+                    </p>
+
+                    <div class="contact__links-list">
+                        <a href="https://www.linkedin.com/in/thevishwakumar" class="contact__link-item" target="_blank" rel="noopener noreferrer" aria-label="Connect with Vishwa K on LinkedIn">
+                            <div class="contact__link-icon" aria-hidden="true"><i class='bx bxl-linkedin'></i></div>
+                            <div>
+                                <span class="contact__link-label">LinkedIn</span>
+                                <span class="contact__link-value">linkedin.com/in/thevishwakumar</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/thevishwakumar" class="contact__link-item" target="_blank" rel="noopener noreferrer" aria-label="Explore Vishwa K's projects on GitHub">
+                            <div class="contact__link-icon" aria-hidden="true"><i class='bx bxl-github'></i></div>
+                            <div>
+                                <span class="contact__link-label">GitHub</span>
+                                <span class="contact__link-value">github.com/thevishwakumar</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:thevishwaofficial@gmail.com" class="contact__link-item" aria-label="Send direct email to Vishwa K">
+                            <div class="contact__link-icon" aria-hidden="true"><i class='bx bx-envelope'></i></div>
+                            <div>
+                                <span class="contact__link-label">Email</span>
+                                <span class="contact__link-value">thevishwaofficial@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/thevishwakumar/" class="contact__link-item" target="_blank" rel="noopener noreferrer" aria-label="Follow Vishwa K on Instagram">
+                            <div class="contact__link-icon" aria-hidden="true"><i class='bx bxl-instagram'></i></div>
+                            <div>
+                                <span class="contact__link-label">Instagram</span>
+                                <span class="contact__link-value">@thevishwakumar</span>
+                            </div>
+                        </a>
+
+                        <a href="https://founder.zinoingroup.in/" class="contact__link-item" aria-label="Visit official founder website">
+                            <div class="contact__link-icon" aria-hidden="true"><i class='bx bx-globe'></i></div>
+                            <div>
+                                <span class="contact__link-label">Website</span>
+                                <span class="contact__link-value">founder.zinoingroup.in</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Preserved Contact Form -->
+                <div class="contact__form-card scroll-animate">
+                    <h3>Send a Direct Message</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" aria-label="Founder Contact Form">
+                        <input type="hidden" name="access_key" value="eb8f26d7-359a-4d92-a252-7851ef76b341">
+                        <input type="hidden" name="subject" value="New Inquiry from founder.zinoingroup.in">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+
+                        <div class="contact__input-group">
+                            <label for="contact-name" class="contact__input-label">Your Name</label>
+                            <input type="text" id="contact-name" placeholder="Your Full Name" class="contact__input" name="name" required autocomplete="name">
+                        </div>
+
+                        <div class="contact__input-group">
+                            <label for="contact-email" class="contact__input-label">Email Address</label>
+                            <input type="email" id="contact-email" placeholder="name@example.com" class="contact__input" name="email" required autocomplete="email">
+                        </div>
+
+                        <div class="contact__input-group">
+                            <label for="contact-phone" class="contact__input-label">Phone Number (Optional)</label>
+                            <input type="tel" id="contact-phone" placeholder="+91 ..." class="contact__input" name="phone" autocomplete="tel">
+                        </div>
+
+                        <div class="contact__input-group">
+                            <label for="contact-message" class="contact__input-label">Your Message</label>
+                            <textarea id="contact-message" name="message" cols="0" rows="5" class="contact__input" placeholder="Share your message or inquiry..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="button contact__button" id="contact-submit" aria-label="Send message inquiry">
+                            <i class='bx bx-paper-plane' aria-hidden="true"></i> Send Message
+                        </button>
+                        <div id="contact-result" class="contact__result" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container bd-grid">
+            <div class="footer__brand">
+                <p class="footer__title">Vishwa K</p>
+                <p class="footer__tagline">Founder & Developer · Zinoin Group</p>
+            </div>
+
+            <nav class="footer__nav" aria-label="Footer Quick Links">
+                <ul class="footer__nav-list">
+                    <li><a href="#home" class="footer__nav-link">Home</a></li>
+                    <li><a href="#about" class="footer__nav-link">About</a></li>
+                    <li><a href="#expertise" class="footer__nav-link">Expertise</a></li>
+                    <li><a href="#projects" class="footer__nav-link">Projects</a></li>
+                    <li><a href="#education" class="footer__nav-link">Education</a></li>
+                    <li><a href="#certifications" class="footer__nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/thevishwakumar" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/thevishwakumar" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="bx bxl-github" aria-hidden="true"></i></a>
+                <a href="mailto:thevishwaofficial@gmail.com" class="footer__icon" aria-label="Direct Email"><i class="bx bx-envelope" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/thevishwakumar/" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="bx bxl-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; <span id="current-year">2026</span> Vishwa K · Zinoin Group. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        /*===== CURRENT YEAR IN FOOTER =====*/
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+
+        /*===== HEADER SHADOW ON SCROLL =====*/
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 50) {
+                header.classList.add('scroll-header');
+            } else {
+                header.classList.remove('scroll-header');
+            }
+        });
+
+        /*===== MENU SHOW/HIDE WITH ACCESSIBILITY =====*/
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+        const overlay = document.getElementById('overlay');
+
+        function openNav() {
+            navMenu.classList.add('show');
+            overlay.classList.add('show');
+            navToggle.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+            navClose.focus();
+        }
+
+        function closeNav() {
+            navMenu.classList.remove('show');
+            overlay.classList.remove('show');
+            navToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = 'auto';
+            navToggle.focus();
+        }
+
+        if (navToggle) {
+            navToggle.addEventListener('click', openNav);
+            navToggle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openNav();
+                }
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', closeNav);
+            navClose.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') {
+                    e.preventDefault();
+                    closeNav();
+                }
+            });
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', closeNav);
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('show')) {
+                closeNav();
+            }
+        });
+
+        const navLinks = document.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+                overlay.classList.remove('show');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        /*===== SCROLL SECTIONS ACTIVE LINK =====*/
+        const sections = document.querySelectorAll('section[id]');
+
+        function scrollActive() {
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 90;
+                const sectionId = current.getAttribute('id');
+                const navAnchor = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+
+                if (navAnchor) {
+                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                        navAnchor.classList.add('active');
+                    } else {
+                        navAnchor.classList.remove('active');
+                    }
+                }
+            });
+        }
+        window.addEventListener('scroll', scrollActive);
+
+        /*===== SYSTEM-AWARE THEME MANAGEMENT (SYSTEM / LIGHT / DARK) =====*/
+        const THEME_STORAGE_KEY = 'theme-preference';
+        const LEGACY_STORAGE_KEY = 'theme';
+        const mediaDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeDropdownMenu = document.getElementById('theme-dropdown-menu');
+        const themeIcon = document.getElementById('theme-icon');
+        const themeMenuItems = document.querySelectorAll('.theme-menu-item');
+        const themeSegmentBtns = document.querySelectorAll('.theme-segment-btn');
+
+        function getStoredThemePreference() {
+            var pref = localStorage.getItem(THEME_STORAGE_KEY) || localStorage.getItem(LEGACY_STORAGE_KEY);
+            return (pref === 'dark' || pref === 'light' || pref === 'system') ? pref : 'system';
+        }
+
+        function applyTheme(preference) {
+            var validPref = (preference === 'dark' || preference === 'light' || preference === 'system') ? preference : 'system';
+            var isDark = validPref === 'dark' || (validPref === 'system' && mediaDarkQuery.matches);
+            var resolvedTheme = isDark ? 'dark' : 'light';
+
+            document.documentElement.setAttribute('data-theme', resolvedTheme);
+            document.documentElement.setAttribute('data-theme-preference', validPref);
+            document.body.setAttribute('data-theme', resolvedTheme);
+
+            // Update Header Icon
+            if (themeIcon) {
+                themeIcon.className = '';
+                if (validPref === 'system') {
+                    themeIcon.className = 'bx bx-desktop';
+                } else if (validPref === 'light') {
+                    themeIcon.className = 'bx bx-sun';
+                } else {
+                    themeIcon.className = 'bx bx-moon';
+                }
+            }
+
+            // Update Toggle Button Title & Aria Label
+            if (themeToggleBtn) {
+                var prefLabel = validPref.charAt(0).toUpperCase() + validPref.slice(1);
+                themeToggleBtn.setAttribute('aria-label', 'Color theme: ' + prefLabel + (validPref === 'system' ? ' (Auto OS)' : '') + '. Click to change theme');
+                themeToggleBtn.setAttribute('title', 'Current theme: ' + prefLabel + (validPref === 'system' ? ' (Auto OS)' : ''));
+            }
+
+            // Update Dropdown Items
+            themeMenuItems.forEach(function(item) {
+                var val = item.getAttribute('data-theme-val');
+                var isSelected = (val === validPref);
+                item.classList.toggle('active', isSelected);
+                item.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+            });
+
+            // Update Mobile Drawer Segmented Buttons
+            themeSegmentBtns.forEach(function(btn) {
+                var val = btn.getAttribute('data-theme-val');
+                var isChecked = (val === validPref);
+                btn.classList.toggle('active', isChecked);
+                btn.setAttribute('aria-checked', isChecked ? 'true' : 'false');
+            });
+        }
+
+        function setThemePreference(pref) {
+            var validPref = (pref === 'dark' || pref === 'light' || pref === 'system') ? pref : 'system';
+            try {
+                localStorage.setItem(THEME_STORAGE_KEY, validPref);
+                localStorage.setItem(LEGACY_STORAGE_KEY, validPref);
+            } catch (e) {}
+            applyTheme(validPref);
+        }
+
+        // Initialize with stored preference
+        applyTheme(getStoredThemePreference());
+
+        // Dynamic OS listener: react when preference is 'system'
+        var handleMediaChange = function() {
+            if (getStoredThemePreference() === 'system') {
+                applyTheme('system');
+            }
+        };
+
+        if (mediaDarkQuery.addEventListener) {
+            mediaDarkQuery.addEventListener('change', handleMediaChange);
+        } else if (mediaDarkQuery.addListener) {
+            mediaDarkQuery.addListener(handleMediaChange);
+        }
+
+        // Dropdown toggle logic
+        if (themeToggleBtn && themeDropdownMenu) {
+            themeToggleBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                var isExpanded = themeDropdownMenu.classList.toggle('show');
+                themeToggleBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+            });
+
+            // Close when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!themeDropdownMenu.contains(e.target) && e.target !== themeToggleBtn) {
+                    themeDropdownMenu.classList.remove('show');
+                    themeToggleBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Keyboard navigation
+            themeToggleBtn.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    themeDropdownMenu.classList.add('show');
+                    themeToggleBtn.setAttribute('aria-expanded', 'true');
+                    var activeOption = themeDropdownMenu.querySelector('.theme-menu-item.active') || themeDropdownMenu.querySelector('.theme-menu-item');
+                    if (activeOption) activeOption.focus();
+                }
+            });
+
+            themeDropdownMenu.addEventListener('keydown', function(e) {
+                var items = Array.from(themeMenuItems);
+                var currentIndex = items.indexOf(document.activeElement);
+
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    themeDropdownMenu.classList.remove('show');
+                    themeToggleBtn.setAttribute('aria-expanded', 'false');
+                    themeToggleBtn.focus();
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    var nextIndex = (currentIndex + 1) % items.length;
+                    items[nextIndex].focus();
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    var prevIndex = (currentIndex - 1 + items.length) % items.length;
+                    items[prevIndex].focus();
+                }
+            });
+
+            // Dropdown menu item click
+            themeMenuItems.forEach(function(item) {
+                item.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    var val = item.getAttribute('data-theme-val');
+                    setThemePreference(val);
+                    themeDropdownMenu.classList.remove('show');
+                    themeToggleBtn.setAttribute('aria-expanded', 'false');
+                    themeToggleBtn.focus();
+                });
+            });
+        }
+
+        // Mobile drawer segmented button click
+        themeSegmentBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var val = btn.getAttribute('data-theme-val');
+                setThemePreference(val);
+            });
+        });
+
+        /*===== SCROLL ANIMATION =====*/
+        const scrollElements = document.querySelectorAll('.scroll-animate');
+
+        const elementInView = (el, dividend = 1.15) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el)) {
+                    el.classList.add('show');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScrollAnimation);
+        window.addEventListener('load', handleScrollAnimation);
+
+        /*===== TYPING ANIMATION (HERO) =====*/
+        function initTypingAnimation() {
+            const typingElement = document.querySelector('.typing-text');
+            if (!typingElement) return;
+
+            const titles = [
+                "Technology Enthusiast.",
+                "Technology Entrepreneur.",
+                "Founder & Developer.",
+                "Cybersecurity Explorer."
+            ];
+            let titleIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typeSpeed = 100;
+
+            function type() {
+                const currentTitle = titles[titleIndex];
+
+                if (isDeleting) {
+                    typingElement.textContent = currentTitle.substring(0, charIndex - 1);
+                    charIndex--;
+                    typeSpeed = 40;
+                } else {
+                    typingElement.textContent = currentTitle.substring(0, charIndex + 1);
+                    charIndex++;
+                    typeSpeed = 85;
+                }
+
+                if (!isDeleting && charIndex === currentTitle.length) {
+                    isDeleting = true;
+                    typeSpeed = 2200;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    titleIndex = (titleIndex + 1) % titles.length;
+                    typeSpeed = 400;
+                }
+
+                setTimeout(type, typeSpeed);
+            }
+
+            setTimeout(type, 1000);
+        }
+        window.addEventListener('load', initTypingAnimation);
+
+        /*===== CONTACT FORM SUBMISSION (NON-BLOCKING WITH INLINE FEEDBACK) =====*/
+        const contactForm = document.querySelector('.contact__form');
+        const contactSubmit = document.getElementById('contact-submit');
+        const contactResult = document.getElementById('contact-result');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                contactSubmit.disabled = true;
+                const originalHtml = contactSubmit.innerHTML;
+                contactSubmit.innerHTML = "<i class='bx bx-loader-alt bx-spin' aria-hidden='true'></i> Sending...";
+
+                const formData = new FormData(contactForm);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
+
+                contactResult.className = 'contact__result';
+                contactResult.style.display = 'none';
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let resJson = await response.json();
+                    if (response.status == 200) {
+                        contactResult.innerHTML = "<i class='bx bx-check-circle' aria-hidden='true'></i> Thank you! Your message has been sent successfully.";
+                        contactResult.className = 'contact__result success';
+                        contactForm.reset();
+                        trackEvent('contact_form_interaction', { action: 'submit_success' });
+                    } else {
+                        contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> ";
+                        const errorText = document.createTextNode(resJson.message || "Failed to send message. Please try again.");
+                        contactResult.appendChild(errorText);
+                        contactResult.className = 'contact__result error';
+                        trackEvent('contact_form_interaction', { action: 'submit_error' });
+                    }
+                })
+                .catch(error => {
+                    console.error('Submission error:', error);
+                    contactResult.innerHTML = "<i class='bx bx-error-circle' aria-hidden='true'></i> A network error occurred. Please try again or email directly.";
+                    contactResult.className = 'contact__result error';
+                    trackEvent('contact_form_interaction', { action: 'submit_error' });
+                })
+                .finally(() => {
+                    contactSubmit.disabled = false;
+                    contactSubmit.innerHTML = originalHtml;
+                    contactResult.style.display = 'block';
+                });
+            });
+        }
+
+        /*===== PRIVACY-CONSCIOUS GA4 & GTM EVENT TRACKING =====*/
+        function trackEvent(eventName, params = {}) {
+            // Push clean interaction events to GTM dataLayer without PII
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: eventName,
+                ...params
+            });
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', eventName, params);
+            }
+        }
+
+        // Track Contact section visibility (IntersectionObserver)
+        const contactSection = document.getElementById('contact');
+        if (contactSection && 'IntersectionObserver' in window) {
+            let contactViewed = false;
+            const contactObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !contactViewed) {
+                        contactViewed = true;
+                        trackEvent('contact_section_view', { section: 'contact' });
+                    }
+                });
+            }, { threshold: 0.3 });
+            contactObserver.observe(contactSection);
+        }
+
+        // Track Outbound Social / Professional clicks
+        document.querySelectorAll('a[href*="linkedin.com"], a[href*="github.com"], a[href*="instagram.com"]').forEach(link => {
+            link.addEventListener('click', function() {
+                const platform = this.href.includes('linkedin.com') ? 'linkedin' :
+                                 this.href.includes('github.com') ? 'github' : 'instagram';
+                trackEvent('social_click', {
+                    platform: platform,
+                    target_url: this.href
+                });
+            });
+        });
+
+        // Track Project link clicks
+        document.querySelectorAll('.project__link').forEach(link => {
+            link.addEventListener('click', function() {
+                const projectCard = this.closest('.project__card');
+                const projectTitle = projectCard ? projectCard.querySelector('.project__title')?.textContent.trim() : 'Project';
+                trackEvent('project_click', {
+                    project_name: projectTitle,
+                    target_url: this.href
+                });
+            });
+        });
+
+        // Track form interaction start (focus on any input, zero PII)
+        const contactInputs = document.querySelectorAll('.contact__input');
+        let formStarted = false;
+        contactInputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                if (!formStarted) {
+                    formStarted = true;
+                    trackEvent('contact_form_interaction', { action: 'form_start' });
+                }
+            }, { once: true });
+        });
+    </script>
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"1c105f76143b459fa149a225654a1140","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>

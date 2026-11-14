@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProfileContentSchema",
+  "description": "Schema for personal identity, hero headlines, about text, and contact info",
+  "type": "object",
+  "required": ["name", "role", "organization", "description", "about"],
+  "properties": {
+    "name": { "type": "string" },
+    "alternateName": { "type": "string" },
+    "handle": { "type": "string" },
+    "role": { "type": "string" },
+    "organization": { "type": "string" },
+    "location": { "type": "string" },
+    "badgeText": { "type": "string" },
+    "headlinePrefix": { "type": "string" },
+    "typingTitles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "description": { "type": "string" },
+    "about": {
+      "type": "object",
+      "required": ["subtitle", "paragraphs", "badges"],
+      "properties": {
+        "subtitle": { "type": "string" },
+        "paragraphs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "badges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "value"],
+            "properties": {
+              "icon": { "type": "string" },
+              "label": { "type": "string" },
+              "value": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "required": ["heading", "subheading", "email"],
+      "properties": {
+        "heading": { "type": "string" },
+        "subheading": { "type": "string" },
+        "description": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "website": { "type": "string" }
+      }
+    }
+  }
+}

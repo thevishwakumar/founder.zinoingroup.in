@@ -78,3 +78,4 @@ Once you have reviewed the three reports:
    - LinkedIn profile consistency (BLK-01 & BLK-04)
 2. State clearly: **"I approve the final content. Proceed with deployment."**
 3. Deployment will then proceed strictly following [DEPLOYMENT_CHECKLIST.md](file:///c:/Users/Vishw/Downloads/founder.zinoingroup.in/DEPLOYMENT_CHECKLIST.md).
+

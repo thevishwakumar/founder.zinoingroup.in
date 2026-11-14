@@ -158,3 +158,4 @@ When hosting via Cloudflare Pages, Apache, or Nginx, configure the following cac
 | **P2** | Boxicons loaded from external CDN | Self-host WOFF2 font locally | Eliminates 1 external DNS lookup |
 | **P2** | Static asset caching headers | Configure Cloudflare Edge Cache Rules | Instant subsequent repeat loads |
 | **P3** | `about.jpg` is 8.6 KB JPEG | Swap to `about.webp` (4.4 KB) | Minor image weight reduction (-4.2 KB) |
+

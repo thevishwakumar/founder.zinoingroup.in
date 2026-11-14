@@ -360,7 +360,7 @@ Structure into 4 domain pillars with verified technical competencies:
 </div>
 
 <div class="education__item scroll-animate">
-    <h3 class="education__title">Higher Secondary (2nd Year)</h3>
+    <h3 class="education__title">Higher Secondary (3rd Year)</h3>
     <p class="education__org">Krishnagiri District Model School, Krishnagiri</p>
     <p class="education__date">Completed with 72.83%</p>
     <p>Developed a strong foundation in core subjects such as Mathematics, Physics, and Chemistry. Gained essential skills in communication and problem-solving through academic and co-curricular activities.</p>

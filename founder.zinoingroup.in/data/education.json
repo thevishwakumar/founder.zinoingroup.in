@@ -1,0 +1,49 @@
+{
+  "$schema": "./schemas/education.schema.json",
+  "education": [
+    {
+      "id": "be-cybersecurity",
+      "degree": "Bachelor of Engineering (B.E.)",
+      "field": "Cybersecurity Engineering (Cyber Security)",
+      "institution": "Sri Sai Ranganathan Engineering College",
+      "location": "Coimbatore, Tamil Nadu, India",
+      "period": "2024–2028",
+      "badge": "Undergraduate Degree",
+      "dateIcon": "bx bx-calendar",
+      "institutionIcon": "bx bx-building-house",
+      "fieldIcon": "bx bx-certification",
+      "meta": [
+        {
+          "label": "CGPA:",
+          "value": "8.5 / 10",
+          "isHighlight": false
+        },
+        {
+          "label": "Status:",
+          "value": "Currently Pursuing",
+          "isHighlight": true,
+          "statusIcon": "bx bx-loader-circle"
+        }
+      ]
+    },
+    {
+      "id": "higher-secondary",
+      "degree": "Higher Secondary",
+      "field": "Secondary Education",
+      "institution": "Krishnagiri District Model School",
+      "location": "Krishnagiri, Tamil Nadu, India",
+      "period": "Completed",
+      "badge": "Secondary Education",
+      "dateIcon": "bx bx-check-shield",
+      "institutionIcon": "bx bx-building-house",
+      "fieldIcon": "",
+      "meta": [
+        {
+          "label": "Performance:",
+          "value": "72.83%",
+          "isHighlight": false
+        }
+      ]
+    }
+  ]
+}

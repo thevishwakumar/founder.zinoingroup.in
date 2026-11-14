@@ -39,7 +39,7 @@
 | Item | Claim in Resume | Source / Verification Method | Status | Notes |
 |---|---|---|:---:|---|
 | **Degree** | B.E. Computer Science and Engineering (Cyber Security) | Academic enrollment records | `[VERIFIED]` | Stated as currently pursuing |
-| **Status** | Pursuing (2024–2028, 2nd Year) | Academic tenure | `[VERIFIED]` | **NOT** claimed as completed |
+| **Status** | Pursuing (2024–2028, 3rd Year) | Academic tenure | `[VERIFIED]` | **NOT** claimed as completed |
 | **Institution** | Sri Sai Ranganathan Engineering College | Academic records | `[VERIFIED]` | Verified location: Coimbatore |
 | **CGPA** | 8.5 / 10 | Primary owner brief & audit | `[VERIFIED]` | Documented in `EDUCATION_REVIEW.md` |
 | **HSC School** | Krishnagiri District Model School | Academic records | `[VERIFIED]` | Verified location: Krishnagiri |
@@ -115,3 +115,4 @@ Before generating the official PDF version of this resume, Vishwa K should revie
    Should a personal contact phone number be included on the ATS resume, or should recruiters contact via email (`thevishwaofficial@gmail.com`), LinkedIn, and website?
 3. **Pending Credential Verification:**  
    Do you have the direct verification IDs or URLs for the 8 secondary marketing/business certificates, or should the resume focus primarily on the 8 verified technical and cybersecurity credentials? *(Focusing on the 8 verified credentials is recommended for technical & security roles).*
+

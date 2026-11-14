@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProjectsContentSchema",
+  "description": "Schema for featured engineering projects and ventures on founder.zinoingroup.in",
+  "type": "object",
+  "required": ["projects"],
+  "properties": {
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "description"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Unique slug identifier for the project"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 80,
+            "description": "Title of the project or venture"
+          },
+          "tagline": {
+            "type": "string",
+            "maxLength": 120,
+            "description": "Subtitle or architectural scope"
+          },
+          "badge": {
+            "type": "string",
+            "maxLength": 40,
+            "description": "Status badge (e.g. Active Venture, In Development)"
+          },
+          "badgeStyle": {
+            "type": "string",
+            "description": "Optional inline CSS overrides for badge background"
+          },
+          "image": {
+            "type": "string",
+            "description": "Relative URL path to WebP or SVG preview asset"
+          },
+          "imageAlt": {
+            "type": "string",
+            "description": "Descriptive accessibility alt text"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 400,
+            "description": "Detailed project description"
+          },
+          "technologies": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "List of technical tools, languages, or architectural principles"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "label"],
+              "properties": {
+                "type": { "enum": ["link", "pill"] },
+                "label": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "icon": { "type": "string" },
+                "buttonClass": { "type": "string" },
+                "pillStyle": { "type": "string" },
+                "ariaLabel": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

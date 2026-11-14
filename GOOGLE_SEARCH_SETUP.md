@@ -125,3 +125,4 @@ To prevent search engines from splitting page authority across multiple URL vari
 - [ ] Submit `sitemap.xml` in Search Console.
 - [ ] Run **Test Live URL** and click **Request Indexing**.
 - [ ] Monitor Search Console **Performance** tab after 7 days to evaluate impressions for branded queries.
+
