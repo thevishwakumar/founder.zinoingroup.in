@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vishwa Kumar (Vishwa K) | Founder & Developer at Zinoin Group</title>
 
-    <!-- Immediate Theme Initialization (Zero-FOUC Prevention) -->
+    <!-- Immediate Theme Initialization (Zero-FOUC Prevention - Default Light) -->
     <script>
         (function () {
             try {
                 var stored = localStorage.getItem('theme-preference') || localStorage.getItem('theme');
-                var pref = (stored === 'dark' || stored === 'light' || stored === 'system') ? stored : 'system';
-                var isDark = pref === 'dark' || (pref === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-                document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+                var pref = (stored === 'dark') ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', pref);
                 document.documentElement.setAttribute('data-theme-preference', pref);
             } catch (e) { }
         })();
@@ -2755,6 +2754,127 @@
                 animation: none !important;
             }
         }
+    
+        /* Section Subtitle */
+        .section-subtitle {
+            text-align: center;
+            max-width: 760px;
+            margin: -1.75rem auto 2.5rem;
+            color: var(--text-muted);
+            font-size: var(--normal-font-size);
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+
+        /* Secondary About Image & Caption */
+        .about__img-main {
+            position: relative;
+            z-index: 1;
+        }
+
+        .about__secondary-card {
+            margin-top: 1.25rem;
+            position: relative;
+            z-index: 1;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: var(--surface-color);
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .about__secondary-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about__secondary-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .about__secondary-caption {
+            padding: 0.6rem 0.85rem;
+            font-size: var(--smaller-font-size);
+            font-weight: 600;
+            color: var(--text-muted);
+            background: var(--surface-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .about__secondary-caption i {
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        /* Languages Grid in About Section */
+        .about__languages {
+            margin-top: 1.75rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .about__languages-title {
+            font-size: var(--small-font-size);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin-bottom: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .languages__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .language-pill {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 0.6rem 0.75rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            transition: transform var(--transition-fast), border-color var(--transition-fast);
+        }
+
+        .language-pill:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .language-pill__name {
+            font-weight: 600;
+            font-size: var(--normal-font-size);
+            color: var(--text-title);
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .language-pill__name i {
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .language-pill__level {
+            font-size: var(--smaller-font-size);
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
     </style>
 </head>
 
@@ -2877,13 +2997,8 @@
                 <div class="nav__mobile-theme">
                     <span class="nav__mobile-theme-title">Theme Preference</span>
                     <div class="theme-segmented-control" role="radiogroup" aria-label="Theme mode selection">
-                        <button type="button" class="theme-segment-btn active" data-theme-val="system" role="radio"
+                        <button type="button" class="theme-segment-btn active" data-theme-val="light" role="radio"
                             aria-checked="true">
-                            <i class='bx bx-desktop' aria-hidden="true"></i>
-                            <span>System</span>
-                        </button>
-                        <button type="button" class="theme-segment-btn" data-theme-val="light" role="radio"
-                            aria-checked="false">
                             <i class='bx bx-sun' aria-hidden="true"></i>
                             <span>Light</span>
                         </button>
@@ -2905,12 +3020,6 @@
                     </button>
                     <div class="theme-dropdown-menu" id="theme-dropdown-menu" role="listbox"
                         aria-label="Theme selection options">
-                        <button type="button" class="theme-menu-item active" data-theme-val="system" role="option"
-                            aria-selected="true">
-                            <i class='bx bx-desktop' aria-hidden="true"></i>
-                            <span class="theme-item-text">System</span>
-                            <i class='bx bx-check theme-item-check' aria-hidden="true"></i>
-                        </button>
                         <button type="button" class="theme-menu-item" data-theme-val="light" role="option"
                             aria-selected="false">
                             <i class='bx bx-sun' aria-hidden="true"></i>
@@ -2991,35 +3100,47 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img-wrapper scroll-animate">
-                    <picture>
-                        <source srcset="assets/img/vishwa.webp" type="image/webp">
-                        <img src="assets/img/vishwa.jpg"
-                            alt="Vishwa Kumar — Founder & CEO at Zinoin Group, executive portrait" class="about__img"
-                            width="400" height="400" loading="lazy" decoding="async">
-                    </picture>
+                    <!-- Primary Authentic Executive Portrait -->
+                    <div class="about__img-main">
+                        <picture>
+                            <source srcset="assets/img/vishwa.webp" type="image/webp">
+                            <img src="assets/img/vishwa.jpg"
+                                alt="Vishwa Kumar — Founder & CEO at Zinoin Group, executive portrait" class="about__img"
+                                width="400" height="400" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <!-- Secondary Strategic Operations Image -->
+                    <div class="about__secondary-card">
+                        <picture>
+                            <source srcset="assets/img/vishwa-bangalore-office.webp" type="image/webp">
+                            <img src="assets/img/vishwa-bangalore-office.jpg"
+                                alt="Vishwa Kumar — Strategic Operations from Bangalore, India" class="about__secondary-img"
+                                width="360" height="280" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="about__secondary-caption">
+                            <i class='bx bx-briefcase' aria-hidden="true"></i>
+                            <span>Executive Operations · Bangalore, India</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="scroll-animate">
                     <h3 class="about__subtitle">Technology · Entrepreneurship · Cybersecurity · Marketing</h3>
                     <p class="about__text">
                         I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in August
-                        2025. My core focus spans cybersecurity engineering, full-stack software development,
-                        performance digital marketing, and venture building.
+                        2025. Based in Bangalore, India, I deliver specialized cybersecurity engineering, network defense architectures, full-stack software systems, and performance digital marketing to clients and organizations worldwide.
                     </p>
                     <p class="about__text">
-                        My journey combines commercial strategic thinking with hands-on technical architecture. From
-                        building enterprise AI retrieval systems like DocuMind to delivering production e-commerce
-                        platforms and multi-channel marketing campaigns, I engineer practical solutions that bridge
-                        technology and business growth.
+                        With 1.5 years of hands-on experience, I bridge the gap between commercial business objectives and robust technical implementation. My work spans architecting enterprise AI retrieval platforms (DocuMind AI), engineering secure transaction ordering systems, and executing high-ROI digital acquisition campaigns.
                     </p>
                     <p class="about__text">
-                        Currently pursuing my engineering degree in Cyber Security at Sri Sai Ranganathan Engineering
-                        College, Coimbatore, I combine rigorous computer science fundamentals with real-world venture
+                        Currently pursuing my B.E. in Cybersecurity Engineering at Sri Sai Ranganathan Engineering
+                        College, Coimbatore (CGPA: 8.5/10), I combine rigorous computer science fundamentals with real-world venture
                         operations.
                     </p>
                     <p class="about__text">
-                        I believe in building scalable digital infrastructure, maintaining defensive security hygiene,
-                        and delivering measurable commercial impact.
+                        From Bangalore to global markets, I engineer resilient digital infrastructure, enforce strict cybersecurity hygiene, and build scalable systems that deliver measurable commercial value.
                     </p>
 
                     <div class="about__badges">
@@ -3028,6 +3149,13 @@
                             <div>
                                 <span class="about__badge-label">Role</span>
                                 <span class="about__badge-val">Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="about__badge-item">
+                            <i class='bx bx-shield-quarter' aria-hidden="true"></i>
+                            <div>
+                                <span class="about__badge-label">Specialization</span>
+                                <span class="about__badge-val">Cybersecurity & Web Architecture</span>
                             </div>
                         </div>
                         <div class="about__badge-item">
@@ -3041,7 +3169,37 @@
                             <i class='bx bx-map-pin' aria-hidden="true"></i>
                             <div>
                                 <span class="about__badge-label">Location</span>
-                                <span class="about__badge-val">Tamil Nadu, India</span>
+                                <span class="about__badge-val">Bangalore, India</span>
+                            </div>
+                        </div>
+                        <div class="about__badge-item">
+                            <i class='bx bx-globe' aria-hidden="true"></i>
+                            <div>
+                                <span class="about__badge-label">Service Area</span>
+                                <span class="about__badge-val">Worldwide / Global Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages Section -->
+                    <div class="about__languages">
+                        <h4 class="about__languages-title"><i class='bx bx-globe' aria-hidden="true"></i> Languages</h4>
+                        <div class="languages__grid">
+                            <div class="language-pill">
+                                <div class="language-pill__name"><i class='bx bx-check-shield' aria-hidden="true"></i> English</div>
+                                <span class="language-pill__level">Professional Working</span>
+                            </div>
+                            <div class="language-pill">
+                                <div class="language-pill__name"><i class='bx bx-check-shield' aria-hidden="true"></i> Tamil</div>
+                                <span class="language-pill__level">Native / Fluent</span>
+                            </div>
+                            <div class="language-pill">
+                                <div class="language-pill__name"><i class='bx bx-check-shield' aria-hidden="true"></i> Kannada</div>
+                                <span class="language-pill__level">Working Proficiency</span>
+                            </div>
+                            <div class="language-pill">
+                                <div class="language-pill__name"><i class='bx bx-check-shield' aria-hidden="true"></i> Hindi</div>
+                                <span class="language-pill__level">Basic Proficiency</span>
                             </div>
                         </div>
                     </div>
@@ -3146,35 +3304,38 @@
 
         <!--===== EXPERTISE =====-->
         <section class="expertise section" id="expertise" aria-labelledby="expertise-heading">
-            <h2 class="section-title" id="expertise-heading">Expertise</h2>
+            <h2 class="section-title" id="expertise-heading">Professional Skills & Expertise</h2>
+            <p class="section-subtitle">
+                With 1.5 years of hands-on experience, I've developed expertise in several key areas that bridge the gap between business objectives and technical implementation.
+            </p>
 
                         <div class="expertise__grid bd-grid">
                 <div class="expertise__card scroll-animate">
                     <div class="expertise__icon" aria-hidden="true"><i class='bx bx-code-alt'></i></div>
                     <h3 class="expertise__card-title">Technology & Software Development</h3>
                     <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Full-Stack Web Development</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Frontend Development (HTML5, CSS3, ES6+)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Python & FastAPI Architecture</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> React & Modern UI Frameworks</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> WordPress & Custom CMS Development</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Generative AI & Prompt Engineering</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Vector Databases & Semantic RAG Search</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Data Analysis & Business Telemetry</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> REST APIs & Cloudflare Serverless</li>
+                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Frontend Development</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Generative AI & Prompt Engineering</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> WordPress Development & Custom CMS</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Data Analysis & Business Telemetry</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Full-Stack Web Development</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Python, Java & SQL Architecture</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> React & Modern UI Frameworks</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Relational Databases (MySQL & PostgreSQL)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Developer Tools (Git, GitHub, VS Code, Postman)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> REST APIs & Cloudflare Serverless Architecture</li>
+                    </ul>
+                </div>
+                <div class="expertise__card scroll-animate">
+                    <div class="expertise__icon" aria-hidden="true"><i class='bx bx-trending-up'></i></div>
+                    <h3 class="expertise__card-title">Digital Marketing & Growth Strategy</h3>
+                    <ul class="expertise__list">
+                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Meta Ads & Facebook Ads Manager</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Google Ads & PPC Advertising</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Social Media Marketing & Brand Reach</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Email Marketing & Automated Funnels</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Marketing Strategy & Growth Strategy</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Digital Marketing & Multi-Channel Campaigns</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> SEO Optimization & Entity Search</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Google Analytics 4 & Measurement</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Conversion Rate Optimization (CRO)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Campaign Manager 360 & Ad Operations</li>
+                    </ul>
+                </div>
+                <div class="expertise__card scroll-animate">
+                    <div class="expertise__icon" aria-hidden="true"><i class='bx bx-briefcase-alt'></i></div>
+                    <h3 class="expertise__card-title">Entrepreneurship & Business Management</h3>
+                    <ul class="expertise__list">
+                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Leadership & Team Management</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Business Administration & Operations Management</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Business Management & Executive Leadership</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Business Development & Partnerships</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Strategic Planning & Market Research</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Financial Planning & Financial Operations</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Risk Management & Banking Processes</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Innovation Thinking & Business Ideation</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Commercial Client Software Delivery</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Agile Project Scoping & Delivery</li>
                     </ul>
                 </div>
                 <div class="expertise__card scroll-animate">
                     <div class="expertise__icon" aria-hidden="true"><i class='bx bx-shield-quarter'></i></div>
                     <h3 class="expertise__card-title">Cybersecurity & Systems Engineering</h3>
                     <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Defensive Security & Threat Hunting</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Identity & Access Management (RBAC)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Multi-Tenant Database Isolation</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Network Security & Packet Inspection</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Linux Server Administration & Hardening</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Ethical Hacking & Vulnerability Assessment</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Security Risk Management (ISO 27001)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Automated Security Test Suites</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Anti-Enumeration Access Controls</li>
-                    </ul>
-                </div>
-                <div class="expertise__card scroll-animate">
-                    <div class="expertise__icon" aria-hidden="true"><i class='bx bx-line-chart'></i></div>
-                    <h3 class="expertise__card-title">Digital Marketing & Performance Ads</h3>
-                    <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Meta Ads Manager (Facebook & Instagram)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Google Ads (Search & Display Networks)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Campaign Manager 360 & Ad Operations</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Technical & Entity SEO Optimization</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Social Media Marketing & Brand Reach</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Google Analytics 4 & Tag Manager</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Automated Email Lead Nurturing</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> PPC Advertising & Keyword Strategy</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Conversion Rate Optimization (CRO)</li>
-                    </ul>
-                </div>
-                <div class="expertise__card scroll-animate">
-                    <div class="expertise__icon" aria-hidden="true"><i class='bx bx-bulb'></i></div>
-                    <h3 class="expertise__card-title">Entrepreneurship & Corporate Leadership</h3>
-                    <ul class="expertise__list">
-                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Founder & Executive Venture Leadership</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Commercial Client Software Delivery</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Business Administration & Operations</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Financial Planning & Risk Governance</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Strategic Market Research & Scoping</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Banking Processes & Collateral Evaluation</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Business Ideation & Innovation Thinking</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Agile Team & Project Management</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> B2B Partnership & Ecosystem Strategy</li>
+                        <li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Network Security (TCP/IP, DNS, HTTP/HTTPS, SSH, VPN)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Packet Inspection & Analysis (Wireshark, Nmap, Tracer)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Autonomous Cyber Defense & Deception Trap Networks</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Vulnerability Assessment & Ethical Hacking</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Phishing Detection & Security Log Analysis</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Identity & Access Management (RBAC & Auth)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Cloud Security (AWS IAM, VPC, Security Groups, KMS)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Linux Server Hardening & CLI Administration</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> AI Data Confidentiality & Compliance Shield (DLP)</li><li class="expertise__item"><i class="bx bx-check" aria-hidden="true"></i> Security Risk Management (ISO 27001 Standards)</li>
                     </ul>
                 </div>
             </div>
@@ -3184,232 +3345,361 @@
         <section class="projects section" id="projects" aria-labelledby="projects-heading">
             <h2 class="section-title" id="projects-heading">Projects & Ventures</h2>
 
-                                    <div class="projects__grid bd-grid">
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-bot" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">GitHub Featured · AI & Security</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">DocuMind AI</h3>
-                            <p class="project__tagline">Full-Stack Enterprise RAG & Knowledge Assistant</p>
-                            <p class="project__description">Document-grounded AI knowledge platform engineered with Python, FastAPI, React, ChromaDB semantic vector search, and Google Gemini AI. Features multi-tenant database isolation, JWT auth, and automated RBAC security test suites.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">FastAPI</span><span class="tech-pill">React</span><span class="tech-pill">ChromaDB</span><span class="tech-pill">Gemini AI</span><span class="tech-pill">RBAC Security</span><span class="tech-pill">PostgreSQL</span>
-                            </div>
-                            <div class="project__actions"><a href="https://github.com/thevishwakumar/documind" class="button--primary" target="_blank" rel="noopener noreferrer" aria-label="View DocuMind AI source code on GitHub"><i class="bx bxl-github" aria-hidden="true"></i> View on GitHub</a></div>
-                        </div>
+            <div class="projects__grid bd-grid">
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-bot" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">GitHub Featured ·
+                            AI & Security</span>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-cart" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Production Client System</span>
+                    <div class="project__content">
+                        <h3 class="project__title">DocuMind AI</h3>
+                        <p class="project__tagline">Full-Stack Enterprise RAG & Knowledge Assistant</p>
+                        <p class="project__description">Document-grounded AI knowledge platform engineered with Python,
+                            FastAPI, React, ChromaDB semantic vector search, and Google Gemini AI. Features multi-tenant
+                            database isolation, JWT auth, and automated RBAC security test suites.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">FastAPI</span><span class="tech-pill">React</span><span
+                                class="tech-pill">ChromaDB</span><span class="tech-pill">Gemini AI</span><span
+                                class="tech-pill">RBAC Security</span><span class="tech-pill">PostgreSQL</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">TNT Commercial Platforms</h3>
-                            <p class="project__tagline">Client Order Management & Digital Utilities</p>
-                            <p class="project__description">Commercial ordering software with anti-enumeration security engineered for client Shree Taste N Taste Catering, alongside the lightweight TNT Tamil Calendar utility app. Built with vanilla ES modules and Supabase backend.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">JavaScript ES Modules</span><span class="tech-pill">Supabase</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Security Controls</span><span class="tech-pill">Netlify Functions</span>
-                            </div>
-                            <div class="project__actions"><a href="https://github.com/thevishwakumar/tntdiwaliordermanagement" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="View TNT Diwali Order Management source code on GitHub"><i class="bx bxl-github" aria-hidden="true"></i> View on GitHub</a></div>
-                        </div>
+                        <div class="project__actions"><a href="https://github.com/thevishwakumar/documind"
+                                class="button--primary" target="_blank" rel="noopener noreferrer"
+                                aria-label="View DocuMind AI source code on GitHub"><i class="bx bxl-github"
+                                    aria-hidden="true"></i> View on GitHub</a></div>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-brain" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(139, 92, 246, 0.9);">GitHub Machine Learning</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Fashion Item CNN Classifier</h3>
-                            <p class="project__tagline">Interactive Deep Learning & Computer Vision</p>
-                            <p class="project__description">Deep learning convolutional neural network (CNN) trained on the Fashion-MNIST dataset. Features an interactive 28x28 HTML5 Canvas for real-time user sketching and instant softmax probability classifications via a Python Flask backend.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">TensorFlow</span><span class="tech-pill">Keras</span><span class="tech-pill">Python Flask</span><span class="tech-pill">HTML5 Canvas</span><span class="tech-pill">Computer Vision</span>
-                            </div>
-                            <div class="project__actions"><a href="https://github.com/thevishwakumar/Fashion-Item-Classification-Convolutional-Neural-Networks" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="View Fashion Item CNN Classifier on GitHub"><i class="bx bxl-github" aria-hidden="true"></i> View on GitHub</a></div>
-                        </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-cart" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Production Client
+                            System</span>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-pulse" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(236, 72, 153, 0.9);">GitHub TypeScript</span>
+                    <div class="project__content">
+                        <h3 class="project__title">TNT Commercial Platforms</h3>
+                        <p class="project__tagline">Client Order Management & Digital Utilities</p>
+                        <p class="project__description">Commercial ordering software with anti-enumeration security
+                            engineered for client Shree Taste N Taste Catering, alongside the lightweight TNT Tamil
+                            Calendar utility app. Built with vanilla ES modules and Supabase backend.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">JavaScript ES Modules</span><span
+                                class="tech-pill">Supabase</span><span class="tech-pill">PostgreSQL</span><span
+                                class="tech-pill">Security Controls</span><span class="tech-pill">Netlify
+                                Functions</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">MediGuide AI</h3>
-                            <p class="project__tagline">Autonomous Healthcare AI Frontend</p>
-                            <p class="project__description">Autonomous healthcare frontend platform engineered with TypeScript, React, Vite, and Bun for rapid symptom analysis, clinical triage recommendations, and interactive patient guidance.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">TypeScript</span><span class="tech-pill">React</span><span class="tech-pill">Vite</span><span class="tech-pill">Bun</span><span class="tech-pill">Healthcare AI</span>
-                            </div>
-                            <div class="project__actions"><a href="https://github.com/thevishwakumar/mediguideai" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="View MediGuide AI on GitHub"><i class="bx bxl-github" aria-hidden="true"></i> View on GitHub</a></div>
-                        </div>
+                        <div class="project__actions"><a
+                                href="https://github.com/thevishwakumar/tntdiwaliordermanagement"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="View TNT Diwali Order Management source code on GitHub"><i
+                                    class="bx bxl-github" aria-hidden="true"></i> View on GitHub</a></div>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-globe" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Active Enterprise (Est. Aug 2025)</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Zinoin Group</h3>
-                            <p class="project__tagline">Founder & CEO Initiative & Digital Infrastructure</p>
-                            <p class="project__description">Founder & CEO-led business group and digital initiatives (established August 2025), orchestrating enterprise technology services, digital infrastructure, client solutions, and commercial web platforms.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Venture Leadership</span><span class="tech-pill">Digital Infrastructure</span><span class="tech-pill">Enterprise Architecture</span><span class="tech-pill">Cloud Hosting</span>
-                            </div>
-                            <div class="project__actions"><a href="https://zinoingroup.in/" class="button--primary" target="_blank" rel="noopener noreferrer" aria-label="Visit Zinoin Group corporate website"><i class="bx bx-globe" aria-hidden="true"></i> Explore Venture</a></div>
-                        </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-brain" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(139, 92, 246, 0.9);">GitHub Machine
+                            Learning</span>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-target-lock" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(245, 158, 11, 0.9);">Digital Marketing</span>
+                    <div class="project__content">
+                        <h3 class="project__title">Fashion Item CNN Classifier</h3>
+                        <p class="project__tagline">Interactive Deep Learning & Computer Vision</p>
+                        <p class="project__description">Deep learning convolutional neural network (CNN) trained on the
+                            Fashion-MNIST dataset. Features an interactive 28x28 HTML5 Canvas for real-time user
+                            sketching and instant softmax probability classifications via a Python Flask backend.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">TensorFlow</span><span class="tech-pill">Keras</span><span
+                                class="tech-pill">Python Flask</span><span class="tech-pill">HTML5 Canvas</span><span
+                                class="tech-pill">Computer Vision</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Performance Marketing & Acquisition Funnel</h3>
-                            <p class="project__tagline">Paid Social, Search & Multi-Channel Growth</p>
-                            <p class="project__description">Engineered high-converting digital advertising campaigns across Meta Ads Manager, Google Ads (Search & Display), and Campaign Manager 360, driving scalable commercial lead generation and ROAS.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Meta Ads</span><span class="tech-pill">Google Ads</span><span class="tech-pill">Campaign Manager 360</span><span class="tech-pill">Conversion Tracking</span><span class="tech-pill">ROAS Optimization</span>
-                            </div>
-                            <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Contact Vishwa Kumar about marketing strategy"><i class="bx bx-envelope" aria-hidden="true"></i> Discuss Marketing</a></div>
-                        </div>
+                        <div class="project__actions"><a
+                                href="https://github.com/thevishwakumar/Fashion-Item-Classification-Convolutional-Neural-Networks"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="View Fashion Item CNN Classifier on GitHub"><i class="bx bxl-github"
+                                    aria-hidden="true"></i> View on GitHub</a></div>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-search-alt" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Growth & Analytics</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Enterprise SEO & Growth Architecture</h3>
-                            <p class="project__tagline">Technical SEO, Knowledge Graphs & Telemetry</p>
-                            <p class="project__description">Full-funnel search engine optimization, semantic Schema.org entity graph engineering, Google Search Console telemetry, and Core Web Vitals performance tuning to capture top search engine positions.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Technical SEO</span><span class="tech-pill">Schema.org JSON-LD</span><span class="tech-pill">Google Analytics 4</span><span class="tech-pill">Core Web Vitals</span><span class="tech-pill">Entity SEO</span>
-                            </div>
-                            <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Inquire about SEO & Growth"><i class="bx bx-search" aria-hidden="true"></i> Inquire via Contact</a></div>
-                        </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-pulse" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(236, 72, 153, 0.9);">GitHub
+                            TypeScript</span>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-chip" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(99, 102, 241, 0.9);">AI Innovation</span>
+                    <div class="project__content">
+                        <h3 class="project__title">MediGuide AI</h3>
+                        <p class="project__tagline">Autonomous Healthcare AI Frontend</p>
+                        <p class="project__description">Autonomous healthcare frontend platform engineered with
+                            TypeScript, React, Vite, and Bun for rapid symptom analysis, clinical triage
+                            recommendations, and interactive patient guidance.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">TypeScript</span><span class="tech-pill">React</span><span
+                                class="tech-pill">Vite</span><span class="tech-pill">Bun</span><span
+                                class="tech-pill">Healthcare AI</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">GenAI & Applied Prompt Engineering Platform</h3>
-                            <p class="project__tagline">LLM Workflows, Context Engineering & AI Automation</p>
-                            <p class="project__description">Practical generative AI pipelines and multi-turn prompt engineering platforms connecting large language models with enterprise document search, automated summaries, and conversational knowledge extraction.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Generative AI</span><span class="tech-pill">Prompt Engineering</span><span class="tech-pill">LLM Pipelines</span><span class="tech-pill">Gemini API</span><span class="tech-pill">Knowledge Workflows</span>
-                            </div>
-                            <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Contact about GenAI and Prompt Engineering solutions"><i class="bx bx-bot" aria-hidden="true"></i> Explore AI Workflows</a></div>
-                        </div>
+                        <div class="project__actions"><a href="https://github.com/thevishwakumar/mediguideai"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="View MediGuide AI on GitHub"><i class="bx bxl-github"
+                                    aria-hidden="true"></i> View on GitHub</a></div>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-trending-up" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Financial Systems</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Financial Risk & Corporate Valuation Systems</h3>
-                            <p class="project__tagline">Collateral Governance, Market Analysis & Financial Strategy</p>
-                            <p class="project__description">Corporate action evaluation, banking collateral management workflows, and financial risk governance models structured according to SEBI standards, TCS iON frameworks, and MTF Institute business administration.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Risk Governance</span><span class="tech-pill">Financial Analysis</span><span class="tech-pill">Collateral Management</span><span class="tech-pill">Business Analytics</span><span class="tech-pill">SEBI Compliance</span>
-                            </div>
-                            <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Consult on Financial Risk and Corporate Strategy"><i class="bx bx-bar-chart" aria-hidden="true"></i> Consult on Strategy</a></div>
-                        </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-globe" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Active Enterprise
+                            (Est. Aug 2025)</span>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bxl-wordpress" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(59, 130, 246, 0.9);">CMS Solutions</span>
+                    <div class="project__content">
+                        <h3 class="project__title">Zinoin Group</h3>
+                        <p class="project__tagline">Founder & CEO Initiative & Digital Infrastructure</p>
+                        <p class="project__description">Founder & CEO-led business group and digital initiatives
+                            (established August 2025), orchestrating enterprise technology services, digital
+                            infrastructure, client solutions, and commercial web platforms.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Venture Leadership</span><span class="tech-pill">Digital
+                                Infrastructure</span><span class="tech-pill">Enterprise Architecture</span><span
+                                class="tech-pill">Cloud Hosting</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">WordPress & CMS Performance Engineering</h3>
-                            <p class="project__tagline">Enterprise Security Hardening, Speed & Custom Architecture</p>
-                            <p class="project__description">Professional WordPress architecture and custom theme development featuring rigorous security hardening, database query optimization, Cloudflare edge caching, and mobile speed scores exceeding 95+.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">WordPress Core</span><span class="tech-pill">PHP & MySQL</span><span class="tech-pill">Security Hardening</span><span class="tech-pill">Edge Caching</span><span class="tech-pill">Speed Optimization</span>
-                            </div>
-                            <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Review WordPress and CMS services"><i class="bx bx-layer" aria-hidden="true"></i> Review CMS Services</a></div>
-                        </div>
+                        <div class="project__actions"><a href="https://zinoingroup.in/" class="button--primary"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit Zinoin Group corporate website"><i class="bx bx-globe"
+                                    aria-hidden="true"></i> Explore Venture</a></div>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-shield-quarter" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(220, 38, 38, 0.9);">Security Engineering</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Defensive Cybersecurity & Security Audit Framework</h3>
-                            <p class="project__tagline">Access Governance, RBAC Isolation & Threat Auditing</p>
-                            <p class="project__description">Defensive security utilities and security test automation frameworks embodying ISO/IEC 27001 principles, password hashing, JWT session security, and multi-tenant database isolation to defeat enumeration attacks.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">RBAC Verification</span><span class="tech-pill">JWT Security</span><span class="tech-pill">ISO/IEC 27001</span><span class="tech-pill">Network Defense</span><span class="tech-pill">Security Test Automation</span>
-                            </div>
-                            <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact" class="button--secondary" target="_blank" rel="noopener noreferrer" aria-label="Inquire about Cybersecurity Consultation"><i class="bx bx-shield-alt" aria-hidden="true"></i> Security Consultation</a></div>
-                        </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-target-lock" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(245, 158, 11, 0.9);">Digital
+                            Marketing</span>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-certification" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(100, 116, 139, 0.9);">In Development</span>
+                    <div class="project__content">
+                        <h3 class="project__title">Performance Marketing & Acquisition Funnel</h3>
+                        <p class="project__tagline">Paid Social, Search & Multi-Channel Growth</p>
+                        <p class="project__description">Engineered high-converting digital advertising campaigns across
+                            Meta Ads Manager, Google Ads (Search & Display), and Campaign Manager 360, driving scalable
+                            commercial lead generation and ROAS.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Meta Ads</span><span class="tech-pill">Google Ads</span><span
+                                class="tech-pill">Campaign Manager 360</span><span class="tech-pill">Conversion
+                                Tracking</span><span class="tech-pill">ROAS Optimization</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">CampusBridge / SkillTrack</h3>
-                            <p class="project__tagline">Student Certificate Tracking & Verification Engine</p>
-                            <p class="project__description">Secure digital proof platform engineered for students to store and verify symposium and workshop certificates with GPS event validation and administrative cryptographic verification.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Verification Engine</span><span class="tech-pill">GPS Validation</span><span class="tech-pill">Digital Proof</span><span class="tech-pill">Access Controls</span>
-                            </div>
-                            <div class="project__actions"><span style="background: rgba(100, 116, 139, 0.2); color: var(--text-muted); font-size: var(--smaller-font-size); font-weight: 600; padding: 6px 12px; border-radius: var(--radius-full); display: inline-flex; align-items: center;" aria-label="Project in active development"><i class="bx bx-time" aria-hidden="true"></i> In Development</span></div>
-                        </div>
+                        <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="Contact Vishwa Kumar about marketing strategy"><i class="bx bx-envelope"
+                                    aria-hidden="true"></i> Discuss Marketing</a></div>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-shield-quarter" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Cybersecurity / AI</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Autonomous AI Defense & Trap Network</h3>
-                            <p class="project__tagline">Autonomous Cyber Defense & Deception Environment</p>
-                            <p class="project__description">Autonomous cyber-defense architecture engineered to continuously monitor suspicious activity and trigger automated containment responses. Features controlled deception and honeypot trap mechanisms to attract, observe, and profile threat actors while neutralizing lateral movement.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Autonomous Cyber Defense</span><span class="tech-pill">Deception & Trap Networks</span><span class="tech-pill">Behavioral Analysis</span><span class="tech-pill">Automated Response</span><span class="tech-pill">Python</span>
-                            </div>
-                            <div class="project__actions"><a href="https://github.com/thevishwakumar" class="button button--ghost" target="_blank" rel="noopener noreferrer" aria-label="Explore Autonomous AI Defense repository on GitHub"><i class="bx bxl-github" aria-hidden="true"></i> Architecture Repo</a></div>
-                        </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-search-alt" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(16, 185, 129, 0.9);">Growth &
+                            Analytics</span>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-radar" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(59, 130, 246, 0.9);">Cybersecurity / AI</span>
+                    <div class="project__content">
+                        <h3 class="project__title">Enterprise SEO & Growth Architecture</h3>
+                        <p class="project__tagline">Technical SEO, Knowledge Graphs & Telemetry</p>
+                        <p class="project__description">Full-funnel search engine optimization, semantic Schema.org
+                            entity graph engineering, Google Search Console telemetry, and Core Web Vitals performance
+                            tuning to capture top search engine positions.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Technical SEO</span><span class="tech-pill">Schema.org
+                                JSON-LD</span><span class="tech-pill">Google Analytics 4</span><span
+                                class="tech-pill">Core Web Vitals</span><span class="tech-pill">Entity SEO</span>
                         </div>
-                        <div class="project__content">
-                            <h3 class="project__title">CyberGuard – AI Threat Detection</h3>
-                            <p class="project__tagline">Phishing, Spam & Log Threat Analysis Engine</p>
-                            <p class="project__description">Multi-vector security intelligence system developed to inspect spam communications, analyze live security logs, and flag phishing URLs. Features automated threat classification workflows and behavioral pattern heuristics for proactive security monitoring.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">Phishing & Spam Detection</span><span class="tech-pill">Security Log Analysis</span><span class="tech-pill">Threat Classification</span><span class="tech-pill">Security Monitoring</span><span class="tech-pill">Python</span>
-                            </div>
-                            <div class="project__actions"><a href="https://github.com/thevishwakumar" class="button button--ghost" target="_blank" rel="noopener noreferrer" aria-label="Explore CyberGuard Threat Detection on GitHub"><i class="bx bxl-github" aria-hidden="true"></i> Source Code</a></div>
-                        </div>
+                        <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="Inquire about SEO & Growth"><i class="bx bx-search" aria-hidden="true"></i>
+                                Inquire via Contact</a></div>
                     </div>
-                    <div class="project__card scroll-animate">
-                        <div class="project__icon-wrapper">
-                            <div class="project__icon-box"><i class="bx bx-lock-alt" aria-hidden="true"></i></div>
-                            <span class="project__badge-pill" style="background: rgba(99, 102, 241, 0.9);">AI Security / DLP</span>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">ETHOS – AI Data Confidentiality Shield</h3>
-                            <p class="project__tagline">AI Data Privacy, DLP & Enterprise Compliance Shield</p>
-                            <p class="project__description">Specialized enterprise security layer preventing confidential business data and sensitive corporate assets from being leaked to external AI tools and LLMs. Incorporates real-time policy inspection, sensitive token redaction, and automated compliance enforcement.</p>
-                            <div class="project__tech-chips">
-                                <span class="tech-pill">AI Data Protection</span><span class="tech-pill">Data Loss Prevention (DLP)</span><span class="tech-pill">Compliance Shield</span><span class="tech-pill">Policy Enforcement</span><span class="tech-pill">Data Inspection</span>
-                            </div>
-                            <div class="project__actions"><a href="https://github.com/thevishwakumar" class="button button--ghost" target="_blank" rel="noopener noreferrer" aria-label="Explore ETHOS AI Data Shield on GitHub"><i class="bx bxl-github" aria-hidden="true"></i> Project Overview</a></div>
-                        </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-chip" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(99, 102, 241, 0.9);">AI
+                            Innovation</span>
                     </div>
+                    <div class="project__content">
+                        <h3 class="project__title">GenAI & Applied Prompt Engineering Platform</h3>
+                        <p class="project__tagline">LLM Workflows, Context Engineering & AI Automation</p>
+                        <p class="project__description">Practical generative AI pipelines and multi-turn prompt
+                            engineering platforms connecting large language models with enterprise document search,
+                            automated summaries, and conversational knowledge extraction.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Generative AI</span><span class="tech-pill">Prompt
+                                Engineering</span><span class="tech-pill">LLM Pipelines</span><span
+                                class="tech-pill">Gemini API</span><span class="tech-pill">Knowledge Workflows</span>
+                        </div>
+                        <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="Contact about GenAI and Prompt Engineering solutions"><i class="bx bx-bot"
+                                    aria-hidden="true"></i> Explore AI Workflows</a></div>
+                    </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-trending-up" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Financial
+                            Systems</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Financial Risk & Corporate Valuation Systems</h3>
+                        <p class="project__tagline">Collateral Governance, Market Analysis & Financial Strategy</p>
+                        <p class="project__description">Corporate action evaluation, banking collateral management
+                            workflows, and financial risk governance models structured according to SEBI standards, TCS
+                            iON frameworks, and MTF Institute business administration.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Risk Governance</span><span class="tech-pill">Financial
+                                Analysis</span><span class="tech-pill">Collateral Management</span><span
+                                class="tech-pill">Business Analytics</span><span class="tech-pill">SEBI
+                                Compliance</span>
+                        </div>
+                        <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="Consult on Financial Risk and Corporate Strategy"><i class="bx bx-bar-chart"
+                                    aria-hidden="true"></i> Consult on Strategy</a></div>
+                    </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bxl-wordpress" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(59, 130, 246, 0.9);">CMS
+                            Solutions</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">WordPress & CMS Performance Engineering</h3>
+                        <p class="project__tagline">Enterprise Security Hardening, Speed & Custom Architecture</p>
+                        <p class="project__description">Professional WordPress architecture and custom theme development
+                            featuring rigorous security hardening, database query optimization, Cloudflare edge caching,
+                            and mobile speed scores exceeding 95+.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">WordPress Core</span><span class="tech-pill">PHP & MySQL</span><span
+                                class="tech-pill">Security Hardening</span><span class="tech-pill">Edge
+                                Caching</span><span class="tech-pill">Speed Optimization</span>
+                        </div>
+                        <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="Review WordPress and CMS services"><i class="bx bx-layer"
+                                    aria-hidden="true"></i> Review CMS Services</a></div>
+                    </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-shield-quarter" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(220, 38, 38, 0.9);">Security
+                            Engineering</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Defensive Cybersecurity & Security Audit Framework</h3>
+                        <p class="project__tagline">Access Governance, RBAC Isolation & Threat Auditing</p>
+                        <p class="project__description">Defensive security utilities and security test automation
+                            frameworks embodying ISO/IEC 27001 principles, password hashing, JWT session security, and
+                            multi-tenant database isolation to defeat enumeration attacks.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">RBAC Verification</span><span class="tech-pill">JWT
+                                Security</span><span class="tech-pill">ISO/IEC 27001</span><span
+                                class="tech-pill">Network Defense</span><span class="tech-pill">Security Test
+                                Automation</span>
+                        </div>
+                        <div class="project__actions"><a href="https://founder.zinoingroup.in/#contact"
+                                class="button--secondary" target="_blank" rel="noopener noreferrer"
+                                aria-label="Inquire about Cybersecurity Consultation"><i class="bx bx-shield-alt"
+                                    aria-hidden="true"></i> Security Consultation</a></div>
+                    </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-certification" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(100, 116, 139, 0.9);">In
+                            Development</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">CampusBridge / SkillTrack</h3>
+                        <p class="project__tagline">Student Certificate Tracking & Verification Engine</p>
+                        <p class="project__description">Secure digital proof platform engineered for students to store
+                            and verify symposium and workshop certificates with GPS event validation and administrative
+                            cryptographic verification.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Verification Engine</span><span class="tech-pill">GPS
+                                Validation</span><span class="tech-pill">Digital Proof</span><span
+                                class="tech-pill">Access Controls</span>
+                        </div>
+                        <div class="project__actions"><span
+                                style="background: rgba(100, 116, 139, 0.2); color: var(--text-muted); font-size: var(--smaller-font-size); font-weight: 600; padding: 6px 12px; border-radius: var(--radius-full); display: inline-flex; align-items: center;"
+                                aria-label="Project in active development"><i class="bx bx-time" aria-hidden="true"></i>
+                                In Development</span></div>
+                    </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-shield-quarter" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(14, 165, 233, 0.9);">Cybersecurity /
+                            AI</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Autonomous AI Defense & Trap Network</h3>
+                        <p class="project__tagline">Autonomous Cyber Defense & Deception Environment</p>
+                        <p class="project__description">Autonomous cyber-defense architecture engineered to continuously
+                            monitor suspicious activity and trigger automated containment responses. Features controlled
+                            deception and honeypot trap mechanisms to attract, observe, and profile threat actors while
+                            neutralizing lateral movement.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Autonomous Cyber Defense</span><span class="tech-pill">Deception &
+                                Trap Networks</span><span class="tech-pill">Behavioral Analysis</span><span
+                                class="tech-pill">Automated Response</span><span class="tech-pill">Python</span>
+                        </div>
+                        <div class="project__actions"><a href="https://github.com/thevishwakumar"
+                                class="button button--ghost" target="_blank" rel="noopener noreferrer"
+                                aria-label="Explore Autonomous AI Defense repository on GitHub"><i class="bx bxl-github"
+                                    aria-hidden="true"></i> Architecture Repo</a></div>
+                    </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-radar" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(59, 130, 246, 0.9);">Cybersecurity /
+                            AI</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">CyberGuard – AI Threat Detection</h3>
+                        <p class="project__tagline">Phishing, Spam & Log Threat Analysis Engine</p>
+                        <p class="project__description">Multi-vector security intelligence system developed to inspect
+                            spam communications, analyze live security logs, and flag phishing URLs. Features automated
+                            threat classification workflows and behavioral pattern heuristics for proactive security
+                            monitoring.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">Phishing & Spam Detection</span><span class="tech-pill">Security Log
+                                Analysis</span><span class="tech-pill">Threat Classification</span><span
+                                class="tech-pill">Security Monitoring</span><span class="tech-pill">Python</span>
+                        </div>
+                        <div class="project__actions"><a href="https://github.com/thevishwakumar"
+                                class="button button--ghost" target="_blank" rel="noopener noreferrer"
+                                aria-label="Explore CyberGuard Threat Detection on GitHub"><i class="bx bxl-github"
+                                    aria-hidden="true"></i> Source Code</a></div>
+                    </div>
+                </div>
+                <div class="project__card scroll-animate">
+                    <div class="project__icon-wrapper">
+                        <div class="project__icon-box"><i class="bx bx-lock-alt" aria-hidden="true"></i></div>
+                        <span class="project__badge-pill" style="background: rgba(99, 102, 241, 0.9);">AI Security /
+                            DLP</span>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">ETHOS – AI Data Confidentiality Shield</h3>
+                        <p class="project__tagline">AI Data Privacy, DLP & Enterprise Compliance Shield</p>
+                        <p class="project__description">Specialized enterprise security layer preventing confidential
+                            business data and sensitive corporate assets from being leaked to external AI tools and
+                            LLMs. Incorporates real-time policy inspection, sensitive token redaction, and automated
+                            compliance enforcement.</p>
+                        <div class="project__tech-chips">
+                            <span class="tech-pill">AI Data Protection</span><span class="tech-pill">Data Loss
+                                Prevention (DLP)</span><span class="tech-pill">Compliance Shield</span><span
+                                class="tech-pill">Policy Enforcement</span><span class="tech-pill">Data
+                                Inspection</span>
+                        </div>
+                        <div class="project__actions"><a href="https://github.com/thevishwakumar"
+                                class="button button--ghost" target="_blank" rel="noopener noreferrer"
+                                aria-label="Explore ETHOS AI Data Shield on GitHub"><i class="bx bxl-github"
+                                    aria-hidden="true"></i> Project Overview</a></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -3430,28 +3720,36 @@
                                         <i class='bx bx-building-house' aria-hidden="true"></i> Zinoin Group
                                     </span>
                                 </div>
-                                <span class="experience__badge" style="background: rgba(14, 165, 233, 0.15); color: var(--accent); border-color: rgba(14, 165, 233, 0.3);"><i class='bx bx-time-five' aria-hidden="true"></i>
+                                <span class="experience__badge"
+                                    style="background: rgba(14, 165, 233, 0.15); color: var(--accent); border-color: rgba(14, 165, 233, 0.3);"><i
+                                        class='bx bx-time-five' aria-hidden="true"></i>
                                     Aug 2025 — Present · Active Enterprise</span>
                             </div>
                             <p class="experience__desc">
-                                Leading corporate strategy, software architecture, and venture operations across Zinoin Group (established Aug 2025). Spearheading enterprise AI solutions, cybersecurity engineering, and high-performance digital marketing systems.
+                                Leading corporate strategy, software architecture, and venture operations across Zinoin
+                                Group (established Aug 2025). Spearheading enterprise AI solutions, cybersecurity
+                                engineering, and high-performance digital marketing systems.
                             </p>
                             <div class="experience__bullets">
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-check-shield' aria-hidden="true"></i>
-                                    <span>Founded and established Zinoin Group in August 2025 as Founder & CEO, leading corporate strategy, digital infrastructure, and client software delivery.</span>
+                                    <span>Founded and established Zinoin Group in August 2025 as Founder & CEO, leading
+                                        corporate strategy, digital infrastructure, and client software delivery.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-data' aria-hidden="true"></i>
-                                    <span>Architected and engineered enterprise full-stack platforms including DocuMind AI (RAG knowledge platform) and commercial order management systems.</span>
+                                    <span>Architected and engineered enterprise full-stack platforms including DocuMind
+                                        AI (RAG knowledge platform) and commercial order management systems.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-line-chart' aria-hidden="true"></i>
-                                    <span>Designed and managed performance digital marketing campaigns across Meta Ads, Google Ads, and analytics attribution models.</span>
+                                    <span>Designed and managed performance digital marketing campaigns across Meta Ads,
+                                        Google Ads, and analytics attribution models.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-lock-alt' aria-hidden="true"></i>
-                                    <span>Established cybersecurity hygiene, identity governance, and role-based access control (RBAC) security frameworks across internal and client platforms.</span>
+                                    <span>Established cybersecurity hygiene, identity governance, and role-based access
+                                        control (RBAC) security frameworks across internal and client platforms.</span>
                                 </div>
                             </div>
                             <div class="experience__tech-chips">
@@ -3477,23 +3775,28 @@
                                 </div>
                                 <span class="experience__badge"
                                     style="background: rgba(99, 102, 241, 0.1); color: var(--accent); border-color: rgba(99, 102, 241, 0.25);"><i
-                                        class='bx bx-time-five' aria-hidden="true"></i> 2023 — Aug 2025 · Commercial Practice</span>
+                                        class='bx bx-time-five' aria-hidden="true"></i> 2023 — Aug 2025 · Commercial
+                                    Practice</span>
                             </div>
                             <p class="experience__desc">
-                                Delivered custom web applications, responsive websites, and digital marketing setups for commercial and retail clients, prioritizing data integrity and conversion performance.
+                                Delivered custom web applications, responsive websites, and digital marketing setups for
+                                commercial and retail clients, prioritizing data integrity and conversion performance.
                             </p>
                             <div class="experience__bullets">
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-check-shield' aria-hidden="true"></i>
-                                    <span>Delivered custom web applications, responsive websites, and digital marketing setups for commercial and retail clients.</span>
+                                    <span>Delivered custom web applications, responsive websites, and digital marketing
+                                        setups for commercial and retail clients.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-server' aria-hidden="true"></i>
-                                    <span>Engineered secure commercial order management software with anti-enumeration database controls for catering operations.</span>
+                                    <span>Engineered secure commercial order management software with anti-enumeration
+                                        database controls for catering operations.</span>
                                 </div>
                                 <div class="experience__bullet-item">
                                     <i class='bx bx-trending-up' aria-hidden="true"></i>
-                                    <span>Conducted website performance optimization audits, Core Web Vitals remediation, and technical SEO architecture.</span>
+                                    <span>Conducted website performance optimization audits, Core Web Vitals
+                                        remediation, and technical SEO architecture.</span>
                                 </div>
                             </div>
                             <div class="experience__tech-chips">
@@ -3534,7 +3837,8 @@
                             <span>CGPA:</span> <strong>8.5 / 10</strong>
                         </div>
                         <div class="education__meta-item">
-                            <span>Coursework:</span> <strong>Computer Networks, Network Security, Cybersecurity Fundamentals, Operating Systems, DBMS</strong>
+                            <span>Coursework:</span> <strong>Computer Networks, Network Security, Cybersecurity
+                                Fundamentals, Operating Systems, DBMS</strong>
                         </div>
                         <div class="education__meta-item">
                             <span>Status:</span> <strong class="education__status"><i class='bx bx-loader-circle'
@@ -3567,511 +3871,557 @@
         <section class="certifications section" id="certifications" aria-labelledby="certifications-heading">
             <h2 class="section-title" id="certifications-heading">Certifications</h2>
 
-                                    <div class="certifications__grid bd-grid">
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-shield-quarter" aria-hidden="true"></i> CappricioSec University
-                            </div>
-                            <h3 class="certificate__card-title">Cybersecurity & Ethical Hacking</h3>
+            <div class="certifications__grid bd-grid">
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-shield-quarter" aria-hidden="true"></i> CappricioSec University
                         </div>
-                        <div class="certificate__footer">
-                            <a href="https://university.cappriciosec.com/" target="_blank" rel="noopener noreferrer" class="certificate__link" title="Verify Certificate on CappricioSec University portal"><i class="bx bx-link-external" aria-hidden="true"></i> ID: b093c0aab1b34503a711</a>
-                            <span class="certificate__code">Issued: Apr 2026</span>
-                        </div>
+                        <h3 class="certificate__card-title">Cybersecurity & Ethical Hacking</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-award" aria-hidden="true"></i> Cisco Networking Academy
-                            </div>
-                            <h3 class="certificate__card-title">Introduction to Cybersecurity</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Candidate Record</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <a href="https://university.cappriciosec.com/" target="_blank" rel="noopener noreferrer"
+                            class="certificate__link" title="Verify Certificate on CappricioSec University portal"><i
+                                class="bx bx-link-external" aria-hidden="true"></i> ID: b093c0aab1b34503a711</a>
+                        <span class="certificate__code">Issued: Apr 2026</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-lock-alt" aria-hidden="true"></i> IBM SkillsBuild
-                            </div>
-                            <h3 class="certificate__card-title">Getting Started with Cybersecurity</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-award" aria-hidden="true"></i> Cisco Networking Academy
                         </div>
-                        <div class="certificate__footer">
-                            <a href="https://skillsbuild.org/" target="_blank" rel="noopener noreferrer" class="certificate__link" title="Verify credential on IBM SkillsBuild"><i class="bx bx-link-external" aria-hidden="true"></i> IBM SkillsBuild Credential</a>
-                            <span class="certificate__code">Issued: Aug 2026</span>
-                        </div>
+                        <h3 class="certificate__card-title">Introduction to Cybersecurity</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-shield-quarter" aria-hidden="true"></i> IBM SkillsBuild
-                            </div>
-                            <h3 class="certificate__card-title">Cybersecurity Fundamentals</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <a href="https://skillsbuild.org/" target="_blank" rel="noopener noreferrer" class="certificate__link" title="Verify credential on IBM SkillsBuild"><i class="bx bx-link-external" aria-hidden="true"></i> IBM SkillsBuild Credential</a>
-                            <span class="certificate__code">Issued: Aug 2026</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Candidate Record</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-shield-alt" aria-hidden="true"></i> Simplilearn SkillUp
-                            </div>
-                            <h3 class="certificate__card-title">Ethical Hacking 101: Beginners Guide to Ethical Hacking</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-lock-alt" aria-hidden="true"></i> IBM SkillsBuild
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Issued: Aug 2026</span>
-                        </div>
+                        <h3 class="certificate__card-title">Getting Started with Cybersecurity</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-check-shield" aria-hidden="true"></i> SkillFront
-                            </div>
-                            <h3 class="certificate__card-title">ISO/IEC 27001 Information Security Associate</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Associate Credential</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <a href="https://skillsbuild.org/" target="_blank" rel="noopener noreferrer"
+                            class="certificate__link" title="Verify credential on IBM SkillsBuild"><i
+                                class="bx bx-link-external" aria-hidden="true"></i> IBM SkillsBuild Credential</a>
+                        <span class="certificate__code">Issued: Aug 2026</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-briefcase" aria-hidden="true"></i> TCS iON
-                            </div>
-                            <h3 class="certificate__card-title">Corporate Actions & Entrepreneurship</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-shield-quarter" aria-hidden="true"></i> IBM SkillsBuild
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Enterprise Credential</span>
-                        </div>
+                        <h3 class="certificate__card-title">Cybersecurity Fundamentals</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxs-bank" aria-hidden="true"></i> Securities and Exchange Board of India
-                            </div>
-                            <h3 class="certificate__card-title">SEBI Investor Awareness Test</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Regulatory Compliance</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <a href="https://skillsbuild.org/" target="_blank" rel="noopener noreferrer"
+                            class="certificate__link" title="Verify credential on IBM SkillsBuild"><i
+                                class="bx bx-link-external" aria-hidden="true"></i> IBM SkillsBuild Credential</a>
+                        <span class="certificate__code">Issued: Aug 2026</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-line-chart" aria-hidden="true"></i> HubSpot Academy
-                            </div>
-                            <h3 class="certificate__card-title">Digital Marketing Certified</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-shield-alt" aria-hidden="true"></i> Simplilearn SkillUp
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Inbound Marketing</span>
-                        </div>
+                        <h3 class="certificate__card-title">Ethical Hacking 101: Beginners Guide to Ethical Hacking</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-dollar-circle" aria-hidden="true"></i> Webul
-                            </div>
-                            <h3 class="certificate__card-title">Risk Management in Financial Sector</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Financial Risk</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Issued: Aug 2026</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-stats" aria-hidden="true"></i> Microsoft
-                            </div>
-                            <h3 class="certificate__card-title">Business Analytics with Excel</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-check-shield" aria-hidden="true"></i> SkillFront
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Business Intelligence</span>
-                        </div>
+                        <h3 class="certificate__card-title">ISO/IEC 27001 Information Security Associate</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-group" aria-hidden="true"></i> HP LIFE Foundation
-                            </div>
-                            <h3 class="certificate__card-title">Effective Leadership & Social Entrepreneurship</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Executive Leadership</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Associate Credential</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-target-lock" aria-hidden="true"></i> Accenture
-                            </div>
-                            <h3 class="certificate__card-title">Digital Marketing & Social Media</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-briefcase" aria-hidden="true"></i> TCS iON
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Professional Marketing</span>
-                        </div>
+                        <h3 class="certificate__card-title">Corporate Actions & Entrepreneurship</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-google" aria-hidden="true"></i> Google
-                            </div>
-                            <h3 class="certificate__card-title">Google Ads Display Certification</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Display Ad Operations</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Enterprise Credential</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-google" aria-hidden="true"></i> Google
-                            </div>
-                            <h3 class="certificate__card-title">Google Ads Search Certification</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxs-bank" aria-hidden="true"></i> Securities and Exchange Board of India
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Search Network Advertising</span>
-                        </div>
+                        <h3 class="certificate__card-title">SEBI Investor Awareness Test</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-analyse" aria-hidden="true"></i> Semrush Academy
-                            </div>
-                            <h3 class="certificate__card-title">Fundamentals of Marketing Analytics</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Analytics & Attribution</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Regulatory Compliance</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-trending-up" aria-hidden="true"></i> Study Badshah (Accredited by ACTD)
-                            </div>
-                            <h3 class="certificate__card-title">Digital & Social Media Marketing</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-line-chart" aria-hidden="true"></i> HubSpot Academy
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Accredited Program</span>
-                        </div>
+                        <h3 class="certificate__card-title">Digital Marketing Certified</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-linkedin-square" aria-hidden="true"></i> LinkedIn Learning
-                            </div>
-                            <h3 class="certificate__card-title">Entrepreneurship Foundations</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Business Foundations</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Inbound Marketing</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-google" aria-hidden="true"></i> Google
-                            </div>
-                            <h3 class="certificate__card-title">Campaign Manager 360 Certificate</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-dollar-circle" aria-hidden="true"></i> Webul
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Enterprise Ad Serving</span>
-                        </div>
+                        <h3 class="certificate__card-title">Risk Management in Financial Sector</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-buildings" aria-hidden="true"></i> MTF Institute of Management
-                            </div>
-                            <h3 class="certificate__card-title">Business Administration</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Executive Administration</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Financial Risk</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-money" aria-hidden="true"></i> Udemy
-                            </div>
-                            <h3 class="certificate__card-title">Advanced Financial Analysis and Management</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-stats" aria-hidden="true"></i> Microsoft
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Valuation & Analysis</span>
-                        </div>
+                        <h3 class="certificate__card-title">Business Analytics with Excel</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-certification" aria-hidden="true"></i> Content Marketing Institute
-                            </div>
-                            <h3 class="certificate__card-title">Content Marketing Professional Certificate</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Content & Campaigns</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Business Intelligence</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-facebook-square" aria-hidden="true"></i> WsCube Tech
-                            </div>
-                            <h3 class="certificate__card-title">Master Facebook Ads In 90 Minutes</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-group" aria-hidden="true"></i> HP LIFE Foundation
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Performance Ads</span>
-                        </div>
+                        <h3 class="certificate__card-title">Effective Leadership & Social Entrepreneurship</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-bot" aria-hidden="true"></i> Lets Upgrade
-                            </div>
-                            <h3 class="certificate__card-title">Introduction to GenAI & Prompting</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Generative AI</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Executive Leadership</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-wordpress" aria-hidden="true"></i> Udemy
-                            </div>
-                            <h3 class="certificate__card-title">Advanced WordPress Course for Professionals</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-target-lock" aria-hidden="true"></i> Accenture
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">CMS Architecture</span>
-                        </div>
+                        <h3 class="certificate__card-title">Digital Marketing & Social Media</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-globe" aria-hidden="true"></i> Future Learn (Accenture)
-                            </div>
-                            <h3 class="certificate__card-title">Digital Skills: Digital Marketing</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Omnichannel Strategy</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Professional Marketing</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-share-alt" aria-hidden="true"></i> Future Learn (Accenture)
-                            </div>
-                            <h3 class="certificate__card-title">Digital Skills: Social Media</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-google" aria-hidden="true"></i> Google
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Audience Engagement</span>
-                        </div>
+                        <h3 class="certificate__card-title">Google Ads Display Certification</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-google" aria-hidden="true"></i> Google Digital Academy
-                            </div>
-                            <h3 class="certificate__card-title">Campaign Manager 360 Certification Exam</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Enterprise Ad Tech</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Display Ad Operations</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-shield-quarter" aria-hidden="true"></i> TCS iON
-                            </div>
-                            <h3 class="certificate__card-title">Understanding Collateral Management</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-google" aria-hidden="true"></i> Google
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Banking Operations</span>
-                        </div>
+                        <h3 class="certificate__card-title">Google Ads Search Certification</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-briefcase-alt" aria-hidden="true"></i> TCS iON
-                            </div>
-                            <h3 class="certificate__card-title">Introduction to Corporate Actions</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Capital Markets</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Search Network Advertising</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-table" aria-hidden="true"></i> Simplilearn
-                            </div>
-                            <h3 class="certificate__card-title">Business Analytics with Excel (Beginner to Pro)</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-analyse" aria-hidden="true"></i> Semrush Academy
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Data Analytics</span>
-                        </div>
+                        <h3 class="certificate__card-title">Fundamentals of Marketing Analytics</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-bulb" aria-hidden="true"></i> HP LIFE Foundation
-                            </div>
-                            <h3 class="certificate__card-title">Social Entrepreneurship</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Social Impact</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Analytics & Attribution</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-user-voice" aria-hidden="true"></i> HP LIFE Foundation
-                            </div>
-                            <h3 class="certificate__card-title">Effective Leadership Principles</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-trending-up" aria-hidden="true"></i> Study Badshah (Accredited by ACTD)
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">People Management</span>
-                        </div>
+                        <h3 class="certificate__card-title">Digital & Social Media Marketing</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-chart" aria-hidden="true"></i> Semrush Academy
-                            </div>
-                            <h3 class="certificate__card-title">Maximizing Your Social Impact with Semrush Toolkit</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Competitive Intelligence</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Accredited Program</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-check-shield" aria-hidden="true"></i> TCS iON
-                            </div>
-                            <h3 class="certificate__card-title">Understanding Risk Management in Financial Sector</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-linkedin-square" aria-hidden="true"></i> LinkedIn Learning
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Institutional Risk</span>
-                        </div>
+                        <h3 class="certificate__card-title">Entrepreneurship Foundations</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-chip" aria-hidden="true"></i> Lets Upgrade
-                            </div>
-                            <h3 class="certificate__card-title">Digital Marketing with AI</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">AI Marketing</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Business Foundations</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-book-bookmark" aria-hidden="true"></i> Saylor Academy
-                            </div>
-                            <h3 class="certificate__card-title">BUS200 – Business Ethics</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-google" aria-hidden="true"></i> Google
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Corporate Governance</span>
-                        </div>
+                        <h3 class="certificate__card-title">Campaign Manager 360 Certificate</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-linkedin" aria-hidden="true"></i> LinkedIn Learning
-                            </div>
-                            <h3 class="certificate__card-title">Digital Marketing Professional Certificate</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Career Certification</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Enterprise Ad Serving</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-certification" aria-hidden="true"></i> NISM (SEBI)
-                            </div>
-                            <h3 class="certificate__card-title">National Institute of Securities Markets (NISM) Awareness</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-buildings" aria-hidden="true"></i> MTF Institute of Management
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Financial Literacy</span>
-                        </div>
+                        <h3 class="certificate__card-title">Business Administration</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bx-shield" aria-hidden="true"></i> CyberSec Foundation
-                            </div>
-                            <h3 class="certificate__card-title">Network Defense & Threat Hunting Fundamentals</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Threat Mitigation</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Executive Administration</span>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-python" aria-hidden="true"></i> CodeCraft Academy
-                            </div>
-                            <h3 class="certificate__card-title">Python for Defensive Cybersecurity & Automation</h3>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-money" aria-hidden="true"></i> Udemy
                         </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Security Scripting</span>
-                        </div>
+                        <h3 class="certificate__card-title">Advanced Financial Analysis and Management</h3>
                     </div>
-                    <div class="certificate__card scroll-animate">
-                        <div>
-                            <div class="certificate__org-badge">
-                                <i class="bx bxl-tux" aria-hidden="true"></i> Enterprise Linux
-                            </div>
-                            <h3 class="certificate__card-title">Linux System Administration & Server Hardening</h3>
-                        </div>
-                        <div class="certificate__footer">
-                            <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i> Verified</span>
-                            <span class="certificate__code">Systems Security</span>
-                        </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Valuation & Analysis</span>
                     </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-certification" aria-hidden="true"></i> Content Marketing Institute
+                        </div>
+                        <h3 class="certificate__card-title">Content Marketing Professional Certificate</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Content & Campaigns</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-facebook-square" aria-hidden="true"></i> WsCube Tech
+                        </div>
+                        <h3 class="certificate__card-title">Master Facebook Ads In 90 Minutes</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Performance Ads</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-bot" aria-hidden="true"></i> Lets Upgrade
+                        </div>
+                        <h3 class="certificate__card-title">Introduction to GenAI & Prompting</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Generative AI</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-wordpress" aria-hidden="true"></i> Udemy
+                        </div>
+                        <h3 class="certificate__card-title">Advanced WordPress Course for Professionals</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">CMS Architecture</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-globe" aria-hidden="true"></i> Future Learn (Accenture)
+                        </div>
+                        <h3 class="certificate__card-title">Digital Skills: Digital Marketing</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Omnichannel Strategy</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-share-alt" aria-hidden="true"></i> Future Learn (Accenture)
+                        </div>
+                        <h3 class="certificate__card-title">Digital Skills: Social Media</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Audience Engagement</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-google" aria-hidden="true"></i> Google Digital Academy
+                        </div>
+                        <h3 class="certificate__card-title">Campaign Manager 360 Certification Exam</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Enterprise Ad Tech</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-shield-quarter" aria-hidden="true"></i> TCS iON
+                        </div>
+                        <h3 class="certificate__card-title">Understanding Collateral Management</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Banking Operations</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-briefcase-alt" aria-hidden="true"></i> TCS iON
+                        </div>
+                        <h3 class="certificate__card-title">Introduction to Corporate Actions</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Capital Markets</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-table" aria-hidden="true"></i> Simplilearn
+                        </div>
+                        <h3 class="certificate__card-title">Business Analytics with Excel (Beginner to Pro)</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Data Analytics</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-bulb" aria-hidden="true"></i> HP LIFE Foundation
+                        </div>
+                        <h3 class="certificate__card-title">Social Entrepreneurship</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Social Impact</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-user-voice" aria-hidden="true"></i> HP LIFE Foundation
+                        </div>
+                        <h3 class="certificate__card-title">Effective Leadership Principles</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">People Management</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-chart" aria-hidden="true"></i> Semrush Academy
+                        </div>
+                        <h3 class="certificate__card-title">Maximizing Your Social Impact with Semrush Toolkit</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Competitive Intelligence</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-check-shield" aria-hidden="true"></i> TCS iON
+                        </div>
+                        <h3 class="certificate__card-title">Understanding Risk Management in Financial Sector</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Institutional Risk</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-chip" aria-hidden="true"></i> Lets Upgrade
+                        </div>
+                        <h3 class="certificate__card-title">Digital Marketing with AI</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">AI Marketing</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-book-bookmark" aria-hidden="true"></i> Saylor Academy
+                        </div>
+                        <h3 class="certificate__card-title">BUS200 – Business Ethics</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Corporate Governance</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-linkedin" aria-hidden="true"></i> LinkedIn Learning
+                        </div>
+                        <h3 class="certificate__card-title">Digital Marketing Professional Certificate</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Career Certification</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-certification" aria-hidden="true"></i> NISM (SEBI)
+                        </div>
+                        <h3 class="certificate__card-title">National Institute of Securities Markets (NISM) Awareness
+                        </h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Financial Literacy</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bx-shield" aria-hidden="true"></i> CyberSec Foundation
+                        </div>
+                        <h3 class="certificate__card-title">Network Defense & Threat Hunting Fundamentals</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Threat Mitigation</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-python" aria-hidden="true"></i> CodeCraft Academy
+                        </div>
+                        <h3 class="certificate__card-title">Python for Defensive Cybersecurity & Automation</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Security Scripting</span>
+                    </div>
+                </div>
+                <div class="certificate__card scroll-animate">
+                    <div>
+                        <div class="certificate__org-badge">
+                            <i class="bx bxl-tux" aria-hidden="true"></i> Enterprise Linux
+                        </div>
+                        <h3 class="certificate__card-title">Linux System Administration & Server Hardening</h3>
+                    </div>
+                    <div class="certificate__footer">
+                        <span class="certificate__verified"><i class="bx bx-check-shield" aria-hidden="true"></i>
+                            Verified</span>
+                        <span class="certificate__code">Systems Security</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -4115,8 +4465,7 @@
                             </div>
                         </a>
 
-                        <a href="tel:+916369027043" class="contact__link-item"
-                            aria-label="Call Vishwa K directly">
+                        <a href="tel:+916369027043" class="contact__link-item" aria-label="Call Vishwa K directly">
                             <div class="contact__link-icon" aria-hidden="true"><i class='bx bx-phone-call'></i></div>
                             <div>
                                 <span class="contact__link-label">Direct Phone</span>
@@ -4421,10 +4770,9 @@
             }
         }, { passive: true });
 
-        /*===== SYSTEM-AWARE THEME MANAGEMENT (SYSTEM / LIGHT / DARK) =====*/
+        /*===== THEME INITIALIZATION & PERSISTENCE (LIGHT & DARK - DEFAULT LIGHT) =====*/
         const THEME_STORAGE_KEY = 'theme-preference';
         const LEGACY_STORAGE_KEY = 'theme';
-        const mediaDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeDropdownMenu = document.getElementById('theme-dropdown-menu');
@@ -4434,35 +4782,26 @@
 
         function getStoredThemePreference() {
             var pref = localStorage.getItem(THEME_STORAGE_KEY) || localStorage.getItem(LEGACY_STORAGE_KEY);
-            return (pref === 'dark' || pref === 'light' || pref === 'system') ? pref : 'system';
+            return (pref === 'dark') ? 'dark' : 'light';
         }
 
         function applyTheme(preference) {
-            var validPref = (preference === 'dark' || preference === 'light' || preference === 'system') ? preference : 'system';
-            var isDark = validPref === 'dark' || (validPref === 'system' && mediaDarkQuery.matches);
-            var resolvedTheme = isDark ? 'dark' : 'light';
+            var validPref = (preference === 'dark') ? 'dark' : 'light';
 
-            document.documentElement.setAttribute('data-theme', resolvedTheme);
+            document.documentElement.setAttribute('data-theme', validPref);
             document.documentElement.setAttribute('data-theme-preference', validPref);
-            document.body.setAttribute('data-theme', resolvedTheme);
+            document.body.setAttribute('data-theme', validPref);
 
             // Update Header Icon
             if (themeIcon) {
-                themeIcon.className = '';
-                if (validPref === 'system') {
-                    themeIcon.className = 'bx bx-desktop';
-                } else if (validPref === 'light') {
-                    themeIcon.className = 'bx bx-sun';
-                } else {
-                    themeIcon.className = 'bx bx-moon';
-                }
+                themeIcon.className = (validPref === 'dark') ? 'bx bx-moon' : 'bx bx-sun';
             }
 
             // Update Toggle Button Title & Aria Label
             if (themeToggleBtn) {
-                var prefLabel = validPref.charAt(0).toUpperCase() + validPref.slice(1);
-                themeToggleBtn.setAttribute('aria-label', 'Color theme: ' + prefLabel + (validPref === 'system' ? ' (Auto OS)' : '') + '. Click to change theme');
-                themeToggleBtn.setAttribute('title', 'Current theme: ' + prefLabel + (validPref === 'system' ? ' (Auto OS)' : ''));
+                var prefLabel = (validPref === 'dark') ? 'Dark' : 'Light';
+                themeToggleBtn.setAttribute('aria-label', 'Color theme: ' + prefLabel + '. Click to toggle theme');
+                themeToggleBtn.setAttribute('title', 'Current theme: ' + prefLabel);
             }
 
             // Update Dropdown Items
@@ -4483,12 +4822,13 @@
         }
 
         function setThemePreference(pref) {
-            var validPref = (pref === 'dark' || pref === 'light' || pref === 'system') ? pref : 'system';
+            var validPref = (pref === 'dark') ? 'dark' : 'light';
             try {
                 localStorage.setItem(THEME_STORAGE_KEY, validPref);
                 localStorage.setItem(LEGACY_STORAGE_KEY, validPref);
             } catch (e) { }
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
+            if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
                 document.documentElement.classList.add('theme-transitioning');
                 window.clearTimeout(window.__themeTransitionTimeout);
                 window.__themeTransitionTimeout = window.setTimeout(function () {
@@ -4498,21 +4838,8 @@
             applyTheme(validPref);
         }
 
-        // Initialize with stored preference
+        // Initialize with default light or stored preference
         applyTheme(getStoredThemePreference());
-
-        // Dynamic OS listener: react when preference is 'system'
-        var handleMediaChange = function () {
-            if (getStoredThemePreference() === 'system') {
-                applyTheme('system');
-            }
-        };
-
-        if (mediaDarkQuery.addEventListener) {
-            mediaDarkQuery.addEventListener('change', handleMediaChange);
-        } else if (mediaDarkQuery.addListener) {
-            mediaDarkQuery.addListener(handleMediaChange);
-        }
 
         // Dropdown toggle logic
         if (themeToggleBtn && themeDropdownMenu) {

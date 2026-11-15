@@ -5,7 +5,7 @@
   "handle": "thevishwakumar",
   "role": "Founder & CEO",
   "organization": "Zinoin Group (Est. Aug 2025)",
-  "location": "Bangalore & Coimbatore, India",
+  "location": "Bangalore, India",
   "badgeText": "Founder & CEO at Zinoin Group (Est. Aug 2025)",
   "headlinePrefix": "Founder & CEO.",
   "typingTitles": [
@@ -18,10 +18,10 @@
   "about": {
     "subtitle": "Technology · Entrepreneurship · Cybersecurity · Marketing",
     "paragraphs": [
-      "I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in August 2025. My core specialization bridges cybersecurity engineering, network security defense, full-stack software development, and performance digital marketing.",
-      "Currently pursuing my B.E. in Cybersecurity Engineering at Sri Sai Ranganathan Engineering College, Coimbatore (CGPA: 8.5/10), I focus on building defensive systems including autonomous cyber defense networks, deceptive honeypot traps, AI data confidentiality shields (DLP), and phishing log analytics.",
-      "My commercial experience includes architecting enterprise AI retrieval systems (DocuMind AI), high-security order transaction software, and scalable digital infrastructure balancing defensive security hygiene with practical business growth.",
-      "Proficient across TCP/IP networking, Linux administration, Python, Java, SQL, Wireshark, Nmap, and cloud security frameworks (AWS IAM, VPC), I engineer resilient solutions that protect mission-critical data."
+      "I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in August 2025. Based in Bangalore, India, I deliver specialized cybersecurity engineering, network defense architectures, full-stack software systems, and performance digital marketing to clients and organizations worldwide.",
+      "With 1.5 years of hands-on experience, I bridge the gap between commercial business objectives and robust technical implementation. My work spans architecting enterprise AI retrieval platforms (DocuMind AI), engineering secure transaction ordering systems, and executing high-ROI digital acquisition campaigns.",
+      "Currently pursuing my B.E. in Cybersecurity Engineering at Sri Sai Ranganathan Engineering College (CGPA: 8.5/10), I combine rigorous computer science fundamentals with commercial venture operations.",
+      "From Bangalore to global markets, I engineer resilient digital infrastructure, enforce strict cybersecurity hygiene, and build scalable systems that deliver measurable commercial value."
     ],
     "badges": [
       {
@@ -32,7 +32,7 @@
       {
         "icon": "bx bx-shield-quarter",
         "label": "Specialization",
-        "value": "Network Security & Cyber Defense"
+        "value": "Cybersecurity & Web Architecture"
       },
       {
         "icon": "bx bx-building-house",
@@ -42,7 +42,12 @@
       {
         "icon": "bx bx-map-pin",
         "label": "Location",
-        "value": "Bangalore & Coimbatore, India"
+        "value": "Bangalore, India"
+      },
+      {
+        "icon": "bx bx-globe",
+        "label": "Service Area",
+        "value": "Worldwide / Global Delivery"
       }
     ]
   },
@@ -53,5 +58,25 @@
     "email": "thevishwaofficial@gmail.com",
     "website": "founder.zinoingroup.in"
   },
-  "phone": "+91 6369027043"
+  "phone": "+91 6369027043",
+  "experienceSummary": "With 1.5 years of hands-on experience, I've developed expertise in several key areas that bridge the gap between business objectives and technical implementation.",
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Professional Working Proficiency"
+    },
+    {
+      "name": "Tamil",
+      "proficiency": "Native / Fluent"
+    },
+    {
+      "name": "Kannada",
+      "proficiency": "Working Proficiency"
+    },
+    {
+      "name": "Hindi",
+      "proficiency": "Basic Working Proficiency"
+    }
+  ],
+  "serviceArea": "Worldwide / Global Client Delivery"
 }

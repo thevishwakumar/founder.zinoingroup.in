@@ -27,3 +27,4 @@ for d_file, s_file in schemas.items():
         print(f"[VALID] {d_file} matches {s_file}")
     except Exception as e:
         print(f"[INVALID] {d_file}: {e.message}")
+
