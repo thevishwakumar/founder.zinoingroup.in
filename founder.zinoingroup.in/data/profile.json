@@ -4,21 +4,21 @@
   "alternateName": "Vishwa K",
   "handle": "thevishwakumar",
   "role": "Founder & CEO",
-  "organization": "Zinoin Group (Est. Aug 2025)",
+  "organization": "Zinoin Group (Est. 2024)",
   "location": "Bangalore, India",
-  "badgeText": "Founder & CEO at Zinoin Group (Est. Aug 2025)",
-  "headlinePrefix": "Founder & CEO.",
+  "badgeText": "Founder & CEO at Zinoin Group (Est. 2024)",
+  "headlinePrefix": "",
   "typingTitles": [
     "Founder & CEO.",
-    "Network Security & Cyber Defense.",
+    "Web & App Developer.",
     "Technology Entrepreneur.",
-    "Full-Stack Developer."
+    "Digital Marketer."
   ],
-  "description": "Founder & CEO at Zinoin Group (established August 2025). Building enterprise software solutions, performance marketing funnels, and exploring cybersecurity engineering.",
+  "description": "Founder & CEO at Zinoin Group (established in 2024). Building enterprise software solutions, performance marketing funnels, and exploring cybersecurity engineering.",
   "about": {
     "subtitle": "Technology · Entrepreneurship · Cybersecurity · Marketing",
     "paragraphs": [
-      "I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in August 2025. Based in Bangalore, India, I deliver specialized cybersecurity engineering, network defense architectures, full-stack software systems, and performance digital marketing to clients and organizations worldwide.",
+      "I'm Vishwa Kumar (also known as Vishwa K), Founder & CEO at Zinoin Group, established in 2024. Based in Bangalore, India, I deliver specialized cybersecurity engineering, network defense architectures, full-stack software systems, and performance digital marketing to clients and organizations worldwide.",
       "With 1.5 years of hands-on experience, I bridge the gap between commercial business objectives and robust technical implementation. My work spans architecting enterprise AI retrieval platforms (DocuMind AI), engineering secure transaction ordering systems, and executing high-ROI digital acquisition campaigns.",
       "Currently pursuing my B.E. in Cybersecurity Engineering at Sri Sai Ranganathan Engineering College (CGPA: 8.5/10), I combine rigorous computer science fundamentals with commercial venture operations.",
       "From Bangalore to global markets, I engineer resilient digital infrastructure, enforce strict cybersecurity hygiene, and build scalable systems that deliver measurable commercial value."
@@ -37,7 +37,7 @@
       {
         "icon": "bx bx-building-house",
         "label": "Organization",
-        "value": "Zinoin Group (Est. Aug 2025)"
+        "value": "Zinoin Group (Est. 2024)"
       },
       {
         "icon": "bx bx-map-pin",

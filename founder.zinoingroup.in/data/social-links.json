@@ -42,6 +42,16 @@
       "isPrimary": true
     },
     {
+      "platform": "whatsapp",
+      "label": "WhatsApp",
+      "handle": "thevishwakumar",
+      "displayValue": "thevishwakumar",
+      "url": "https://wa.me/916369027043",
+      "icon": "bx bxl-whatsapp",
+      "ctaText": "Message on WhatsApp",
+      "isPrimary": true
+    },
+    {
       "platform": "website",
       "label": "Website",
       "handle": "founder.zinoingroup.in",
