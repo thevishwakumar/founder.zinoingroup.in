@@ -59,6 +59,85 @@
         return el('i', { className: className, 'aria-hidden': ariaHidden ? 'true' : 'false' });
     }
 
+    // Skill to Context-Appropriate Boxicon Mapping
+    const SKILL_ICON_MAP = {
+        // Technology & Software Development
+        'Frontend Development': 'bx bx-layout',
+        'Generative AI & Prompt Engineering': 'bx bx-brain',
+        'WordPress Development & Custom CMS': 'bx bxl-wordpress',
+        'Data Analysis & Business Telemetry': 'bx bx-bar-chart-alt-2',
+        'Full-Stack Web Development': 'bx bx-layer',
+        'Python, Java & SQL Architecture': 'bx bxl-python',
+        'React & Modern UI Frameworks': 'bx bxl-react',
+        'Relational Databases (MySQL & PostgreSQL)': 'bx bxl-postgresql',
+        'Developer Tools (Git, GitHub, VS Code, Postman)': 'bx bxl-git',
+        'REST APIs & Cloudflare Serverless Architecture': 'bx bx-cloud',
+
+        // Digital Marketing & Growth Strategy
+        'Meta Ads & Facebook Ads Manager': 'bx bxl-meta',
+        'Google Ads & PPC Advertising': 'bx bxl-google',
+        'Social Media Marketing & Brand Reach': 'bx bx-share-alt',
+        'Email Marketing & Automated Funnels': 'bx bx-envelope',
+        'Marketing Strategy & Growth Strategy': 'bx bx-line-chart',
+        'Digital Marketing & Multi-Channel Campaigns': 'bx bx-broadcast',
+        'SEO Optimization & Entity Search': 'bx bx-search-alt',
+        'Google Analytics 4 & Measurement': 'bx bx-pie-chart-alt',
+        'Conversion Rate Optimization (CRO)': 'bx bx-trending-up',
+        'Campaign Manager 360 & Ad Operations': 'bx bx-slider-alt',
+
+        // Entrepreneurship & Business Management
+        'Leadership & Team Management': 'bx bx-group',
+        'Business Administration & Operations Management': 'bx bx-briefcase-alt',
+        'Business Management & Executive Leadership': 'bx bx-crown',
+        'Business Development & Partnerships': 'bx bx-network-chart',
+        'Strategic Planning & Market Research': 'bx bx-compass',
+        'Financial Planning & Financial Operations': 'bx bx-dollar-circle',
+        'Risk Management & Banking Processes': 'bx bx-shield-quarter',
+        'Innovation Thinking & Business Ideation': 'bx bx-bulb',
+        'Commercial Client Software Delivery': 'bx bx-package',
+        'Agile Project Scoping & Delivery': 'bx bx-task',
+
+        // Cybersecurity & Systems Engineering
+        'Network Security (TCP/IP, DNS, HTTP/HTTPS, SSH, VPN)': 'bx bx-shield-alt-2',
+        'Packet Inspection & Analysis (Wireshark, Nmap, Tracer)': 'bx bx-radar',
+        'Autonomous Cyber Defense & Deception Trap Networks': 'bx bx-shield-plus',
+        'Vulnerability Assessment & Ethical Hacking': 'bx bx-bug',
+        'Phishing Detection & Security Log Analysis': 'bx bx-file-find',
+        'Identity & Access Management (RBAC & Auth)': 'bx bx-key',
+        'Cloud Security (AWS IAM, VPC, Security Groups, KMS)': 'bx bx-lock-alt',
+        'Linux Server Hardening & CLI Administration': 'bx bxl-tux',
+        'AI Data Confidentiality & Compliance Shield (DLP)': 'bx bx-check-shield',
+        'Security Risk Management (ISO 27001 Standards)': 'bx bx-award'
+    };
+
+    function getSkillIcon(skillName) {
+        if (!skillName) return 'bx bx-check';
+        const trimmed = skillName.trim();
+        if (SKILL_ICON_MAP[trimmed]) return SKILL_ICON_MAP[trimmed];
+        
+        const lower = trimmed.toLowerCase();
+        if (lower.includes('python')) return 'bx bxl-python';
+        if (lower.includes('react')) return 'bx bxl-react';
+        if (lower.includes('wordpress')) return 'bx bxl-wordpress';
+        if (lower.includes('git')) return 'bx bxl-git';
+        if (lower.includes('postgres') || lower.includes('sql') || lower.includes('database')) return 'bx bxl-postgresql';
+        if (lower.includes('cloud') || lower.includes('api')) return 'bx bx-cloud';
+        if (lower.includes('ai') || lower.includes('prompt') || lower.includes('brain')) return 'bx bx-brain';
+        if (lower.includes('meta') || lower.includes('facebook')) return 'bx bxl-meta';
+        if (lower.includes('google') || lower.includes('ppc')) return 'bx bxl-google';
+        if (lower.includes('seo') || lower.includes('search')) return 'bx bx-search-alt';
+        if (lower.includes('analytics') || lower.includes('telemetry')) return 'bx bx-pie-chart-alt';
+        if (lower.includes('market') || lower.includes('funnel')) return 'bx bx-line-chart';
+        if (lower.includes('security') || lower.includes('defense') || lower.includes('shield')) return 'bx bx-shield-quarter';
+        if (lower.includes('hack') || lower.includes('vulnerability')) return 'bx bx-bug';
+        if (lower.includes('packet') || lower.includes('network') || lower.includes('wireshark')) return 'bx bx-radar';
+        if (lower.includes('linux')) return 'bx bxl-tux';
+        if (lower.includes('leadership') || lower.includes('team') || lower.includes('management')) return 'bx bx-group';
+        if (lower.includes('finance') || lower.includes('banking') || lower.includes('dollar')) return 'bx bx-dollar-circle';
+        if (lower.includes('frontend') || lower.includes('ui') || lower.includes('web')) return 'bx bx-layout';
+        return 'bx bx-check';
+    }
+
     const ContentManager = {
         basePath: 'data/',
         manifest: {
@@ -115,11 +194,13 @@
                     const ul = el('ul', { className: 'expertise__list' });
                     category.skills.forEach(skill => {
                         if (typeof skill === 'string' && skill.trim().length > 0) {
+                            const trimmedSkill = skill.trim();
+                            const skillIcon = getSkillIcon(trimmedSkill);
                             ul.appendChild(
                                 el('li', { className: 'expertise__item' },
-                                    icon('bx bx-check', true),
+                                    icon(skillIcon, true),
                                     ' ',
-                                    skill.trim()
+                                    trimmedSkill
                                 )
                             );
                         }
@@ -351,10 +432,20 @@
                 if (Array.isArray(edu.meta) && edu.meta.length > 0) {
                     const metaDiv = el('div', { className: 'education__meta' });
                     edu.meta.forEach(m => {
-                        const itemDiv = el('div', { className: 'education__meta-item' },
-                            el('span', {}, m.label),
-                            ' '
-                        );
+                        let metaIconClass = null;
+                        const lbl = (m.label || '').toLowerCase();
+                        if (lbl.includes('cgpa')) metaIconClass = 'bx bx-award';
+                        else if (lbl.includes('coursework')) metaIconClass = 'bx bx-book-bookmark';
+                        else if (lbl.includes('performance')) metaIconClass = 'bx bx-bar-chart-alt-2';
+
+                        const itemDiv = el('div', { className: 'education__meta-item' });
+                        if (metaIconClass) {
+                            itemDiv.appendChild(icon(metaIconClass));
+                            itemDiv.appendChild(document.createTextNode(' '));
+                        }
+                        itemDiv.appendChild(el('span', {}, m.label));
+                        itemDiv.appendChild(document.createTextNode(' '));
+
                         if (m.isHighlight) {
                             itemDiv.appendChild(
                                 el('strong', { className: 'education__status' },
@@ -408,7 +499,7 @@
                         },
                             cert.link.text || 'Verify Certificate',
                             ' ',
-                            icon('bx bx-external-link')
+                            icon('bx bx-link-external')
                         )
                     );
                 } else if (cert.footerLabel) {
